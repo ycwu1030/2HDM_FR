@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[    379468,       9006]
-NotebookOptionsPosition[    351642,       8260]
-NotebookOutlinePosition[    352095,       8278]
-CellTagsIndexPosition[    352052,       8275]
+NotebookDataLength[    426819,      10227]
+NotebookOptionsPosition[    394231,       9359]
+NotebookOutlinePosition[    394684,       9377]
+CellTagsIndexPosition[    394641,       9374]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -41,7 +41,7 @@ Cell[BoxData[
   3.776383094061726*^9, 3.776383102228602*^9}, {3.776383158444569*^9, 
   3.776383161305128*^9}, {3.776383430897925*^9, 3.7763834321000643`*^9}, {
   3.776384090587508*^9, 3.776384091387588*^9}, {3.776430672715502*^9, 
-  3.776430673483596*^9}}],
+  3.776430673483596*^9}, {3.776443859070384*^9, 3.7764438608465557`*^9}}],
 
 Cell[BoxData[
  FormBox["\<\"/Users/ycwu/Workingspace/FeynRules/feynrules-2.3.32\"\>", 
@@ -55,7 +55,9 @@ Cell[BoxData[
    3.776384518449177*^9, 3.776384936849778*^9, 3.776385012904022*^9, 
    3.776386598003647*^9, 3.776387247730318*^9, 3.776388818883997*^9, 
    3.77643067441761*^9, 3.776432310656917*^9, 3.776434270358971*^9, 
-   3.776435608529462*^9, 3.776436398501936*^9}]
+   3.776435608529462*^9, 3.776436398501936*^9, 3.776443071508658*^9, 
+   3.776443774683371*^9, 3.776443861627434*^9, 3.776444429014696*^9, 
+   3.7764451348750067`*^9, 3.776454394607191*^9, 3.7764546977254972`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -76,7 +78,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.7764546993666887`*^9}],
 
 Cell[BoxData[
  FormBox[
@@ -95,7 +100,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409518354*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.77645469939471*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Authors: A. Alloul, N. Christensen, C. Degrande, C. Duhr, B. \
@@ -108,7 +116,10 @@ Fuks\"\>", TraditionalForm]], "Print",
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409532755*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699422434*^9}],
 
 Cell[BoxData[
  FormBox["\<\" \"\>", TraditionalForm]], "Print",
@@ -120,7 +131,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409548087*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699440325*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Please cite:\"\>", TraditionalForm]], "Print",
@@ -132,7 +146,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409563261*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699455344*^9}],
 
 Cell[BoxData[
  FormBox["\<\"    - Comput.Phys.Commun.185:2250-2300,2014 \
@@ -145,7 +162,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409578809*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699473629*^9}],
 
 Cell[BoxData[
  FormBox["\<\"    - Comput.Phys.Commun.180:1614-1641,2009 \
@@ -158,7 +178,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409596367*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699489191*^9}],
 
 Cell[BoxData[
  FormBox["\<\" \"\>", TraditionalForm]], "Print",
@@ -170,7 +193,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409609469*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.7764546995041447`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"http://feynrules.phys.ucl.ac.be\"\>", TraditionalForm]], "Print",\
@@ -183,7 +209,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409625959*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699518868*^9}],
 
 Cell[BoxData[
  FormBox["\<\" \"\>", TraditionalForm]], "Print",
@@ -195,7 +224,10 @@ Cell[BoxData[
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364096393547`*^9}],
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699535646*^9}],
 
 Cell[BoxData[
  FormBox["\<\"The FeynRules palette can be opened using the command \
@@ -208,7 +240,10 @@ FRPalette[].\"\>", TraditionalForm]], "Print",
   3.776384456681765*^9, 3.776384519519311*^9, 3.77638493897709*^9, 
   3.776385014469331*^9, 3.776386598750185*^9, 3.776387248727223*^9, 
   3.776388820458653*^9, 3.776430677147628*^9, 3.776432312036317*^9, 
-  3.7764342719324627`*^9, 3.776435610116013*^9, 3.776436409653873*^9}]
+  3.7764342719324627`*^9, 3.776435610116013*^9, 3.7764364095017443`*^9, 
+  3.776443073185021*^9, 3.7764437763316317`*^9, 3.7764438627465076`*^9, 
+  3.7764444307243967`*^9, 3.776445136123509*^9, 3.776454396823923*^9, 
+  3.776454699552332*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -261,7 +296,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703501742*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Yongcheng Wu\"\>", TraditionalForm]], "Print",
@@ -273,7 +311,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.776436415457778*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703515417*^9}],
 
 Cell[BoxData[
  FormBox[
@@ -289,7 +330,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641547396*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703535501*^9}],
 
 Cell[BoxData[
  FormBox["\<\"For more information, type ModelInformation[].\"\>", 
@@ -302,7 +346,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.7764364154897013`*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703555529*^9}],
 
 Cell[BoxData[
  FormBox["\<\"\"\>", TraditionalForm]], "Print",
@@ -314,7 +361,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.776436415507471*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703575843*^9}],
 
 Cell[BoxData[
  FormBox["\<\"   - Loading particle classes.\"\>", TraditionalForm]], "Print",\
@@ -327,7 +377,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.776436415525579*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703597299*^9}],
 
 Cell[BoxData[
  FormBox["\<\"   - Loading gauge group classes.\"\>", 
@@ -340,7 +393,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.7764364156644697`*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703702363*^9}],
 
 Cell[BoxData[
  FormBox["\<\"   - Loading parameter classes.\"\>", TraditionalForm]], "Print",\
@@ -353,7 +409,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.776436415680751*^9}],
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.776454703723695*^9}],
 
 Cell[BoxData[
  FormBox[
@@ -370,7 +429,10 @@ Cell[BoxData[
   3.7763844632528067`*^9, 3.776384527622705*^9, 3.776384954016492*^9, 
   3.776385021627523*^9, 3.776386604249909*^9, 3.7763872539065857`*^9, 
   3.776388939567507*^9, 3.776430684587912*^9, 3.7764324649011707`*^9, 
-  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641575331*^9}]
+  3.7764343203723707`*^9, 3.77643561449821*^9, 3.77643641544424*^9, 
+  3.776443081415229*^9, 3.77644378760413*^9, 3.776444096369175*^9, 
+  3.776444435577648*^9, 3.7764451724935303`*^9, 3.7764544136481857`*^9, 
+  3.7764547038303757`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -387,10 +449,12 @@ We should also specify which Yukawa Type You want, right now we have \
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"YukawaType", "=", "\"\<Type-FL\>\""}], ";"}]], "Input",
+  RowBox[{"YukawaType", "=", "\"\<Type-II\>\""}], ";"}]], "Input",
  CellChangeTimes->{{3.776383411574366*^9, 3.776383419382718*^9}, 
    3.77643484606044*^9, {3.7764356187775593`*^9, 3.7764356195214233`*^9}, {
-   3.77643641803867*^9, 3.776436418980282*^9}}],
+   3.77643641803867*^9, 3.776436418980282*^9}, {3.776443084491547*^9, 
+   3.7764430852484283`*^9}, {3.776444438285274*^9, 3.776444438914528*^9}, 
+   3.776454418618034*^9, 3.776454708201373*^9}],
 
 Cell[BoxData[
  RowBox[{"(*", 
@@ -612,7 +676,7 @@ Cell[BoxData["LGhost"], "Input",
   3.411910615781582*^9}}]
 }, Open  ]]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -1703,7 +1767,7 @@ Cell[BoxData[
 }, Open  ]]
 }, Closed]]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -1810,9 +1874,12 @@ Cell[CellGroupData[{
 Cell["FeynArts output", "Subsection",
  CellChangeTimes->{{3.411911000132907*^9, 3.411911005135379*^9}}],
 
-Cell["The FeynArts output for the SM can be obtained via", "Text",
+Cell["The FeynArts output for the 2HDM can be obtained via", "Text",
  CellChangeTimes->{{3.411910955110715*^9, 3.4119109690877657`*^9}, {
-  3.411911062212926*^9, 3.4119110634765463`*^9}}],
+  3.411911062212926*^9, 3.4119110634765463`*^9}, {3.776442976717401*^9, 
+  3.7764429781388893`*^9}}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -1821,14 +1888,348 @@ Cell[BoxData[{
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"WriteFeynArtsOutput", "[", 
   RowBox[{"LGauge", ",", "LHiggs", ",", "LFermions", ",", "LYukawa", ",", 
-   RowBox[{"FlavorExpand", "\[Rule]", "SU2W"}]}], "]"}]}], "Input",
+   RowBox[{"FlavorExpand", "\[Rule]", "SU2W"}], ",", 
+   RowBox[{"Output", "\[Rule]", 
+    RowBox[{
+    "\"\<2HDM_\>\"", "<>", "YukawaType", "<>", 
+     "\"\<_UnitaryGauge_FA\>\""}]}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.411911018354619*^9, 3.4119110196967573`*^9}, {
    3.412185470680571*^9, 3.412185480912915*^9}, {3.41245048911446*^9, 
    3.4124504892674522`*^9}, 3.414315634453483*^9, {3.423416180751266*^9, 
-   3.423416182892613*^9}}],
+   3.423416182892613*^9}, {3.776443053627142*^9, 3.776443061521159*^9}, {
+   3.776443338295298*^9, 3.7764433401708097`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox["\<\" - - - FeynRules interface to FeynArts - - -\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521101104*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"      C. Degrande C. Duhr, 2013\"\>", TraditionalForm]], "Print",\
+
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521117453*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"      Counterterms: B. Fuks, 2012\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521132765*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Creating output directory: \"\>", 
+    "\[InvisibleSpace]", "\<\"2HDM_Type-II_UnitaryGauge_FA\"\>"}],
+   SequenceForm["Creating output directory: ", "2HDM_Type-II_UnitaryGauge_FA"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521149523*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L1\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L1"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521165546*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L1.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521187345*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521205062*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444521221477*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445228471003`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "8", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been found \
+-> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "8", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   8, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 8, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444522870838*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"8", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[8, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444523808125*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L2\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L2"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444523826642*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L2.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444523849627*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444523864326*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445238767767`*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445325343113`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "58", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "58", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   58, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 58, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.77644453261488*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"58", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[58, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445357715797`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L3\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L3"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445357872868`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L3.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444535802459*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445358149967`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444535830782*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445376366663`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "18", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "18", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   18, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 18, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444537713552*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"13", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[13, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444538755884*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L4\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L4"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445387711782`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L4.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.77644453878428*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444538796154*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444539685586*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "13", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "13", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   13, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 13, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444539711417*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"13", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[13, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.7764445403972797`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Writing FeynArts model file into directory \"\>", 
+    "\[InvisibleSpace]", "\<\"2HDM_Type-II_UnitaryGauge_FA\"\>"}],
+   SequenceForm[
+   "Writing FeynArts model file into directory ", 
+    "2HDM_Type-II_UnitaryGauge_FA"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444543114455*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Writing FeynArts generic file on \"\>", 
+    "\[InvisibleSpace]", "\<\"2HDM_Type-II_UnitaryGauge_FA.gen\"\>", 
+    "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   "Writing FeynArts generic file on ", "2HDM_Type-II_UnitaryGauge_FA.gen", 
+    "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776443093879978*^9, 3.77644334603836*^9, 
+  3.776443798118824*^9, 3.776444543173789*^9}]
+}, Open  ]]
+}, Closed]],
 
 Cell["FeynArts also supports the Feynman gauge", "Text",
  CellChangeTimes->{{3.4121854851672792`*^9, 3.412185494183435*^9}}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -1840,10 +2241,380 @@ Cell[BoxData[{
   "LGauge", ",", "LHiggs", ",", "LFermions", ",", "LYukawa", ",", "LGhost", 
    ",", 
    RowBox[{"FlavorExpand", "\[Rule]", "SU2W"}], ",", 
-   RowBox[{"Output", "\[Rule]", "\"\<SM.mod\>\""}]}], "]"}]}], "Input",
+   RowBox[{"Output", "\[Rule]", 
+    RowBox[{
+    "\"\<2HDM_\>\"", "<>", "YukawaType", "<>", 
+     "\"\<_FeynmanGauge_FA\>\""}]}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.411911018354619*^9, 3.4119110196967573`*^9}, {
   3.412185470680571*^9, 3.412185506240796*^9}, {3.4234161971513453`*^9, 
-  3.423416209716672*^9}}]
+  3.423416209716672*^9}, {3.7764429930647373`*^9, 3.776443038302792*^9}, {
+  3.776444112203061*^9, 3.776444114656878*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox["\<\" - - - FeynRules interface to FeynArts - - -\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445215514785*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"      C. Degrande C. Duhr, 2013\"\>", TraditionalForm]], "Print",\
+
+ CellChangeTimes->{3.776444113929455*^9, 3.77644521553251*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"      Counterterms: B. Fuks, 2012\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445215554207*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Creating output directory: \"\>", 
+    "\[InvisibleSpace]", "\<\"2HDM_Type-II_FeynmanGauge_FA\"\>"}],
+   SequenceForm["Creating output directory: ", "2HDM_Type-II_FeynmanGauge_FA"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452155717297`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L1\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L1"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452155971823`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L1.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452156259823`*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445215644678*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445215665949*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445217278722*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "8", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been found \
+-> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "8", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   8, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 8, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452173054457`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"8", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[8, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452187626038`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L2\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L2"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452188028297`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L2.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445218859439*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452188787107`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445218936058*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445234474461*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "148", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "148", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   148, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 148, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.77644523467306*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"148", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[148, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445243420124*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L3\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L3"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445243434353*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L3.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452434494877`*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452434631643`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452434757137`*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445245308056*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "18", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "18", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   18, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 18, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445245387765*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"13", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[13, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445246430746*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L4\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L4"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445246445002*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L4.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445246458708*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452464729958`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.77644524648669*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445248147427*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "20", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "20", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   20, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 20, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452481614943`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"20", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[20, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445249321764*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Calculating Feynman rules for \"\>", 
+    "\[InvisibleSpace]", "\<\"L5\"\>"}],
+   SequenceForm["Calculating Feynman rules for ", "L5"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445249337359*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rules calculation for L5.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445249350809*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445249361513*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445249377028*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.7764452505998497`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "19", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{18., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "19", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   19, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 19, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445250614377*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"19", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[19, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445251134831*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Writing FeynArts model file into directory \"\>", 
+    "\[InvisibleSpace]", "\<\"2HDM_Type-II_FeynmanGauge_FA\"\>"}],
+   SequenceForm[
+   "Writing FeynArts model file into directory ", 
+    "2HDM_Type-II_FeynmanGauge_FA"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445256475029*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Writing FeynArts generic file on \"\>", 
+    "\[InvisibleSpace]", "\<\"2HDM_Type-II_FeynmanGauge_FA.gen\"\>", 
+    "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   "Writing FeynArts generic file on ", "2HDM_Type-II_FeynmanGauge_FA.gen", 
+    "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776444113929455*^9, 3.776445256557784*^9}]
+}, Open  ]]
+}, Closed]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1866,7 +2637,7 @@ Cell[BoxData[{
  CellChangeTimes->{{3.4119110943383636`*^9, 3.41191110054212*^9}, {
   3.412185455856553*^9, 3.412185456628922*^9}, {3.4143156544792233`*^9, 
   3.414315668290971*^9}, {3.423416222700699*^9, 3.423416235756197*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -1893,7 +2664,7 @@ Cell[BoxData[{
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{3.412185367693318*^9, 3.412185407947097*^9}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -1922,7 +2693,7 @@ Cell[BoxData[{
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{3.412185367693318*^9, 3.412185407947097*^9}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -2012,7 +2783,7 @@ Cell[BoxData[
    "213", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
 found -> starting the computation: \"\>", "\[InvisibleSpace]", 
     DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
-     ImageSizeCache->{27., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+     ImageSizeCache->{18., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
     "\[InvisibleSpace]", "213", "\[InvisibleSpace]", "\<\".\"\>"}],
    SequenceForm[
    213, " possible non-zero vertices have been found -> starting the \
@@ -2040,7 +2811,7 @@ Cell[BoxData[
     "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" cores: \"\>", 
     "\[InvisibleSpace]", 
     DynamicBox[ToBoxes[FeynRules`FR$Count1, TraditionalForm],
-     ImageSizeCache->{27., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+     ImageSizeCache->{84., {2., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
     "\[InvisibleSpace]", "208"}],
    SequenceForm[
    "Flavor expansion of the vertices distributed over ", 2, " cores: ", 
@@ -2077,7 +2848,7 @@ Cell[BoxData[
   InterpretationBox[
    RowBox[{
     DynamicBox[ToBoxes[PRIVATE`mycounter, TraditionalForm],
-     ImageSizeCache->{27., {1., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+     ImageSizeCache->{18., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
     "\[InvisibleSpace]", "107"}],
    SequenceForm[
     Dynamic[PRIVATE`mycounter], " / ", 107],
@@ -2102,7 +2873,7 @@ Cell[BoxData[
   InterpretationBox[
    RowBox[{
     DynamicBox[ToBoxes[PRIVATE`mycounter, TraditionalForm],
-     ImageSizeCache->{27., {1., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+     ImageSizeCache->{18., {1., 12.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
     "\[InvisibleSpace]", "135"}],
    SequenceForm[
     Dynamic[PRIVATE`mycounter], " / ", 135],
@@ -2151,7 +2922,7 @@ Cell[BoxData[
   InterpretationBox[
    RowBox[{"\<\"    - Optimizing: \"\>", "\[InvisibleSpace]", 
     DynamicBox[ToBoxes[PRIVATE`PY$SplitVertexCounter, TraditionalForm],
-     ImageSizeCache->{27., {1., 13.}}], "\[InvisibleSpace]", "\<\"/\"\>", 
+     ImageSizeCache->{255., {4., 13.}}], "\[InvisibleSpace]", "\<\"/\"\>", 
     "\[InvisibleSpace]", "310", "\[InvisibleSpace]", "\<\" .\"\>"}],
    SequenceForm["    - Optimizing: ", 
     Dynamic[PRIVATE`PY$SplitVertexCounter], "/", 310, " ."],
@@ -2171,6 +2942,334 @@ Cell[BoxData[
  CellChangeTimes->{3.776388630506179*^9, 3.776389082623736*^9, 
   3.776430713427211*^9, 3.77643486037092*^9, 3.776435639072092*^9, 
   3.776436540727618*^9}]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"WriteUFO", "[", 
+   RowBox[{"L2HDM", ",", "LggHL", ",", "LggHH", ",", "LggHA", ",", 
+    RowBox[{"Output", "\[Rule]", 
+     RowBox[{"StringReplace", "[", 
+      RowBox[{
+       RowBox[{
+       "M$ModelName", "<>", "\"\<_ggF_\>\"", "<>", "YukawaType", "<>", 
+        "\"\<_UFO\>\""}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\< \>\"", "\[Rule]", "\"\<_\>\""}], "}"}]}], "]"}]}]}], 
+   "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.776454444596822*^9, 3.776454479330357*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox["\<\" --- Universal FeynRules Output (UFO) v 1.1 ---\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454723346487*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rule calculation.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454723915955*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454723941585*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Expanding the indices over \"\>", "\[InvisibleSpace]", "2", 
+    "\[InvisibleSpace]", "\<\" cores\"\>"}],
+   SequenceForm["Expanding the indices over ", 2, " cores"],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.77645472395816*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454750148802*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "213", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been \
+found -> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{9., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "213", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   213, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 213, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.77645475043821*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"208", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[208, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454763833852*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rule calculation.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454763849765*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454763864636*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454763960958*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "3", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been found \
+-> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{9., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   3, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 3, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.7764547639803257`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"3", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[3, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454764407261*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rule calculation.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.7764547644304113`*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454764446607*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454764548678*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "3", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been found \
+-> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{9., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   3, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 3, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454764567236*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"3", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[3, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454764999736*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Starting Feynman rule calculation.\"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.7764547650129547`*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454765024294*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
+   TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454765273012*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+   "3", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been found \
+-> starting the computation: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
+     ImageSizeCache->{9., {0., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\".\"\>"}],
+   SequenceForm[
+   3, " possible non-zero vertices have been found -> starting the \
+computation: ", 
+    Dynamic[FeynRules`FR$FeynmanRules], " / ", 3, "."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454765290318*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"3", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
+   SequenceForm[3, " vertices obtained."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454766106371*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Flavor expansion of the vertices distributed over \"\>", 
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" cores: \"\>", 
+    "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[FeynRules`FR$Count1, TraditionalForm],
+     ImageSizeCache->{27., {1., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "216"}],
+   SequenceForm[
+   "Flavor expansion of the vertices distributed over ", 2, " cores: ", 
+    Dynamic[FeynRules`FR$Count1], " / ", 216],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.7764547708630857`*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"   - Saved vertices in InterfaceRun[ 1 ].\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.77645478715513*^9}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox["\<\"Computing the squared matrix elements relevant for the 1->2 \
+decays: \"\>",
+   StripOnInput->False,
+   LineColor->RGBColor[1, 0.5, 0],
+   FrontFaceColor->RGBColor[1, 0.5, 0],
+   BackFaceColor->RGBColor[1, 0.5, 0],
+   GraphicsColor->RGBColor[1, 0.5, 0],
+   FontWeight->Bold,
+   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454787179853*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+    DynamicBox[ToBoxes[PRIVATE`mycounter, TraditionalForm],
+     ImageSizeCache->{27., {1., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "110"}],
+   SequenceForm[
+    Dynamic[PRIVATE`mycounter], " / ", 110],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454787206231*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Squared matrix elent compute in \"\>", "\[InvisibleSpace]", 
+    "6.614435`", "\[InvisibleSpace]", "\<\" seconds.\"\>"}],
+   SequenceForm["Squared matrix elent compute in ", 6.614435, " seconds."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.7764548180657578`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{
+    DynamicBox[ToBoxes[PRIVATE`mycounter, TraditionalForm],
+     ImageSizeCache->{27., {1., 13.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
+    "\[InvisibleSpace]", "138"}],
+   SequenceForm[
+    Dynamic[PRIVATE`mycounter], " / ", 138],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454818100692*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Decay widths computed in \"\>", "\[InvisibleSpace]", "3.978`",
+     "\[InvisibleSpace]", "\<\" seconds.\"\>"}],
+   SequenceForm["Decay widths computed in ", 3.978, " seconds."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.77645482377087*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Preparing Python output.\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454823790015*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"    - Splitting vertices into building blocks.\"\>", 
+  TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454824185568*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Splitting of vertices distributed over \"\>", 
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" kernels.\"\>"}],
+   SequenceForm["Splitting of vertices distributed over ", 2, " kernels."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.7764548242751627`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"    - Optimizing: \"\>", "\[InvisibleSpace]", 
+    DynamicBox[ToBoxes[PRIVATE`PY$SplitVertexCounter, TraditionalForm],
+     ImageSizeCache->{27., {1., 13.}}], "\[InvisibleSpace]", "\<\"/\"\>", 
+    "\[InvisibleSpace]", "318", "\[InvisibleSpace]", "\<\" .\"\>"}],
+   SequenceForm["    - Optimizing: ", 
+    Dynamic[PRIVATE`PY$SplitVertexCounter], "/", 318, " ."],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454829185215*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"    - Writing files.\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454829694428*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"Done!\"\>", TraditionalForm]], "Print",
+ CellChangeTimes->{3.776454487219738*^9, 3.776454830569839*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -8280,730 +9379,852 @@ Notebook[{
 Cell[545, 20, 120, 2, 43, "Input"],
 Cell[668, 24, 184, 4, 43, "Input"],
 Cell[CellGroupData[{
-Cell[877, 32, 625, 11, 43, "Input"],
-Cell[1505, 45, 800, 12, 44, "Output"]
+Cell[877, 32, 673, 11, 43, "Input"],
+Cell[1553, 45, 966, 14, 44, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2342, 62, 120, 2, 43, "Input"],
+Cell[2556, 64, 120, 2, 43, "Input"],
 Cell[CellGroupData[{
-Cell[2487, 68, 707, 10, 30, "Print"],
-Cell[3197, 80, 987, 17, 30, "Print"],
-Cell[4187, 99, 757, 11, 30, "Print"],
-Cell[4947, 112, 691, 10, 30, "Print"],
-Cell[5641, 124, 702, 10, 30, "Print"],
-Cell[6346, 136, 754, 11, 30, "Print"],
-Cell[7103, 149, 754, 11, 30, "Print"],
-Cell[7860, 162, 691, 10, 30, "Print"],
-Cell[8554, 174, 723, 11, 30, "Print"],
-Cell[9280, 187, 693, 10, 30, "Print"],
-Cell[9976, 199, 758, 11, 30, "Print"]
+Cell[2701, 70, 878, 13, 30, "Print"],
+Cell[3582, 85, 1157, 20, 30, "Print"],
+Cell[4742, 107, 928, 14, 30, "Print"],
+Cell[5673, 123, 862, 13, 30, "Print"],
+Cell[6538, 138, 873, 13, 30, "Print"],
+Cell[7414, 153, 925, 14, 30, "Print"],
+Cell[8342, 169, 925, 14, 30, "Print"],
+Cell[9270, 185, 864, 13, 30, "Print"],
+Cell[10137, 200, 894, 14, 30, "Print"],
+Cell[11034, 216, 862, 13, 30, "Print"],
+Cell[11899, 231, 929, 14, 30, "Print"]
 }, Open  ]]
 }, Open  ]],
-Cell[10761, 214, 404, 7, 43, "Input"],
+Cell[12855, 249, 404, 7, 43, "Input"],
 Cell[CellGroupData[{
-Cell[11190, 225, 99, 1, 137, "Title"],
-Cell[11292, 228, 120, 1, 46, "Text"],
+Cell[13284, 260, 99, 1, 137, "Title"],
+Cell[13386, 263, 120, 1, 46, "Text"],
 Cell[CellGroupData[{
-Cell[11437, 233, 1081, 15, 43, "Input"],
+Cell[13531, 268, 1081, 15, 43, "Input"],
 Cell[CellGroupData[{
-Cell[12543, 252, 735, 11, 30, "Print"],
-Cell[13281, 265, 705, 10, 30, "Print"],
-Cell[13989, 277, 846, 14, 30, "Print"],
-Cell[14838, 293, 744, 11, 30, "Print"],
-Cell[15585, 306, 693, 10, 30, "Print"],
-Cell[16281, 318, 725, 11, 30, "Print"],
-Cell[17009, 331, 731, 11, 30, "Print"],
-Cell[17743, 344, 726, 11, 30, "Print"],
-Cell[18472, 357, 897, 15, 54, "Print"]
+Cell[14637, 287, 901, 14, 30, "Print"],
+Cell[15541, 303, 870, 13, 30, "Print"],
+Cell[16414, 318, 1012, 17, 30, "Print"],
+Cell[17429, 337, 907, 14, 30, "Print"],
+Cell[18339, 353, 858, 13, 30, "Print"],
+Cell[19200, 368, 890, 14, 30, "Print"],
+Cell[20093, 384, 894, 14, 30, "Print"],
+Cell[20990, 400, 891, 14, 30, "Print"],
+Cell[21884, 416, 1065, 18, 54, "Print"]
 }, Open  ]]
 }, Open  ]],
-Cell[19396, 376, 495, 9, 46, "Text"],
-Cell[19894, 387, 280, 5, 43, "Input"],
-Cell[20177, 394, 297, 6, 43, "Input"],
+Cell[22976, 438, 495, 9, 46, "Text"],
+Cell[23474, 449, 426, 7, 43, "Input"],
+Cell[23903, 458, 297, 6, 43, "Input"],
 Cell[CellGroupData[{
-Cell[20499, 404, 155, 2, 95, "Section"],
+Cell[24225, 468, 155, 2, 95, "Section"],
 Cell[CellGroupData[{
-Cell[20679, 410, 100, 1, 65, "Subsection"],
-Cell[20782, 413, 257, 5, 46, "Text"],
-Cell[21042, 420, 96, 1, 43, "Input"],
+Cell[24405, 474, 100, 1, 65, "Subsection"],
+Cell[24508, 477, 257, 5, 46, "Text"],
+Cell[24768, 484, 96, 1, 43, "Input"],
 Cell[CellGroupData[{
-Cell[21163, 425, 105, 1, 52, "Subsubsection"],
-Cell[21271, 428, 219, 4, 46, "Text"],
-Cell[21493, 434, 98, 1, 43, "Input"]
+Cell[24889, 489, 105, 1, 52, "Subsubsection"],
+Cell[24997, 492, 219, 4, 46, "Text"],
+Cell[25219, 498, 98, 1, 43, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21628, 440, 154, 2, 52, "Subsubsection"],
-Cell[21785, 444, 270, 6, 46, "Text"],
-Cell[22058, 452, 147, 2, 43, "Input"]
+Cell[25354, 504, 154, 2, 52, "Subsubsection"],
+Cell[25511, 508, 270, 6, 46, "Text"],
+Cell[25784, 516, 147, 2, 43, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22242, 459, 158, 2, 52, "Subsubsection"],
-Cell[22403, 463, 272, 5, 46, "Text"],
-Cell[22678, 470, 148, 2, 43, "Input"]
+Cell[25968, 523, 158, 2, 52, "Subsubsection"],
+Cell[26129, 527, 272, 5, 46, "Text"],
+Cell[26404, 534, 148, 2, 43, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22863, 477, 155, 2, 52, "Subsubsection"],
-Cell[23021, 481, 271, 6, 46, "Text"],
-Cell[23295, 489, 150, 2, 43, "Input"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23494, 497, 148, 2, 65, "Subsection"],
-Cell[23645, 501, 195, 4, 46, "Text"],
-Cell[23843, 507, 149, 3, 43, "Input"],
-Cell[23995, 512, 303, 5, 46, "Text"],
-Cell[24301, 519, 146, 2, 43, "Input"],
-Cell[CellGroupData[{
-Cell[24472, 525, 105, 1, 52, "Subsubsection"],
-Cell[24580, 528, 219, 4, 46, "Text"],
-Cell[24802, 534, 98, 1, 43, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[24937, 540, 154, 2, 52, "Subsubsection"],
-Cell[25094, 544, 270, 6, 46, "Text"],
-Cell[25367, 552, 147, 2, 43, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[25551, 559, 158, 2, 52, "Subsubsection"],
-Cell[25712, 563, 272, 5, 46, "Text"],
-Cell[25987, 570, 148, 2, 43, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[26172, 577, 155, 2, 52, "Subsubsection"],
-Cell[26330, 581, 271, 6, 46, "Text"],
-Cell[26604, 589, 150, 2, 43, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[26791, 596, 205, 3, 52, "Subsubsection"],
-Cell[26999, 601, 316, 5, 46, "Text"],
-Cell[27318, 608, 198, 3, 43, "Input"]
-}, Open  ]]
+Cell[26589, 541, 155, 2, 52, "Subsubsection"],
+Cell[26747, 545, 271, 6, 46, "Text"],
+Cell[27021, 553, 150, 2, 43, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27577, 618, 110, 1, 95, "Section"],
-Cell[27690, 621, 199, 4, 43, "Input"],
+Cell[27220, 561, 148, 2, 65, "Subsection"],
+Cell[27371, 565, 195, 4, 46, "Text"],
+Cell[27569, 571, 149, 3, 43, "Input"],
+Cell[27721, 576, 303, 5, 46, "Text"],
+Cell[28027, 583, 146, 2, 43, "Input"],
 Cell[CellGroupData[{
-Cell[27914, 629, 110, 1, 65, "Subsection"],
-Cell[28027, 632, 134, 1, 46, "Text"],
-Cell[CellGroupData[{
-Cell[28186, 637, 245, 4, 43, "Input"],
-Cell[CellGroupData[{
-Cell[28456, 645, 187, 3, 30, "Print"],
-Cell[28646, 650, 183, 3, 30, "Print"],
-Cell[28832, 655, 384, 10, 30, "Print"],
-Cell[29219, 667, 131, 2, 30, "Print"],
-Cell[29353, 671, 318, 7, 30, "Print"],
-Cell[29674, 680, 167, 3, 30, "Print"],
-Cell[29844, 685, 124, 2, 30, "Print"],
-Cell[29971, 689, 250, 6, 30, "Print"],
-Cell[30224, 697, 132, 2, 30, "Print"]
+Cell[28198, 589, 105, 1, 52, "Subsubsection"],
+Cell[28306, 592, 219, 4, 46, "Text"],
+Cell[28528, 598, 98, 1, 43, "Input"]
 }, Open  ]],
-Cell[30371, 702, 118, 3, 43, "Output"]
+Cell[CellGroupData[{
+Cell[28663, 604, 154, 2, 52, "Subsubsection"],
+Cell[28820, 608, 270, 6, 46, "Text"],
+Cell[29093, 616, 147, 2, 43, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29277, 623, 158, 2, 52, "Subsubsection"],
+Cell[29438, 627, 272, 5, 46, "Text"],
+Cell[29713, 634, 148, 2, 43, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29898, 641, 155, 2, 52, "Subsubsection"],
+Cell[30056, 645, 271, 6, 46, "Text"],
+Cell[30330, 653, 150, 2, 43, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30517, 660, 205, 3, 52, "Subsubsection"],
+Cell[30725, 665, 316, 5, 46, "Text"],
+Cell[31044, 672, 198, 3, 43, "Input"]
+}, Open  ]]
+}, Open  ]]
 }, Closed]],
-Cell[30504, 708, 157, 3, 39, "Text"],
-Cell[30664, 713, 257, 5, 43, "Input"]
+Cell[CellGroupData[{
+Cell[31303, 682, 110, 1, 72, "Section"],
+Cell[31416, 685, 199, 4, 43, "Input"],
+Cell[CellGroupData[{
+Cell[31640, 693, 110, 1, 65, "Subsection"],
+Cell[31753, 696, 134, 1, 46, "Text"],
+Cell[CellGroupData[{
+Cell[31912, 701, 245, 4, 43, "Input"],
+Cell[CellGroupData[{
+Cell[32182, 709, 187, 3, 30, "Print"],
+Cell[32372, 714, 183, 3, 30, "Print"],
+Cell[32558, 719, 384, 10, 30, "Print"],
+Cell[32945, 731, 131, 2, 30, "Print"],
+Cell[33079, 735, 318, 7, 30, "Print"],
+Cell[33400, 744, 167, 3, 30, "Print"],
+Cell[33570, 749, 124, 2, 30, "Print"],
+Cell[33697, 753, 250, 6, 30, "Print"],
+Cell[33950, 761, 132, 2, 30, "Print"]
+}, Open  ]],
+Cell[34097, 766, 118, 3, 43, "Output"]
+}, Closed]],
+Cell[34230, 772, 157, 3, 39, "Text"],
+Cell[34390, 777, 257, 5, 43, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30958, 723, 114, 1, 65, "Subsection"],
-Cell[31075, 726, 230, 4, 76, "Text"],
-Cell[31308, 732, 305, 5, 76, "Text"],
+Cell[34684, 787, 114, 1, 65, "Subsection"],
+Cell[34801, 790, 230, 4, 76, "Text"],
+Cell[35034, 796, 305, 5, 76, "Text"],
 Cell[CellGroupData[{
-Cell[31638, 741, 214, 3, 43, "Input"],
+Cell[35364, 805, 214, 3, 43, "Input"],
 Cell[CellGroupData[{
-Cell[31877, 748, 363, 8, 30, "Print"],
-Cell[32243, 758, 194, 3, 30, "Print"],
-Cell[32440, 763, 9610, 271, 261, "Print"],
-Cell[42053, 1036, 196, 3, 30, "Print"],
-Cell[42252, 1041, 5487, 151, 201, "Print"],
-Cell[47742, 1194, 194, 3, 30, "Print"],
-Cell[47939, 1199, 6412, 187, 201, "Print"],
-Cell[54354, 1388, 194, 3, 30, "Print"],
-Cell[54551, 1393, 6412, 187, 201, "Print"]
+Cell[35603, 812, 363, 8, 30, "Print"],
+Cell[35969, 822, 194, 3, 30, "Print"],
+Cell[36166, 827, 9610, 271, 261, "Print"],
+Cell[45779, 1100, 196, 3, 30, "Print"],
+Cell[45978, 1105, 5487, 151, 201, "Print"],
+Cell[51468, 1258, 194, 3, 30, "Print"],
+Cell[51665, 1263, 6412, 187, 201, "Print"],
+Cell[58080, 1452, 194, 3, 30, "Print"],
+Cell[58277, 1457, 6412, 187, 201, "Print"]
 }, Open  ]]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[61024, 1587, 113, 1, 65, "Subsection"],
-Cell[61140, 1590, 181, 4, 46, "Text"],
+Cell[64750, 1651, 113, 1, 65, "Subsection"],
+Cell[64866, 1654, 181, 4, 46, "Text"],
 Cell[CellGroupData[{
-Cell[61346, 1598, 270, 5, 43, "Input"],
+Cell[65072, 1662, 270, 5, 43, "Input"],
 Cell[CellGroupData[{
-Cell[61641, 1607, 361, 8, 30, "Print"],
-Cell[62005, 1617, 139, 3, 30, "Print"],
-Cell[62147, 1622, 424, 10, 30, "Print"]
+Cell[65367, 1671, 361, 8, 30, "Print"],
+Cell[65731, 1681, 139, 3, 30, "Print"],
+Cell[65873, 1686, 424, 10, 30, "Print"]
 }, Open  ]]
 }, Closed]],
-Cell[62598, 1636, 173, 4, 39, "Text"],
+Cell[66324, 1700, 173, 4, 39, "Text"],
 Cell[CellGroupData[{
-Cell[62796, 1644, 219, 4, 43, "Input"],
+Cell[66522, 1708, 219, 4, 43, "Input"],
 Cell[CellGroupData[{
-Cell[63040, 1652, 363, 8, 30, "Print"],
-Cell[63406, 1662, 137, 3, 30, "Print"],
-Cell[63546, 1667, 426, 10, 30, "Print"],
-Cell[63975, 1679, 424, 10, 30, "Print"],
-Cell[64402, 1691, 424, 10, 30, "Print"]
+Cell[66766, 1716, 363, 8, 30, "Print"],
+Cell[67132, 1726, 137, 3, 30, "Print"],
+Cell[67272, 1731, 426, 10, 30, "Print"],
+Cell[67701, 1743, 424, 10, 30, "Print"],
+Cell[68128, 1755, 424, 10, 30, "Print"]
 }, Open  ]]
 }, Closed]]
 }, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[68625, 1773, 116, 1, 72, "Section"],
+Cell[68744, 1776, 170, 4, 208, "Text"],
+Cell[68917, 1782, 149, 3, 216, "Input"],
+Cell[CellGroupData[{
+Cell[69091, 1789, 100, 1, 272, "Subsection"],
+Cell[69194, 1792, 457, 10, 216, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[64899, 1709, 116, 1, 95, "Section"],
-Cell[65018, 1712, 170, 4, 208, "Text"],
-Cell[65191, 1718, 149, 3, 216, "Input"],
-Cell[CellGroupData[{
-Cell[65365, 1725, 100, 1, 272, "Subsection"],
-Cell[65468, 1728, 457, 10, 216, "Input"]
+Cell[69688, 1807, 76, 1, 272, "Subsection"],
+Cell[69767, 1810, 258, 5, 216, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[65962, 1743, 76, 1, 272, "Subsection"],
-Cell[66041, 1746, 258, 5, 216, "Input"]
+Cell[70062, 1820, 35, 0, 272, "Subsection"],
+Cell[70100, 1822, 417, 7, 216, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66336, 1756, 35, 0, 272, "Subsection"],
-Cell[66374, 1758, 417, 7, 216, "Input"]
+Cell[70554, 1834, 35, 0, 272, "Subsection"],
+Cell[70592, 1836, 360, 8, 216, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66828, 1770, 35, 0, 272, "Subsection"],
-Cell[66866, 1772, 360, 8, 216, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[67263, 1785, 101, 1, 272, "Subsection"],
-Cell[67367, 1788, 433, 9, 216, "Input"]
+Cell[70989, 1849, 101, 1, 272, "Subsection"],
+Cell[71093, 1852, 433, 9, 216, "Input"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[67849, 1803, 132, 2, 72, "Section"],
+Cell[71575, 1867, 132, 2, 72, "Section"],
 Cell[CellGroupData[{
-Cell[68006, 1809, 103, 1, 65, "Subsection"],
-Cell[68112, 1812, 185, 2, 46, "Text"],
-Cell[68300, 1816, 569, 11, 94, "Input"],
-Cell[68872, 1829, 124, 1, 46, "Text"],
-Cell[68999, 1832, 575, 13, 119, "Input"]
+Cell[71732, 1873, 103, 1, 65, "Subsection"],
+Cell[71838, 1876, 238, 3, 46, "Text"],
+Cell[CellGroupData[{
+Cell[72101, 1883, 804, 16, 119, "Input"],
+Cell[CellGroupData[{
+Cell[72930, 1903, 219, 4, 30, "Print"],
+Cell[73152, 1909, 205, 4, 30, "Print"],
+Cell[73360, 1915, 208, 4, 30, "Print"],
+Cell[73571, 1921, 401, 8, 30, "Print"],
+Cell[73975, 1931, 355, 8, 30, "Print"],
+Cell[74333, 1941, 460, 11, 30, "Print"],
+Cell[74796, 1954, 199, 3, 30, "Print"],
+Cell[74998, 1959, 386, 8, 30, "Print"],
+Cell[75387, 1969, 235, 4, 30, "Print"],
+Cell[75625, 1975, 723, 15, 30, "Print"],
+Cell[76351, 1992, 316, 7, 30, "Print"],
+Cell[76670, 2001, 355, 8, 30, "Print"],
+Cell[77028, 2011, 460, 11, 30, "Print"],
+Cell[77491, 2024, 199, 3, 30, "Print"],
+Cell[77693, 2029, 388, 8, 30, "Print"],
+Cell[78084, 2039, 235, 4, 30, "Print"],
+Cell[78322, 2045, 726, 15, 30, "Print"],
+Cell[79051, 2062, 320, 7, 30, "Print"],
+Cell[79374, 2071, 357, 8, 30, "Print"],
+Cell[79734, 2081, 460, 11, 30, "Print"],
+Cell[80197, 2094, 201, 3, 30, "Print"],
+Cell[80401, 2099, 386, 8, 30, "Print"],
+Cell[80790, 2109, 235, 4, 30, "Print"],
+Cell[81028, 2115, 727, 15, 30, "Print"],
+Cell[81758, 2132, 318, 7, 30, "Print"],
+Cell[82079, 2141, 357, 8, 30, "Print"],
+Cell[82439, 2151, 459, 11, 30, "Print"],
+Cell[82901, 2164, 199, 3, 30, "Print"],
+Cell[83103, 2169, 233, 4, 30, "Print"],
+Cell[83339, 2175, 727, 15, 30, "Print"],
+Cell[84069, 2192, 320, 7, 30, "Print"],
+Cell[84392, 2201, 442, 10, 30, "Print"],
+Cell[84837, 2213, 474, 11, 30, "Print"]
+}, Open  ]]
+}, Closed]],
+Cell[85338, 2228, 124, 1, 39, "Text"],
+Cell[CellGroupData[{
+Cell[85487, 2233, 751, 17, 119, "Input"],
+Cell[CellGroupData[{
+Cell[86263, 2254, 173, 3, 30, "Print"],
+Cell[86439, 2259, 158, 3, 30, "Print"],
+Cell[86600, 2264, 162, 3, 30, "Print"],
+Cell[86765, 2269, 357, 7, 30, "Print"],
+Cell[87125, 2278, 311, 7, 30, "Print"],
+Cell[87439, 2287, 416, 10, 30, "Print"],
+Cell[87858, 2299, 153, 2, 30, "Print"],
+Cell[88014, 2303, 340, 7, 30, "Print"],
+Cell[88357, 2312, 187, 3, 30, "Print"],
+Cell[88547, 2317, 679, 14, 30, "Print"],
+Cell[89229, 2333, 272, 6, 30, "Print"],
+Cell[89504, 2341, 311, 7, 30, "Print"],
+Cell[89818, 2350, 414, 10, 30, "Print"],
+Cell[90235, 2362, 155, 2, 30, "Print"],
+Cell[90393, 2366, 340, 7, 30, "Print"],
+Cell[90736, 2375, 187, 3, 30, "Print"],
+Cell[90926, 2380, 684, 14, 30, "Print"],
+Cell[91613, 2396, 274, 6, 30, "Print"],
+Cell[91890, 2404, 309, 7, 30, "Print"],
+Cell[92202, 2413, 416, 10, 30, "Print"],
+Cell[92621, 2425, 155, 2, 30, "Print"],
+Cell[92779, 2429, 342, 7, 30, "Print"],
+Cell[93124, 2438, 187, 3, 30, "Print"],
+Cell[93314, 2443, 681, 14, 30, "Print"],
+Cell[93998, 2459, 272, 6, 30, "Print"],
+Cell[94273, 2467, 309, 7, 30, "Print"],
+Cell[94585, 2476, 414, 10, 30, "Print"],
+Cell[95002, 2488, 155, 2, 30, "Print"],
+Cell[95160, 2492, 339, 7, 30, "Print"],
+Cell[95502, 2501, 187, 3, 30, "Print"],
+Cell[95692, 2506, 683, 14, 30, "Print"],
+Cell[96378, 2522, 272, 6, 30, "Print"],
+Cell[96653, 2530, 309, 7, 30, "Print"],
+Cell[96965, 2539, 414, 10, 30, "Print"],
+Cell[97382, 2551, 153, 2, 30, "Print"],
+Cell[97538, 2555, 340, 7, 30, "Print"],
+Cell[97881, 2564, 189, 3, 30, "Print"],
+Cell[98073, 2569, 681, 14, 30, "Print"],
+Cell[98757, 2585, 272, 6, 30, "Print"],
+Cell[99032, 2593, 396, 9, 30, "Print"],
+Cell[99431, 2604, 428, 10, 30, "Print"]
+}, Open  ]]
+}, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[69611, 1850, 103, 1, 65, "Subsection"],
-Cell[69717, 1853, 183, 2, 46, "Text"],
-Cell[69903, 1857, 474, 10, 94, "Input"]
-}, Open  ]],
+Cell[99920, 2621, 103, 1, 65, "Subsection"],
+Cell[100026, 2624, 183, 2, 46, "Text"],
+Cell[100212, 2628, 474, 10, 94, "Input"]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[70414, 1872, 155, 2, 65, "Subsection"],
-Cell[70572, 1876, 123, 1, 46, "Text"],
-Cell[70698, 1879, 468, 12, 94, "Input"],
-Cell[71169, 1893, 90, 1, 43, "Input"]
-}, Open  ]],
+Cell[100723, 2643, 155, 2, 51, "Subsection"],
+Cell[100881, 2647, 123, 1, 46, "Text"],
+Cell[101007, 2650, 468, 12, 94, "Input"],
+Cell[101478, 2664, 90, 1, 43, "Input"]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[71296, 1899, 206, 3, 65, "Subsection"],
-Cell[71505, 1904, 172, 2, 46, "Text"],
-Cell[71680, 1908, 514, 12, 94, "Input"],
-Cell[72197, 1922, 90, 1, 43, "Input"]
-}, Open  ]],
+Cell[101605, 2670, 206, 3, 51, "Subsection"],
+Cell[101814, 2675, 172, 2, 46, "Text"],
+Cell[101989, 2679, 514, 12, 94, "Input"],
+Cell[102506, 2693, 90, 1, 43, "Input"]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[72324, 1928, 248, 3, 65, "Subsection"],
-Cell[72575, 1933, 197, 4, 43, "Input"],
+Cell[102633, 2699, 248, 3, 51, "Subsection"],
+Cell[102884, 2704, 197, 4, 43, "Input"],
 Cell[CellGroupData[{
-Cell[72797, 1941, 671, 17, 44, "Input"],
+Cell[103106, 2712, 671, 17, 44, "Input"],
 Cell[CellGroupData[{
-Cell[73493, 1962, 269, 5, 30, "Print"],
-Cell[73765, 1969, 499, 12, 30, "Print"],
-Cell[74267, 1983, 246, 4, 30, "Print"],
-Cell[74516, 1989, 433, 9, 30, "Print"],
-Cell[74952, 2000, 280, 5, 30, "Print"],
-Cell[75235, 2007, 778, 16, 30, "Print"],
-Cell[76016, 2025, 366, 8, 30, "Print"],
-Cell[76385, 2035, 732, 15, 30, "Print"],
-Cell[77120, 2052, 265, 5, 30, "Print"],
-Cell[77388, 2059, 537, 13, 30, "Print"],
-Cell[77928, 2074, 495, 12, 30, "Print"],
-Cell[78426, 2088, 464, 9, 30, "Print"],
-Cell[78893, 2099, 495, 12, 30, "Print"],
-Cell[79391, 2113, 452, 9, 30, "Print"],
-Cell[79846, 2124, 243, 4, 30, "Print"],
-Cell[80092, 2130, 268, 5, 30, "Print"],
-Cell[80363, 2137, 462, 9, 30, "Print"],
-Cell[80828, 2148, 631, 12, 30, "Print"],
-Cell[81462, 2162, 239, 4, 30, "Print"],
-Cell[81704, 2168, 224, 4, 30, "Print"]
+Cell[103802, 2733, 269, 5, 30, "Print"],
+Cell[104074, 2740, 499, 12, 30, "Print"],
+Cell[104576, 2754, 246, 4, 30, "Print"],
+Cell[104825, 2760, 433, 9, 30, "Print"],
+Cell[105261, 2771, 280, 5, 30, "Print"],
+Cell[105544, 2778, 778, 16, 30, "Print"],
+Cell[106325, 2796, 366, 8, 30, "Print"],
+Cell[106694, 2806, 732, 15, 30, "Print"],
+Cell[107429, 2823, 265, 5, 30, "Print"],
+Cell[107697, 2830, 537, 13, 30, "Print"],
+Cell[108237, 2845, 495, 12, 30, "Print"],
+Cell[108735, 2859, 464, 9, 30, "Print"],
+Cell[109202, 2870, 495, 12, 30, "Print"],
+Cell[109700, 2884, 452, 9, 30, "Print"],
+Cell[110155, 2895, 243, 4, 30, "Print"],
+Cell[110401, 2901, 268, 5, 30, "Print"],
+Cell[110672, 2908, 462, 9, 30, "Print"],
+Cell[111137, 2919, 632, 12, 30, "Print"],
+Cell[111772, 2933, 239, 4, 30, "Print"],
+Cell[112014, 2939, 224, 4, 30, "Print"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[112287, 2949, 514, 13, 58, "Input"],
+Cell[CellGroupData[{
+Cell[112826, 2966, 176, 3, 30, "Print"],
+Cell[113005, 2971, 406, 10, 30, "Print"],
+Cell[113414, 2983, 153, 2, 30, "Print"],
+Cell[113570, 2987, 339, 7, 30, "Print"],
+Cell[113912, 2996, 187, 3, 30, "Print"],
+Cell[114102, 3001, 683, 14, 30, "Print"],
+Cell[114788, 3017, 274, 6, 30, "Print"],
+Cell[115065, 3025, 406, 10, 30, "Print"],
+Cell[115474, 3037, 153, 2, 30, "Print"],
+Cell[115630, 3041, 187, 3, 30, "Print"],
+Cell[115820, 3046, 678, 14, 30, "Print"],
+Cell[116501, 3062, 270, 6, 30, "Print"],
+Cell[116774, 3070, 408, 10, 30, "Print"],
+Cell[117185, 3082, 153, 2, 30, "Print"],
+Cell[117341, 3086, 187, 3, 30, "Print"],
+Cell[117531, 3091, 676, 14, 30, "Print"],
+Cell[118210, 3107, 270, 6, 30, "Print"],
+Cell[118483, 3115, 408, 10, 30, "Print"],
+Cell[118894, 3127, 153, 2, 30, "Print"],
+Cell[119050, 3131, 187, 3, 30, "Print"],
+Cell[119240, 3136, 676, 14, 30, "Print"],
+Cell[119919, 3152, 270, 6, 30, "Print"],
+Cell[120192, 3160, 641, 13, 30, "Print"],
+Cell[120836, 3175, 169, 3, 30, "Print"],
+Cell[121008, 3180, 442, 11, 30, "Print"],
+Cell[121453, 3193, 402, 10, 30, "Print"],
+Cell[121858, 3205, 373, 7, 30, "Print"],
+Cell[122234, 3214, 402, 10, 30, "Print"],
+Cell[122639, 3226, 350, 7, 30, "Print"],
+Cell[122992, 3235, 150, 2, 30, "Print"],
+Cell[123145, 3239, 175, 3, 30, "Print"],
+Cell[123323, 3244, 372, 7, 30, "Print"],
+Cell[123698, 3253, 536, 10, 30, "Print"],
+Cell[124237, 3265, 146, 2, 30, "Print"],
+Cell[124386, 3269, 131, 2, 30, "Print"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[82001, 2180, 147, 2, 44, "Subsubtitle"],
-Cell[82151, 2184, 248, 6, 43, "Input"],
+Cell[124590, 3279, 147, 2, 44, "Subsubtitle"],
+Cell[124740, 3283, 248, 6, 43, "Input"],
 Cell[CellGroupData[{
-Cell[82424, 2194, 892, 20, 94, "Input"],
+Cell[125013, 3293, 892, 20, 94, "Input"],
 Cell[CellGroupData[{
-Cell[83341, 2218, 212, 4, 30, "Print"],
-Cell[83556, 2224, 410, 9, 30, "Print"],
-Cell[83969, 2235, 177, 3, 30, "Print"],
-Cell[84149, 2240, 197, 4, 30, "Print"],
-Cell[84349, 2246, 180, 3, 30, "Print"],
-Cell[84532, 2251, 177, 3, 30, "Print"],
-Cell[84712, 2256, 198, 4, 30, "Print"],
-Cell[84913, 2262, 190, 4, 30, "Print"],
-Cell[85106, 2268, 181, 3, 30, "Print"],
-Cell[85290, 2273, 172, 3, 30, "Print"],
-Cell[85465, 2278, 168, 3, 30, "Print"],
-Cell[85636, 2283, 202, 4, 30, "Print"],
-Cell[85841, 2289, 186, 4, 30, "Print"],
-Cell[86030, 2295, 191, 4, 30, "Print"],
-Cell[86224, 2301, 346, 8, 30, "Print"],
-Cell[86573, 2311, 336, 8, 30, "Print"],
-Cell[86912, 2321, 441, 11, 30, "Print"],
-Cell[87356, 2334, 180, 3, 30, "Print"],
-Cell[87539, 2339, 367, 8, 30, "Print"],
-Cell[87909, 2349, 214, 4, 30, "Print"],
-Cell[88126, 2355, 469, 12, 30, "Print"],
-Cell[88598, 2369, 171, 3, 30, "Print"],
-Cell[88772, 2374, 239, 4, 30, "Print"],
-Cell[89014, 2380, 221, 4, 30, "Print"],
-Cell[89238, 2386, 223, 4, 30, "Print"],
-Cell[89464, 2392, 338, 8, 30, "Print"],
-Cell[89805, 2402, 443, 11, 30, "Print"],
-Cell[90251, 2415, 180, 3, 30, "Print"],
-Cell[90434, 2420, 367, 8, 30, "Print"],
-Cell[90804, 2430, 214, 4, 30, "Print"],
-Cell[91021, 2436, 713, 15, 30, "Print"],
-Cell[91737, 2453, 301, 7, 30, "Print"],
-Cell[92041, 2462, 380, 8, 30, "Print"]
+Cell[125930, 3317, 212, 4, 30, "Print"],
+Cell[126145, 3323, 410, 9, 30, "Print"],
+Cell[126558, 3334, 177, 3, 30, "Print"],
+Cell[126738, 3339, 197, 4, 30, "Print"],
+Cell[126938, 3345, 180, 3, 30, "Print"],
+Cell[127121, 3350, 177, 3, 30, "Print"],
+Cell[127301, 3355, 198, 4, 30, "Print"],
+Cell[127502, 3361, 190, 4, 30, "Print"],
+Cell[127695, 3367, 181, 3, 30, "Print"],
+Cell[127879, 3372, 172, 3, 30, "Print"],
+Cell[128054, 3377, 168, 3, 30, "Print"],
+Cell[128225, 3382, 202, 4, 30, "Print"],
+Cell[128430, 3388, 186, 4, 30, "Print"],
+Cell[128619, 3394, 191, 4, 30, "Print"],
+Cell[128813, 3400, 346, 8, 30, "Print"],
+Cell[129162, 3410, 336, 8, 30, "Print"],
+Cell[129501, 3420, 441, 11, 30, "Print"],
+Cell[129945, 3433, 180, 3, 30, "Print"],
+Cell[130128, 3438, 367, 8, 30, "Print"],
+Cell[130498, 3448, 214, 4, 30, "Print"],
+Cell[130715, 3454, 469, 12, 30, "Print"],
+Cell[131187, 3468, 171, 3, 30, "Print"],
+Cell[131361, 3473, 239, 4, 30, "Print"],
+Cell[131603, 3479, 221, 4, 30, "Print"],
+Cell[131827, 3485, 223, 4, 30, "Print"],
+Cell[132053, 3491, 338, 8, 30, "Print"],
+Cell[132394, 3501, 443, 11, 30, "Print"],
+Cell[132840, 3514, 180, 3, 30, "Print"],
+Cell[133023, 3519, 367, 8, 30, "Print"],
+Cell[133393, 3529, 214, 4, 30, "Print"],
+Cell[133610, 3535, 713, 15, 30, "Print"],
+Cell[134326, 3552, 301, 7, 30, "Print"],
+Cell[134630, 3561, 380, 8, 30, "Print"]
 }, Open  ]]
 }, Open  ]],
-Cell[92448, 2474, 189, 4, 43, "Input"],
-Cell[92640, 2480, 118, 2, 43, "Input"],
+Cell[135037, 3573, 189, 4, 43, "Input"],
+Cell[135229, 3579, 118, 2, 43, "Input"],
 Cell[CellGroupData[{
-Cell[92783, 2486, 487, 10, 94, "Input"],
+Cell[135372, 3585, 487, 10, 94, "Input"],
 Cell[CellGroupData[{
-Cell[93295, 2500, 362, 6, 30, "Print"],
-Cell[93660, 2508, 389, 6, 30, "Print"],
-Cell[94052, 2516, 410, 7, 30, "Print"],
-Cell[94465, 2525, 375, 6, 30, "Print"],
-Cell[94843, 2533, 375, 6, 30, "Print"],
-Cell[95221, 2541, 382, 6, 30, "Print"],
-Cell[95606, 2549, 429, 7, 30, "Print"]
+Cell[135884, 3599, 362, 6, 30, "Print"],
+Cell[136249, 3607, 389, 6, 30, "Print"],
+Cell[136641, 3615, 410, 7, 30, "Print"],
+Cell[137054, 3624, 375, 6, 30, "Print"],
+Cell[137432, 3632, 375, 6, 30, "Print"],
+Cell[137810, 3640, 382, 6, 30, "Print"],
+Cell[138195, 3648, 429, 7, 30, "Print"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[96084, 2562, 968, 24, 94, "Input"],
+Cell[138673, 3661, 968, 24, 94, "Input"],
 Cell[CellGroupData[{
-Cell[97077, 2590, 711, 15, 30, "Print"],
-Cell[97791, 2607, 460, 8, 30, "Print"],
-Cell[98254, 2617, 913, 20, 30, "Print"],
-Cell[99170, 2639, 483, 8, 30, "Print"],
-Cell[99656, 2649, 709, 14, 30, "Print"],
-Cell[100368, 2665, 460, 8, 30, "Print"],
-Cell[100831, 2675, 941, 20, 30, "Print"],
-Cell[101775, 2697, 781, 15, 30, "Print"],
-Cell[102559, 2714, 481, 8, 30, "Print"],
-Cell[103043, 2724, 634, 13, 30, "Print"],
-Cell[103680, 2739, 661, 13, 30, "Print"],
-Cell[104344, 2754, 737, 14, 30, "Print"],
-Cell[105084, 2770, 460, 8, 30, "Print"],
-Cell[105547, 2780, 699, 14, 30, "Print"],
-Cell[106249, 2796, 732, 14, 30, "Print"],
-Cell[106984, 2812, 663, 13, 30, "Print"],
-Cell[107650, 2827, 459, 8, 30, "Print"],
-Cell[108112, 2837, 725, 15, 30, "Print"],
-Cell[108840, 2854, 661, 13, 30, "Print"],
-Cell[109504, 2869, 502, 9, 30, "Print"],
-Cell[110009, 2880, 532, 9, 30, "Print"],
-Cell[110544, 2891, 460, 8, 30, "Print"],
-Cell[111007, 2901, 699, 14, 30, "Print"],
-Cell[111709, 2917, 730, 14, 30, "Print"],
-Cell[112442, 2933, 661, 13, 30, "Print"],
-Cell[113106, 2948, 460, 8, 30, "Print"],
-Cell[113569, 2958, 723, 15, 30, "Print"],
-Cell[114295, 2975, 661, 13, 30, "Print"],
-Cell[114959, 2990, 512, 9, 30, "Print"],
-Cell[115474, 3001, 497, 9, 30, "Print"],
-Cell[115974, 3012, 517, 9, 30, "Print"],
-Cell[116494, 3023, 499, 9, 30, "Print"],
-Cell[116996, 3034, 714, 15, 30, "Print"],
-Cell[117713, 3051, 460, 8, 30, "Print"],
-Cell[118176, 3061, 698, 14, 30, "Print"],
-Cell[118877, 3077, 730, 14, 30, "Print"],
-Cell[119610, 3093, 736, 14, 30, "Print"],
-Cell[120349, 3109, 665, 13, 30, "Print"],
-Cell[121017, 3124, 460, 8, 30, "Print"],
-Cell[121480, 3134, 723, 15, 30, "Print"],
-Cell[122206, 3151, 732, 14, 30, "Print"],
-Cell[122941, 3167, 665, 13, 30, "Print"],
-Cell[123609, 3182, 504, 9, 30, "Print"],
-Cell[124116, 3193, 532, 9, 30, "Print"],
-Cell[124651, 3204, 460, 8, 30, "Print"],
-Cell[125114, 3214, 699, 14, 30, "Print"],
-Cell[125816, 3230, 732, 14, 30, "Print"],
-Cell[126551, 3246, 663, 13, 30, "Print"],
-Cell[127217, 3261, 460, 8, 30, "Print"],
-Cell[127680, 3271, 725, 15, 30, "Print"],
-Cell[128408, 3288, 732, 14, 30, "Print"],
-Cell[129143, 3304, 665, 13, 30, "Print"],
-Cell[129811, 3319, 508, 9, 30, "Print"],
-Cell[130322, 3330, 498, 9, 30, "Print"],
-Cell[130823, 3341, 516, 9, 30, "Print"],
-Cell[131342, 3352, 501, 9, 30, "Print"],
-Cell[131846, 3363, 711, 15, 30, "Print"],
-Cell[132560, 3380, 460, 8, 30, "Print"],
-Cell[133023, 3390, 699, 14, 30, "Print"],
-Cell[133725, 3406, 732, 14, 30, "Print"],
-Cell[134460, 3422, 732, 14, 30, "Print"],
-Cell[135195, 3438, 663, 13, 30, "Print"],
-Cell[135861, 3453, 460, 8, 30, "Print"],
-Cell[136324, 3463, 723, 15, 30, "Print"],
-Cell[137050, 3480, 661, 13, 30, "Print"],
-Cell[137714, 3495, 506, 9, 30, "Print"],
-Cell[138223, 3506, 534, 9, 30, "Print"],
-Cell[138760, 3517, 460, 8, 30, "Print"],
-Cell[139223, 3527, 701, 14, 30, "Print"],
-Cell[139927, 3543, 730, 14, 30, "Print"],
-Cell[140660, 3559, 661, 13, 30, "Print"],
-Cell[141324, 3574, 460, 8, 30, "Print"],
-Cell[141787, 3584, 725, 15, 30, "Print"],
-Cell[142515, 3601, 663, 13, 30, "Print"],
-Cell[143181, 3616, 510, 9, 30, "Print"],
-Cell[143694, 3627, 497, 9, 30, "Print"],
-Cell[144194, 3638, 517, 9, 30, "Print"],
-Cell[144714, 3649, 502, 9, 30, "Print"],
-Cell[145219, 3660, 712, 15, 30, "Print"],
-Cell[145934, 3677, 460, 8, 30, "Print"],
-Cell[146397, 3687, 699, 14, 30, "Print"],
-Cell[147099, 3703, 734, 14, 30, "Print"],
-Cell[147836, 3719, 734, 14, 30, "Print"],
-Cell[148573, 3735, 665, 13, 30, "Print"],
-Cell[149241, 3750, 460, 8, 30, "Print"],
-Cell[149704, 3760, 723, 15, 30, "Print"],
-Cell[150430, 3777, 732, 14, 30, "Print"],
-Cell[151165, 3793, 732, 14, 30, "Print"],
-Cell[151900, 3809, 663, 13, 30, "Print"],
-Cell[152566, 3824, 503, 9, 30, "Print"],
-Cell[153072, 3835, 532, 9, 30, "Print"],
-Cell[153607, 3846, 460, 8, 30, "Print"],
-Cell[154070, 3856, 699, 14, 30, "Print"],
-Cell[154772, 3872, 732, 14, 30, "Print"],
-Cell[155507, 3888, 663, 13, 30, "Print"],
-Cell[156173, 3903, 460, 8, 30, "Print"],
-Cell[156636, 3913, 723, 15, 30, "Print"],
-Cell[157362, 3930, 730, 14, 30, "Print"],
-Cell[158095, 3946, 661, 13, 30, "Print"],
-Cell[158759, 3961, 509, 9, 30, "Print"],
-Cell[159271, 3972, 498, 9, 30, "Print"],
-Cell[159772, 3983, 519, 9, 30, "Print"],
-Cell[160294, 3994, 502, 9, 30, "Print"],
-Cell[160799, 4005, 715, 15, 30, "Print"],
-Cell[161517, 4022, 460, 8, 30, "Print"],
-Cell[161980, 4032, 699, 14, 30, "Print"],
-Cell[162682, 4048, 736, 14, 30, "Print"],
-Cell[163421, 4064, 730, 14, 30, "Print"],
-Cell[164154, 4080, 729, 14, 30, "Print"],
-Cell[164886, 4096, 730, 14, 30, "Print"],
-Cell[165619, 4112, 665, 13, 30, "Print"],
-Cell[166287, 4127, 460, 8, 30, "Print"],
-Cell[166750, 4137, 725, 15, 30, "Print"],
-Cell[167478, 4154, 732, 14, 30, "Print"],
-Cell[168213, 4170, 663, 13, 30, "Print"],
-Cell[168879, 4185, 504, 9, 30, "Print"],
-Cell[169386, 4196, 534, 9, 30, "Print"],
-Cell[169923, 4207, 460, 8, 30, "Print"],
-Cell[170386, 4217, 699, 14, 30, "Print"],
-Cell[171088, 4233, 734, 14, 30, "Print"],
-Cell[171825, 4249, 663, 13, 30, "Print"],
-Cell[172491, 4264, 460, 8, 30, "Print"],
-Cell[172954, 4274, 725, 15, 30, "Print"],
-Cell[173682, 4291, 732, 14, 30, "Print"],
-Cell[174417, 4307, 663, 13, 30, "Print"],
-Cell[175083, 4322, 512, 9, 30, "Print"],
-Cell[175598, 4333, 498, 9, 30, "Print"],
-Cell[176099, 4344, 517, 9, 30, "Print"],
-Cell[176619, 4355, 505, 9, 30, "Print"],
-Cell[177127, 4366, 715, 15, 30, "Print"],
-Cell[177845, 4383, 460, 8, 30, "Print"],
-Cell[178308, 4393, 699, 14, 30, "Print"],
-Cell[179010, 4409, 736, 14, 30, "Print"],
-Cell[179749, 4425, 730, 14, 30, "Print"],
-Cell[180482, 4441, 730, 14, 30, "Print"],
-Cell[181215, 4457, 729, 14, 30, "Print"],
-Cell[181947, 4473, 664, 13, 30, "Print"],
-Cell[182614, 4488, 460, 8, 30, "Print"],
-Cell[183077, 4498, 725, 15, 30, "Print"],
-Cell[183805, 4515, 734, 14, 30, "Print"],
-Cell[184542, 4531, 664, 13, 30, "Print"],
-Cell[185209, 4546, 505, 9, 30, "Print"],
-Cell[185717, 4557, 533, 9, 30, "Print"],
-Cell[186253, 4568, 460, 8, 30, "Print"],
-Cell[186716, 4578, 699, 14, 30, "Print"],
-Cell[187418, 4594, 732, 14, 30, "Print"],
-Cell[188153, 4610, 665, 13, 30, "Print"],
-Cell[188821, 4625, 460, 8, 30, "Print"],
-Cell[189284, 4635, 723, 15, 30, "Print"],
-Cell[190010, 4652, 732, 14, 30, "Print"],
-Cell[190745, 4668, 663, 13, 30, "Print"],
-Cell[191411, 4683, 511, 9, 30, "Print"],
-Cell[191925, 4694, 499, 9, 30, "Print"],
-Cell[192427, 4705, 518, 9, 30, "Print"],
-Cell[192948, 4716, 506, 9, 30, "Print"],
-Cell[193457, 4727, 715, 15, 30, "Print"],
-Cell[194175, 4744, 462, 8, 30, "Print"],
-Cell[194640, 4754, 698, 14, 30, "Print"],
-Cell[195341, 4770, 738, 14, 30, "Print"],
-Cell[196082, 4786, 734, 14, 30, "Print"],
-Cell[196819, 4802, 731, 14, 30, "Print"],
-Cell[197553, 4818, 731, 14, 30, "Print"],
-Cell[198287, 4834, 669, 13, 30, "Print"],
-Cell[198959, 4849, 460, 8, 30, "Print"],
-Cell[199422, 4859, 725, 15, 30, "Print"],
-Cell[200150, 4876, 734, 14, 30, "Print"],
-Cell[200887, 4892, 730, 14, 30, "Print"],
-Cell[201620, 4908, 730, 14, 30, "Print"],
-Cell[202353, 4924, 730, 14, 30, "Print"],
-Cell[203086, 4940, 665, 13, 30, "Print"],
-Cell[203754, 4955, 505, 9, 30, "Print"],
-Cell[204262, 4966, 536, 9, 30, "Print"],
-Cell[204801, 4977, 460, 8, 30, "Print"],
-Cell[205264, 4987, 699, 14, 30, "Print"],
-Cell[205966, 5003, 732, 14, 30, "Print"],
-Cell[206701, 5019, 661, 13, 30, "Print"],
-Cell[207365, 5034, 462, 8, 30, "Print"],
-Cell[207830, 5044, 723, 15, 30, "Print"],
-Cell[208556, 5061, 730, 14, 30, "Print"],
-Cell[209289, 5077, 661, 13, 30, "Print"],
-Cell[209953, 5092, 512, 9, 30, "Print"],
-Cell[210468, 5103, 500, 9, 30, "Print"],
-Cell[210971, 5114, 521, 9, 30, "Print"],
-Cell[211495, 5125, 507, 9, 30, "Print"],
-Cell[212005, 5136, 715, 15, 30, "Print"],
-Cell[212723, 5153, 460, 8, 30, "Print"],
-Cell[213186, 5163, 699, 14, 30, "Print"],
-Cell[213888, 5179, 736, 14, 30, "Print"],
-Cell[214627, 5195, 732, 14, 30, "Print"],
-Cell[215362, 5211, 732, 14, 30, "Print"],
-Cell[216097, 5227, 731, 14, 30, "Print"],
-Cell[216831, 5243, 667, 13, 30, "Print"],
-Cell[217501, 5258, 460, 8, 30, "Print"],
-Cell[217964, 5268, 723, 15, 30, "Print"],
-Cell[218690, 5285, 732, 14, 30, "Print"],
-Cell[219425, 5301, 663, 13, 30, "Print"],
-Cell[220091, 5316, 506, 9, 30, "Print"],
-Cell[220600, 5327, 534, 9, 30, "Print"],
-Cell[221137, 5338, 460, 8, 30, "Print"],
-Cell[221600, 5348, 701, 14, 30, "Print"],
-Cell[222304, 5364, 730, 14, 30, "Print"],
-Cell[223037, 5380, 661, 13, 30, "Print"],
-Cell[223701, 5395, 460, 8, 30, "Print"],
-Cell[224164, 5405, 723, 15, 30, "Print"],
-Cell[224890, 5422, 661, 13, 30, "Print"],
-Cell[225554, 5437, 512, 9, 30, "Print"],
-Cell[226069, 5448, 502, 9, 30, "Print"],
-Cell[226574, 5459, 519, 9, 30, "Print"],
-Cell[227096, 5470, 507, 9, 30, "Print"],
-Cell[227606, 5481, 715, 15, 30, "Print"],
-Cell[228324, 5498, 460, 8, 30, "Print"],
-Cell[228787, 5508, 701, 14, 30, "Print"],
-Cell[229491, 5524, 736, 14, 30, "Print"],
-Cell[230230, 5540, 732, 14, 30, "Print"],
-Cell[230965, 5556, 732, 14, 30, "Print"],
-Cell[231700, 5572, 732, 14, 30, "Print"],
-Cell[232435, 5588, 667, 13, 30, "Print"],
-Cell[233105, 5603, 460, 8, 30, "Print"],
-Cell[233568, 5613, 723, 15, 30, "Print"],
-Cell[234294, 5630, 732, 14, 30, "Print"],
-Cell[235029, 5646, 663, 13, 30, "Print"],
-Cell[235695, 5661, 505, 9, 30, "Print"],
-Cell[236203, 5672, 534, 9, 30, "Print"],
-Cell[236740, 5683, 462, 8, 30, "Print"],
-Cell[237205, 5693, 699, 14, 30, "Print"],
-Cell[237907, 5709, 730, 14, 30, "Print"],
-Cell[238640, 5725, 663, 13, 30, "Print"],
-Cell[239306, 5740, 460, 8, 30, "Print"],
-Cell[239769, 5750, 723, 15, 30, "Print"],
-Cell[240495, 5767, 661, 13, 30, "Print"],
-Cell[241159, 5782, 512, 9, 30, "Print"],
-Cell[241674, 5793, 500, 9, 30, "Print"],
-Cell[242177, 5804, 518, 9, 30, "Print"],
-Cell[242698, 5815, 507, 9, 30, "Print"],
-Cell[243208, 5826, 715, 15, 30, "Print"],
-Cell[243926, 5843, 460, 8, 30, "Print"],
-Cell[244389, 5853, 701, 14, 30, "Print"],
-Cell[245093, 5869, 736, 14, 30, "Print"],
-Cell[245832, 5885, 734, 14, 30, "Print"],
-Cell[246569, 5901, 732, 14, 30, "Print"],
-Cell[247304, 5917, 732, 14, 30, "Print"],
-Cell[248039, 5933, 667, 13, 30, "Print"],
-Cell[248709, 5948, 462, 8, 30, "Print"],
-Cell[249174, 5958, 723, 15, 30, "Print"],
-Cell[249900, 5975, 661, 13, 30, "Print"],
-Cell[250564, 5990, 506, 9, 30, "Print"],
-Cell[251073, 6001, 533, 9, 30, "Print"],
-Cell[251609, 6012, 462, 8, 30, "Print"],
-Cell[252074, 6022, 699, 14, 30, "Print"],
-Cell[252776, 6038, 732, 14, 30, "Print"],
-Cell[253511, 6054, 663, 13, 30, "Print"],
-Cell[254177, 6069, 460, 8, 30, "Print"],
-Cell[254640, 6079, 725, 15, 30, "Print"],
-Cell[255368, 6096, 661, 13, 30, "Print"],
-Cell[256032, 6111, 514, 9, 30, "Print"],
-Cell[256549, 6122, 502, 9, 30, "Print"],
-Cell[257054, 6133, 521, 9, 30, "Print"],
-Cell[257578, 6144, 507, 9, 30, "Print"],
-Cell[258088, 6155, 720, 15, 30, "Print"],
-Cell[258811, 6172, 460, 8, 30, "Print"],
-Cell[259274, 6182, 726, 15, 30, "Print"],
-Cell[260003, 6199, 460, 8, 30, "Print"],
-Cell[260466, 6209, 699, 14, 30, "Print"],
-Cell[261168, 6225, 736, 14, 30, "Print"],
-Cell[261907, 6241, 734, 14, 30, "Print"],
-Cell[262644, 6257, 733, 14, 30, "Print"],
-Cell[263380, 6273, 734, 14, 30, "Print"],
-Cell[264117, 6289, 733, 14, 30, "Print"],
-Cell[264853, 6305, 736, 14, 30, "Print"],
-Cell[265592, 6321, 736, 14, 30, "Print"],
-Cell[266331, 6337, 736, 14, 30, "Print"],
-Cell[267070, 6353, 738, 14, 30, "Print"],
-Cell[267811, 6369, 736, 14, 30, "Print"],
-Cell[268550, 6385, 738, 14, 30, "Print"],
-Cell[269291, 6401, 738, 14, 30, "Print"],
-Cell[270032, 6417, 462, 8, 30, "Print"],
-Cell[270497, 6427, 660, 13, 30, "Print"],
-Cell[271160, 6442, 671, 13, 30, "Print"],
-Cell[271834, 6457, 460, 8, 30, "Print"],
-Cell[272297, 6467, 725, 15, 30, "Print"],
-Cell[273025, 6484, 732, 14, 30, "Print"],
-Cell[273760, 6500, 732, 14, 30, "Print"],
-Cell[274495, 6516, 730, 14, 30, "Print"],
-Cell[275228, 6532, 730, 14, 30, "Print"],
-Cell[275961, 6548, 732, 14, 30, "Print"],
-Cell[276696, 6564, 730, 14, 30, "Print"],
-Cell[277429, 6580, 738, 14, 30, "Print"],
-Cell[278170, 6596, 736, 14, 30, "Print"],
-Cell[278909, 6612, 735, 14, 30, "Print"],
-Cell[279647, 6628, 732, 14, 30, "Print"],
-Cell[280382, 6644, 734, 14, 30, "Print"],
-Cell[281119, 6660, 732, 14, 30, "Print"],
-Cell[281854, 6676, 671, 13, 30, "Print"],
-Cell[282528, 6691, 506, 9, 30, "Print"],
-Cell[283037, 6702, 534, 9, 30, "Print"],
-Cell[283574, 6713, 460, 8, 30, "Print"],
-Cell[284037, 6723, 699, 14, 30, "Print"],
-Cell[284739, 6739, 732, 14, 30, "Print"],
-Cell[285474, 6755, 661, 13, 30, "Print"],
-Cell[286138, 6770, 460, 8, 30, "Print"],
-Cell[286601, 6780, 723, 15, 30, "Print"],
-Cell[287327, 6797, 730, 14, 30, "Print"],
-Cell[288060, 6813, 663, 13, 30, "Print"],
-Cell[288726, 6828, 514, 9, 30, "Print"],
-Cell[289243, 6839, 502, 9, 30, "Print"],
-Cell[289748, 6850, 521, 9, 30, "Print"],
-Cell[290272, 6861, 512, 9, 30, "Print"],
-Cell[290787, 6872, 718, 15, 30, "Print"],
-Cell[291508, 6889, 460, 8, 30, "Print"],
-Cell[291971, 6899, 726, 15, 30, "Print"],
-Cell[292700, 6916, 460, 8, 30, "Print"],
-Cell[293163, 6926, 699, 14, 30, "Print"],
-Cell[293865, 6942, 734, 14, 30, "Print"],
-Cell[294602, 6958, 734, 14, 30, "Print"],
-Cell[295339, 6974, 734, 14, 30, "Print"],
-Cell[296076, 6990, 736, 14, 30, "Print"],
-Cell[296815, 7006, 734, 14, 30, "Print"],
-Cell[297552, 7022, 734, 14, 30, "Print"],
-Cell[298289, 7038, 736, 14, 30, "Print"],
-Cell[299028, 7054, 736, 14, 30, "Print"],
-Cell[299767, 7070, 734, 14, 30, "Print"],
-Cell[300504, 7086, 734, 14, 30, "Print"],
-Cell[301241, 7102, 736, 14, 30, "Print"],
-Cell[301980, 7118, 736, 14, 30, "Print"],
-Cell[302719, 7134, 460, 8, 30, "Print"],
-Cell[303182, 7144, 660, 13, 30, "Print"],
-Cell[303845, 7159, 669, 13, 30, "Print"],
-Cell[304517, 7174, 462, 8, 30, "Print"],
-Cell[304982, 7184, 723, 15, 30, "Print"],
-Cell[305708, 7201, 734, 14, 30, "Print"],
-Cell[306445, 7217, 734, 14, 30, "Print"],
-Cell[307182, 7233, 734, 14, 30, "Print"],
-Cell[307919, 7249, 667, 13, 30, "Print"],
-Cell[308589, 7264, 506, 9, 30, "Print"],
-Cell[309098, 7275, 536, 9, 30, "Print"],
-Cell[309637, 7286, 460, 8, 30, "Print"],
-Cell[310100, 7296, 699, 14, 30, "Print"],
-Cell[310802, 7312, 730, 14, 30, "Print"],
-Cell[311535, 7328, 663, 13, 30, "Print"],
-Cell[312201, 7343, 460, 8, 30, "Print"],
-Cell[312664, 7353, 725, 15, 30, "Print"],
-Cell[313392, 7370, 661, 13, 30, "Print"],
-Cell[314056, 7385, 512, 9, 30, "Print"],
-Cell[314571, 7396, 500, 9, 30, "Print"],
-Cell[315074, 7407, 519, 9, 30, "Print"],
-Cell[315596, 7418, 510, 9, 30, "Print"],
-Cell[316109, 7429, 717, 15, 30, "Print"],
-Cell[316829, 7446, 462, 8, 30, "Print"],
-Cell[317294, 7456, 867, 17, 30, "Print"],
-Cell[318164, 7475, 462, 8, 30, "Print"],
-Cell[318629, 7485, 728, 15, 30, "Print"],
-Cell[319360, 7502, 460, 8, 30, "Print"],
-Cell[319823, 7512, 701, 14, 30, "Print"],
-Cell[320527, 7528, 734, 14, 30, "Print"],
-Cell[321264, 7544, 734, 14, 30, "Print"],
-Cell[322001, 7560, 734, 14, 30, "Print"],
-Cell[322738, 7576, 734, 14, 30, "Print"],
-Cell[323475, 7592, 734, 14, 30, "Print"],
-Cell[324212, 7608, 734, 14, 30, "Print"],
-Cell[324949, 7624, 734, 14, 30, "Print"],
-Cell[325686, 7640, 734, 14, 30, "Print"],
-Cell[326423, 7656, 736, 14, 30, "Print"],
-Cell[327162, 7672, 738, 14, 30, "Print"],
-Cell[327903, 7688, 736, 14, 30, "Print"],
-Cell[328642, 7704, 736, 14, 30, "Print"],
-Cell[329381, 7720, 460, 8, 30, "Print"],
-Cell[329844, 7730, 865, 17, 30, "Print"],
-Cell[330712, 7749, 460, 8, 30, "Print"],
-Cell[331175, 7759, 662, 13, 30, "Print"],
-Cell[331840, 7774, 671, 13, 30, "Print"],
-Cell[332514, 7789, 460, 8, 30, "Print"],
-Cell[332977, 7799, 723, 15, 30, "Print"],
-Cell[333703, 7816, 661, 13, 30, "Print"],
-Cell[334367, 7831, 506, 9, 30, "Print"],
-Cell[334876, 7842, 534, 9, 30, "Print"],
-Cell[335413, 7853, 462, 8, 30, "Print"],
-Cell[335878, 7863, 697, 14, 30, "Print"],
-Cell[336578, 7879, 730, 14, 30, "Print"],
-Cell[337311, 7895, 661, 13, 30, "Print"],
-Cell[337975, 7910, 460, 8, 30, "Print"],
-Cell[338438, 7920, 723, 15, 30, "Print"],
-Cell[339164, 7937, 663, 13, 30, "Print"],
-Cell[339830, 7952, 512, 9, 30, "Print"],
-Cell[340345, 7963, 500, 9, 30, "Print"],
-Cell[340848, 7974, 521, 9, 30, "Print"],
-Cell[341372, 7985, 512, 9, 30, "Print"],
-Cell[341887, 7996, 501, 9, 30, "Print"],
-Cell[342391, 8007, 485, 8, 30, "Print"],
-Cell[342879, 8017, 548, 9, 30, "Print"],
-Cell[343430, 8028, 464, 8, 30, "Print"]
+Cell[139666, 3689, 711, 15, 30, "Print"],
+Cell[140380, 3706, 460, 8, 30, "Print"],
+Cell[140843, 3716, 913, 20, 30, "Print"],
+Cell[141759, 3738, 483, 8, 30, "Print"],
+Cell[142245, 3748, 709, 14, 30, "Print"],
+Cell[142957, 3764, 460, 8, 30, "Print"],
+Cell[143420, 3774, 941, 20, 30, "Print"],
+Cell[144364, 3796, 781, 15, 30, "Print"],
+Cell[145148, 3813, 481, 8, 30, "Print"],
+Cell[145632, 3823, 634, 13, 30, "Print"],
+Cell[146269, 3838, 661, 13, 30, "Print"],
+Cell[146933, 3853, 737, 14, 30, "Print"],
+Cell[147673, 3869, 460, 8, 30, "Print"],
+Cell[148136, 3879, 699, 14, 30, "Print"],
+Cell[148838, 3895, 732, 14, 30, "Print"],
+Cell[149573, 3911, 663, 13, 30, "Print"],
+Cell[150239, 3926, 459, 8, 30, "Print"],
+Cell[150701, 3936, 725, 15, 30, "Print"],
+Cell[151429, 3953, 661, 13, 30, "Print"],
+Cell[152093, 3968, 502, 9, 30, "Print"],
+Cell[152598, 3979, 532, 9, 30, "Print"],
+Cell[153133, 3990, 460, 8, 30, "Print"],
+Cell[153596, 4000, 699, 14, 30, "Print"],
+Cell[154298, 4016, 730, 14, 30, "Print"],
+Cell[155031, 4032, 661, 13, 30, "Print"],
+Cell[155695, 4047, 460, 8, 30, "Print"],
+Cell[156158, 4057, 723, 15, 30, "Print"],
+Cell[156884, 4074, 661, 13, 30, "Print"],
+Cell[157548, 4089, 512, 9, 30, "Print"],
+Cell[158063, 4100, 497, 9, 30, "Print"],
+Cell[158563, 4111, 517, 9, 30, "Print"],
+Cell[159083, 4122, 499, 9, 30, "Print"],
+Cell[159585, 4133, 714, 15, 30, "Print"],
+Cell[160302, 4150, 460, 8, 30, "Print"],
+Cell[160765, 4160, 698, 14, 30, "Print"],
+Cell[161466, 4176, 730, 14, 30, "Print"],
+Cell[162199, 4192, 736, 14, 30, "Print"],
+Cell[162938, 4208, 665, 13, 30, "Print"],
+Cell[163606, 4223, 460, 8, 30, "Print"],
+Cell[164069, 4233, 723, 15, 30, "Print"],
+Cell[164795, 4250, 732, 14, 30, "Print"],
+Cell[165530, 4266, 665, 13, 30, "Print"],
+Cell[166198, 4281, 504, 9, 30, "Print"],
+Cell[166705, 4292, 532, 9, 30, "Print"],
+Cell[167240, 4303, 460, 8, 30, "Print"],
+Cell[167703, 4313, 699, 14, 30, "Print"],
+Cell[168405, 4329, 732, 14, 30, "Print"],
+Cell[169140, 4345, 663, 13, 30, "Print"],
+Cell[169806, 4360, 460, 8, 30, "Print"],
+Cell[170269, 4370, 725, 15, 30, "Print"],
+Cell[170997, 4387, 732, 14, 30, "Print"],
+Cell[171732, 4403, 665, 13, 30, "Print"],
+Cell[172400, 4418, 508, 9, 30, "Print"],
+Cell[172911, 4429, 498, 9, 30, "Print"],
+Cell[173412, 4440, 516, 9, 30, "Print"],
+Cell[173931, 4451, 501, 9, 30, "Print"],
+Cell[174435, 4462, 711, 15, 30, "Print"],
+Cell[175149, 4479, 460, 8, 30, "Print"],
+Cell[175612, 4489, 699, 14, 30, "Print"],
+Cell[176314, 4505, 732, 14, 30, "Print"],
+Cell[177049, 4521, 732, 14, 30, "Print"],
+Cell[177784, 4537, 663, 13, 30, "Print"],
+Cell[178450, 4552, 460, 8, 30, "Print"],
+Cell[178913, 4562, 723, 15, 30, "Print"],
+Cell[179639, 4579, 661, 13, 30, "Print"],
+Cell[180303, 4594, 506, 9, 30, "Print"],
+Cell[180812, 4605, 534, 9, 30, "Print"],
+Cell[181349, 4616, 460, 8, 30, "Print"],
+Cell[181812, 4626, 701, 14, 30, "Print"],
+Cell[182516, 4642, 730, 14, 30, "Print"],
+Cell[183249, 4658, 661, 13, 30, "Print"],
+Cell[183913, 4673, 460, 8, 30, "Print"],
+Cell[184376, 4683, 725, 15, 30, "Print"],
+Cell[185104, 4700, 663, 13, 30, "Print"],
+Cell[185770, 4715, 510, 9, 30, "Print"],
+Cell[186283, 4726, 497, 9, 30, "Print"],
+Cell[186783, 4737, 517, 9, 30, "Print"],
+Cell[187303, 4748, 502, 9, 30, "Print"],
+Cell[187808, 4759, 712, 15, 30, "Print"],
+Cell[188523, 4776, 460, 8, 30, "Print"],
+Cell[188986, 4786, 699, 14, 30, "Print"],
+Cell[189688, 4802, 734, 14, 30, "Print"],
+Cell[190425, 4818, 734, 14, 30, "Print"],
+Cell[191162, 4834, 665, 13, 30, "Print"],
+Cell[191830, 4849, 460, 8, 30, "Print"],
+Cell[192293, 4859, 723, 15, 30, "Print"],
+Cell[193019, 4876, 732, 14, 30, "Print"],
+Cell[193754, 4892, 732, 14, 30, "Print"],
+Cell[194489, 4908, 663, 13, 30, "Print"],
+Cell[195155, 4923, 503, 9, 30, "Print"],
+Cell[195661, 4934, 532, 9, 30, "Print"],
+Cell[196196, 4945, 460, 8, 30, "Print"],
+Cell[196659, 4955, 699, 14, 30, "Print"],
+Cell[197361, 4971, 732, 14, 30, "Print"],
+Cell[198096, 4987, 663, 13, 30, "Print"],
+Cell[198762, 5002, 460, 8, 30, "Print"],
+Cell[199225, 5012, 723, 15, 30, "Print"],
+Cell[199951, 5029, 730, 14, 30, "Print"],
+Cell[200684, 5045, 661, 13, 30, "Print"],
+Cell[201348, 5060, 509, 9, 30, "Print"],
+Cell[201860, 5071, 498, 9, 30, "Print"],
+Cell[202361, 5082, 519, 9, 30, "Print"],
+Cell[202883, 5093, 502, 9, 30, "Print"],
+Cell[203388, 5104, 715, 15, 30, "Print"],
+Cell[204106, 5121, 460, 8, 30, "Print"],
+Cell[204569, 5131, 699, 14, 30, "Print"],
+Cell[205271, 5147, 736, 14, 30, "Print"],
+Cell[206010, 5163, 730, 14, 30, "Print"],
+Cell[206743, 5179, 729, 14, 30, "Print"],
+Cell[207475, 5195, 730, 14, 30, "Print"],
+Cell[208208, 5211, 665, 13, 30, "Print"],
+Cell[208876, 5226, 460, 8, 30, "Print"],
+Cell[209339, 5236, 725, 15, 30, "Print"],
+Cell[210067, 5253, 732, 14, 30, "Print"],
+Cell[210802, 5269, 663, 13, 30, "Print"],
+Cell[211468, 5284, 504, 9, 30, "Print"],
+Cell[211975, 5295, 534, 9, 30, "Print"],
+Cell[212512, 5306, 460, 8, 30, "Print"],
+Cell[212975, 5316, 699, 14, 30, "Print"],
+Cell[213677, 5332, 734, 14, 30, "Print"],
+Cell[214414, 5348, 663, 13, 30, "Print"],
+Cell[215080, 5363, 460, 8, 30, "Print"],
+Cell[215543, 5373, 725, 15, 30, "Print"],
+Cell[216271, 5390, 732, 14, 30, "Print"],
+Cell[217006, 5406, 663, 13, 30, "Print"],
+Cell[217672, 5421, 512, 9, 30, "Print"],
+Cell[218187, 5432, 498, 9, 30, "Print"],
+Cell[218688, 5443, 517, 9, 30, "Print"],
+Cell[219208, 5454, 505, 9, 30, "Print"],
+Cell[219716, 5465, 715, 15, 30, "Print"],
+Cell[220434, 5482, 460, 8, 30, "Print"],
+Cell[220897, 5492, 699, 14, 30, "Print"],
+Cell[221599, 5508, 736, 14, 30, "Print"],
+Cell[222338, 5524, 730, 14, 30, "Print"],
+Cell[223071, 5540, 730, 14, 30, "Print"],
+Cell[223804, 5556, 729, 14, 30, "Print"],
+Cell[224536, 5572, 664, 13, 30, "Print"],
+Cell[225203, 5587, 460, 8, 30, "Print"],
+Cell[225666, 5597, 725, 15, 30, "Print"],
+Cell[226394, 5614, 734, 14, 30, "Print"],
+Cell[227131, 5630, 664, 13, 30, "Print"],
+Cell[227798, 5645, 505, 9, 30, "Print"],
+Cell[228306, 5656, 533, 9, 30, "Print"],
+Cell[228842, 5667, 460, 8, 30, "Print"],
+Cell[229305, 5677, 699, 14, 30, "Print"],
+Cell[230007, 5693, 732, 14, 30, "Print"],
+Cell[230742, 5709, 665, 13, 30, "Print"],
+Cell[231410, 5724, 460, 8, 30, "Print"],
+Cell[231873, 5734, 723, 15, 30, "Print"],
+Cell[232599, 5751, 732, 14, 30, "Print"],
+Cell[233334, 5767, 663, 13, 30, "Print"],
+Cell[234000, 5782, 511, 9, 30, "Print"],
+Cell[234514, 5793, 499, 9, 30, "Print"],
+Cell[235016, 5804, 518, 9, 30, "Print"],
+Cell[235537, 5815, 506, 9, 30, "Print"],
+Cell[236046, 5826, 715, 15, 30, "Print"],
+Cell[236764, 5843, 462, 8, 30, "Print"],
+Cell[237229, 5853, 698, 14, 30, "Print"],
+Cell[237930, 5869, 738, 14, 30, "Print"],
+Cell[238671, 5885, 734, 14, 30, "Print"],
+Cell[239408, 5901, 731, 14, 30, "Print"],
+Cell[240142, 5917, 731, 14, 30, "Print"],
+Cell[240876, 5933, 669, 13, 30, "Print"],
+Cell[241548, 5948, 460, 8, 30, "Print"],
+Cell[242011, 5958, 725, 15, 30, "Print"],
+Cell[242739, 5975, 734, 14, 30, "Print"],
+Cell[243476, 5991, 730, 14, 30, "Print"],
+Cell[244209, 6007, 730, 14, 30, "Print"],
+Cell[244942, 6023, 730, 14, 30, "Print"],
+Cell[245675, 6039, 665, 13, 30, "Print"],
+Cell[246343, 6054, 505, 9, 30, "Print"],
+Cell[246851, 6065, 536, 9, 30, "Print"],
+Cell[247390, 6076, 460, 8, 30, "Print"],
+Cell[247853, 6086, 699, 14, 30, "Print"],
+Cell[248555, 6102, 732, 14, 30, "Print"],
+Cell[249290, 6118, 661, 13, 30, "Print"],
+Cell[249954, 6133, 462, 8, 30, "Print"],
+Cell[250419, 6143, 723, 15, 30, "Print"],
+Cell[251145, 6160, 730, 14, 30, "Print"],
+Cell[251878, 6176, 661, 13, 30, "Print"],
+Cell[252542, 6191, 512, 9, 30, "Print"],
+Cell[253057, 6202, 500, 9, 30, "Print"],
+Cell[253560, 6213, 521, 9, 30, "Print"],
+Cell[254084, 6224, 507, 9, 30, "Print"],
+Cell[254594, 6235, 715, 15, 30, "Print"],
+Cell[255312, 6252, 460, 8, 30, "Print"],
+Cell[255775, 6262, 699, 14, 30, "Print"],
+Cell[256477, 6278, 736, 14, 30, "Print"],
+Cell[257216, 6294, 732, 14, 30, "Print"],
+Cell[257951, 6310, 732, 14, 30, "Print"],
+Cell[258686, 6326, 731, 14, 30, "Print"],
+Cell[259420, 6342, 667, 13, 30, "Print"],
+Cell[260090, 6357, 460, 8, 30, "Print"],
+Cell[260553, 6367, 723, 15, 30, "Print"],
+Cell[261279, 6384, 732, 14, 30, "Print"],
+Cell[262014, 6400, 663, 13, 30, "Print"],
+Cell[262680, 6415, 506, 9, 30, "Print"],
+Cell[263189, 6426, 534, 9, 30, "Print"],
+Cell[263726, 6437, 460, 8, 30, "Print"],
+Cell[264189, 6447, 701, 14, 30, "Print"],
+Cell[264893, 6463, 730, 14, 30, "Print"],
+Cell[265626, 6479, 661, 13, 30, "Print"],
+Cell[266290, 6494, 460, 8, 30, "Print"],
+Cell[266753, 6504, 723, 15, 30, "Print"],
+Cell[267479, 6521, 661, 13, 30, "Print"],
+Cell[268143, 6536, 512, 9, 30, "Print"],
+Cell[268658, 6547, 502, 9, 30, "Print"],
+Cell[269163, 6558, 519, 9, 30, "Print"],
+Cell[269685, 6569, 507, 9, 30, "Print"],
+Cell[270195, 6580, 715, 15, 30, "Print"],
+Cell[270913, 6597, 460, 8, 30, "Print"],
+Cell[271376, 6607, 701, 14, 30, "Print"],
+Cell[272080, 6623, 736, 14, 30, "Print"],
+Cell[272819, 6639, 732, 14, 30, "Print"],
+Cell[273554, 6655, 732, 14, 30, "Print"],
+Cell[274289, 6671, 732, 14, 30, "Print"],
+Cell[275024, 6687, 667, 13, 30, "Print"],
+Cell[275694, 6702, 460, 8, 30, "Print"],
+Cell[276157, 6712, 723, 15, 30, "Print"],
+Cell[276883, 6729, 732, 14, 30, "Print"],
+Cell[277618, 6745, 663, 13, 30, "Print"],
+Cell[278284, 6760, 505, 9, 30, "Print"],
+Cell[278792, 6771, 534, 9, 30, "Print"],
+Cell[279329, 6782, 462, 8, 30, "Print"],
+Cell[279794, 6792, 699, 14, 30, "Print"],
+Cell[280496, 6808, 730, 14, 30, "Print"],
+Cell[281229, 6824, 663, 13, 30, "Print"],
+Cell[281895, 6839, 460, 8, 30, "Print"],
+Cell[282358, 6849, 723, 15, 30, "Print"],
+Cell[283084, 6866, 661, 13, 30, "Print"],
+Cell[283748, 6881, 512, 9, 30, "Print"],
+Cell[284263, 6892, 500, 9, 30, "Print"],
+Cell[284766, 6903, 518, 9, 30, "Print"],
+Cell[285287, 6914, 507, 9, 30, "Print"],
+Cell[285797, 6925, 715, 15, 30, "Print"],
+Cell[286515, 6942, 460, 8, 30, "Print"],
+Cell[286978, 6952, 701, 14, 30, "Print"],
+Cell[287682, 6968, 736, 14, 30, "Print"],
+Cell[288421, 6984, 734, 14, 30, "Print"],
+Cell[289158, 7000, 732, 14, 30, "Print"],
+Cell[289893, 7016, 732, 14, 30, "Print"],
+Cell[290628, 7032, 667, 13, 30, "Print"],
+Cell[291298, 7047, 462, 8, 30, "Print"],
+Cell[291763, 7057, 723, 15, 30, "Print"],
+Cell[292489, 7074, 661, 13, 30, "Print"],
+Cell[293153, 7089, 506, 9, 30, "Print"],
+Cell[293662, 7100, 533, 9, 30, "Print"],
+Cell[294198, 7111, 462, 8, 30, "Print"],
+Cell[294663, 7121, 699, 14, 30, "Print"],
+Cell[295365, 7137, 732, 14, 30, "Print"],
+Cell[296100, 7153, 663, 13, 30, "Print"],
+Cell[296766, 7168, 460, 8, 30, "Print"],
+Cell[297229, 7178, 725, 15, 30, "Print"],
+Cell[297957, 7195, 661, 13, 30, "Print"],
+Cell[298621, 7210, 514, 9, 30, "Print"],
+Cell[299138, 7221, 502, 9, 30, "Print"],
+Cell[299643, 7232, 521, 9, 30, "Print"],
+Cell[300167, 7243, 507, 9, 30, "Print"],
+Cell[300677, 7254, 720, 15, 30, "Print"],
+Cell[301400, 7271, 460, 8, 30, "Print"],
+Cell[301863, 7281, 726, 15, 30, "Print"],
+Cell[302592, 7298, 460, 8, 30, "Print"],
+Cell[303055, 7308, 699, 14, 30, "Print"],
+Cell[303757, 7324, 736, 14, 30, "Print"],
+Cell[304496, 7340, 734, 14, 30, "Print"],
+Cell[305233, 7356, 733, 14, 30, "Print"],
+Cell[305969, 7372, 734, 14, 30, "Print"],
+Cell[306706, 7388, 733, 14, 30, "Print"],
+Cell[307442, 7404, 736, 14, 30, "Print"],
+Cell[308181, 7420, 736, 14, 30, "Print"],
+Cell[308920, 7436, 736, 14, 30, "Print"],
+Cell[309659, 7452, 738, 14, 30, "Print"],
+Cell[310400, 7468, 736, 14, 30, "Print"],
+Cell[311139, 7484, 738, 14, 30, "Print"],
+Cell[311880, 7500, 738, 14, 30, "Print"],
+Cell[312621, 7516, 462, 8, 30, "Print"],
+Cell[313086, 7526, 660, 13, 30, "Print"],
+Cell[313749, 7541, 671, 13, 30, "Print"],
+Cell[314423, 7556, 460, 8, 30, "Print"],
+Cell[314886, 7566, 725, 15, 30, "Print"],
+Cell[315614, 7583, 732, 14, 30, "Print"],
+Cell[316349, 7599, 732, 14, 30, "Print"],
+Cell[317084, 7615, 730, 14, 30, "Print"],
+Cell[317817, 7631, 730, 14, 30, "Print"],
+Cell[318550, 7647, 732, 14, 30, "Print"],
+Cell[319285, 7663, 730, 14, 30, "Print"],
+Cell[320018, 7679, 738, 14, 30, "Print"],
+Cell[320759, 7695, 736, 14, 30, "Print"],
+Cell[321498, 7711, 735, 14, 30, "Print"],
+Cell[322236, 7727, 732, 14, 30, "Print"],
+Cell[322971, 7743, 734, 14, 30, "Print"],
+Cell[323708, 7759, 732, 14, 30, "Print"],
+Cell[324443, 7775, 671, 13, 30, "Print"],
+Cell[325117, 7790, 506, 9, 30, "Print"],
+Cell[325626, 7801, 534, 9, 30, "Print"],
+Cell[326163, 7812, 460, 8, 30, "Print"],
+Cell[326626, 7822, 699, 14, 30, "Print"],
+Cell[327328, 7838, 732, 14, 30, "Print"],
+Cell[328063, 7854, 661, 13, 30, "Print"],
+Cell[328727, 7869, 460, 8, 30, "Print"],
+Cell[329190, 7879, 723, 15, 30, "Print"],
+Cell[329916, 7896, 730, 14, 30, "Print"],
+Cell[330649, 7912, 663, 13, 30, "Print"],
+Cell[331315, 7927, 514, 9, 30, "Print"],
+Cell[331832, 7938, 502, 9, 30, "Print"],
+Cell[332337, 7949, 521, 9, 30, "Print"],
+Cell[332861, 7960, 512, 9, 30, "Print"],
+Cell[333376, 7971, 718, 15, 30, "Print"],
+Cell[334097, 7988, 460, 8, 30, "Print"],
+Cell[334560, 7998, 726, 15, 30, "Print"],
+Cell[335289, 8015, 460, 8, 30, "Print"],
+Cell[335752, 8025, 699, 14, 30, "Print"],
+Cell[336454, 8041, 734, 14, 30, "Print"],
+Cell[337191, 8057, 734, 14, 30, "Print"],
+Cell[337928, 8073, 734, 14, 30, "Print"],
+Cell[338665, 8089, 736, 14, 30, "Print"],
+Cell[339404, 8105, 734, 14, 30, "Print"],
+Cell[340141, 8121, 734, 14, 30, "Print"],
+Cell[340878, 8137, 736, 14, 30, "Print"],
+Cell[341617, 8153, 736, 14, 30, "Print"],
+Cell[342356, 8169, 734, 14, 30, "Print"],
+Cell[343093, 8185, 734, 14, 30, "Print"],
+Cell[343830, 8201, 736, 14, 30, "Print"],
+Cell[344569, 8217, 736, 14, 30, "Print"],
+Cell[345308, 8233, 460, 8, 30, "Print"],
+Cell[345771, 8243, 660, 13, 30, "Print"],
+Cell[346434, 8258, 669, 13, 30, "Print"],
+Cell[347106, 8273, 462, 8, 30, "Print"],
+Cell[347571, 8283, 723, 15, 30, "Print"],
+Cell[348297, 8300, 734, 14, 30, "Print"],
+Cell[349034, 8316, 734, 14, 30, "Print"],
+Cell[349771, 8332, 734, 14, 30, "Print"],
+Cell[350508, 8348, 667, 13, 30, "Print"],
+Cell[351178, 8363, 506, 9, 30, "Print"],
+Cell[351687, 8374, 536, 9, 30, "Print"],
+Cell[352226, 8385, 460, 8, 30, "Print"],
+Cell[352689, 8395, 699, 14, 30, "Print"],
+Cell[353391, 8411, 730, 14, 30, "Print"],
+Cell[354124, 8427, 663, 13, 30, "Print"],
+Cell[354790, 8442, 460, 8, 30, "Print"],
+Cell[355253, 8452, 725, 15, 30, "Print"],
+Cell[355981, 8469, 661, 13, 30, "Print"],
+Cell[356645, 8484, 512, 9, 30, "Print"],
+Cell[357160, 8495, 500, 9, 30, "Print"],
+Cell[357663, 8506, 519, 9, 30, "Print"],
+Cell[358185, 8517, 510, 9, 30, "Print"],
+Cell[358698, 8528, 717, 15, 30, "Print"],
+Cell[359418, 8545, 462, 8, 30, "Print"],
+Cell[359883, 8555, 867, 17, 30, "Print"],
+Cell[360753, 8574, 462, 8, 30, "Print"],
+Cell[361218, 8584, 728, 15, 30, "Print"],
+Cell[361949, 8601, 460, 8, 30, "Print"],
+Cell[362412, 8611, 701, 14, 30, "Print"],
+Cell[363116, 8627, 734, 14, 30, "Print"],
+Cell[363853, 8643, 734, 14, 30, "Print"],
+Cell[364590, 8659, 734, 14, 30, "Print"],
+Cell[365327, 8675, 734, 14, 30, "Print"],
+Cell[366064, 8691, 734, 14, 30, "Print"],
+Cell[366801, 8707, 734, 14, 30, "Print"],
+Cell[367538, 8723, 734, 14, 30, "Print"],
+Cell[368275, 8739, 734, 14, 30, "Print"],
+Cell[369012, 8755, 736, 14, 30, "Print"],
+Cell[369751, 8771, 738, 14, 30, "Print"],
+Cell[370492, 8787, 736, 14, 30, "Print"],
+Cell[371231, 8803, 736, 14, 30, "Print"],
+Cell[371970, 8819, 460, 8, 30, "Print"],
+Cell[372433, 8829, 865, 17, 30, "Print"],
+Cell[373301, 8848, 460, 8, 30, "Print"],
+Cell[373764, 8858, 662, 13, 30, "Print"],
+Cell[374429, 8873, 671, 13, 30, "Print"],
+Cell[375103, 8888, 460, 8, 30, "Print"],
+Cell[375566, 8898, 723, 15, 30, "Print"],
+Cell[376292, 8915, 661, 13, 30, "Print"],
+Cell[376956, 8930, 506, 9, 30, "Print"],
+Cell[377465, 8941, 534, 9, 30, "Print"],
+Cell[378002, 8952, 462, 8, 30, "Print"],
+Cell[378467, 8962, 697, 14, 30, "Print"],
+Cell[379167, 8978, 730, 14, 30, "Print"],
+Cell[379900, 8994, 661, 13, 30, "Print"],
+Cell[380564, 9009, 460, 8, 30, "Print"],
+Cell[381027, 9019, 723, 15, 30, "Print"],
+Cell[381753, 9036, 663, 13, 30, "Print"],
+Cell[382419, 9051, 512, 9, 30, "Print"],
+Cell[382934, 9062, 500, 9, 30, "Print"],
+Cell[383437, 9073, 521, 9, 30, "Print"],
+Cell[383961, 9084, 512, 9, 30, "Print"],
+Cell[384476, 9095, 501, 9, 30, "Print"],
+Cell[384980, 9106, 485, 8, 30, "Print"],
+Cell[385468, 9116, 548, 9, 30, "Print"],
+Cell[386019, 9127, 464, 8, 30, "Print"]
 }, Open  ]],
-Cell[343909, 8039, 520, 10, 43, "Output"]
+Cell[386498, 9138, 520, 10, 43, "Output"]
 }, Open  ]],
-Cell[344444, 8052, 276, 6, 43, "Input"],
-Cell[344723, 8060, 357, 10, 69, "Input"],
+Cell[387033, 9151, 276, 6, 43, "Input"],
+Cell[387312, 9159, 357, 10, 69, "Input"],
 Cell[CellGroupData[{
-Cell[345105, 8074, 321, 6, 44, "Input"],
+Cell[387694, 9173, 321, 6, 44, "Input"],
 Cell[CellGroupData[{
-Cell[345451, 8084, 154, 3, 30, "Print"],
-Cell[345608, 8089, 384, 10, 30, "Print"],
-Cell[345995, 8101, 131, 2, 30, "Print"],
-Cell[346129, 8105, 320, 7, 30, "Print"],
-Cell[346452, 8114, 167, 3, 30, "Print"],
-Cell[346622, 8119, 660, 14, 30, "Print"],
-Cell[347285, 8135, 250, 6, 30, "Print"],
-Cell[347538, 8143, 618, 13, 30, "Print"],
-Cell[348159, 8158, 148, 3, 30, "Print"],
-Cell[348310, 8163, 422, 11, 30, "Print"],
-Cell[348735, 8176, 381, 10, 30, "Print"],
-Cell[349119, 8188, 349, 7, 30, "Print"],
-Cell[349471, 8197, 379, 10, 30, "Print"],
-Cell[349853, 8209, 335, 7, 30, "Print"],
-Cell[350191, 8218, 130, 2, 30, "Print"],
-Cell[350324, 8222, 155, 3, 30, "Print"],
-Cell[350482, 8227, 348, 7, 30, "Print"],
-Cell[350833, 8236, 514, 10, 30, "Print"],
-Cell[351350, 8248, 126, 2, 30, "Print"],
-Cell[351479, 8252, 111, 2, 30, "Print"]
+Cell[388040, 9183, 154, 3, 30, "Print"],
+Cell[388197, 9188, 384, 10, 30, "Print"],
+Cell[388584, 9200, 131, 2, 30, "Print"],
+Cell[388718, 9204, 320, 7, 30, "Print"],
+Cell[389041, 9213, 167, 3, 30, "Print"],
+Cell[389211, 9218, 660, 14, 30, "Print"],
+Cell[389874, 9234, 250, 6, 30, "Print"],
+Cell[390127, 9242, 618, 13, 30, "Print"],
+Cell[390748, 9257, 148, 3, 30, "Print"],
+Cell[390899, 9262, 422, 11, 30, "Print"],
+Cell[391324, 9275, 381, 10, 30, "Print"],
+Cell[391708, 9287, 349, 7, 30, "Print"],
+Cell[392060, 9296, 379, 10, 30, "Print"],
+Cell[392442, 9308, 335, 7, 30, "Print"],
+Cell[392780, 9317, 130, 2, 30, "Print"],
+Cell[392913, 9321, 155, 3, 30, "Print"],
+Cell[393071, 9326, 348, 7, 30, "Print"],
+Cell[393422, 9335, 514, 10, 30, "Print"],
+Cell[393939, 9347, 126, 2, 30, "Print"],
+Cell[394068, 9351, 111, 2, 30, "Print"]
 }, Open  ]]
 }, Closed]]
 }, Closed]]

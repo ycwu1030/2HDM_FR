@@ -37,6 +37,7 @@ FR$RmDblExt = { ymb -> MB, ymc -> MC, ymdo -> MD, yme -> Me,
 (* ************************** *)
 
 (* ******************************* *)
+(* 0.2.0: Add ggF vertex           *)
 (* 0.1.2: Fix Typo in m222         *)
 (* 0.1.1: Remove the Cot function  *)
 (* 0.0.2: First Working Version    *)

@@ -93,4 +93,18 @@ ExpandIndices[ LGhs + If[FeynmanGauge, LGh1 + LGhw + LGhphi,0], FlavorExpand->SU
 
 LYukawa := LYu[YukawaType];
 
+(* The Extra ggF vertex used only for MG5 event generation *)
+LggHL := Block[{mu,nu,a},
+    -1/4 GHL FS[G,mu,nu,a] FS[G,mu,nu,a] HL
+];
+
+LggHH := Block[{mu,nu,a},
+    -1/4 GHH FS[G,mu,nu,a] FS[G,mu,nu,a] HH
+];
+
+LggHA := Block[{mu,nu,a},
+    -1/4 GHA FS[G,mu,nu,a] Dual[FS][G,mu,nu,a] HA
+];
+
+
 L2HDM:= LGauge + LFermions + LHiggs + LYukawa + LGhost;
