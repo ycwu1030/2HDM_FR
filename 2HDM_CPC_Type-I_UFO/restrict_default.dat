@@ -56,9 +56,9 @@ Block sminputs
 ## INFORMATION FOR THDMBLOCK
 ###################################
 Block thdmblock 
-    1 7.854000e-01 # beta 
+    1  7.854100e-01 # beta 
     2 -7.854000e-01 # alpha 
-    3 9.000000e+04 # m122 
+    3  9.000000e+04 # m122 
 
 ###################################
 ## INFORMATION FOR YUKAWA
