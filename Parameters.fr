@@ -300,6 +300,30 @@ M$Parameters = {
     InteractionOrder -> {QED, 2},
     Description      -> "lambda5"
   },
+  kHLUp == {
+    ParameterType    -> Internal,
+    Value            -> ca/sb,
+    TeX              -> Subsuperscript[\[Kappa], HL, u],
+    Description      -> "The up yukawa with HL normalized to SM value" 
+  },
+  kHLDo == {
+    ParameterType    -> Internal,
+    Value            -> -sa/cb,
+    TeX              -> Subsuperscript[\[Kappa], HL, d],
+    Description      -> "The down yukawa with HL normalized to SM value" 
+  },
+  kHHUp == {
+    ParameterType    -> Internal,
+    Value            -> sa/sb,
+    TeX              -> Subsuperscript[\[Kappa], HH, u],
+    Description      -> "The up yukawa with HH normalized to SM value" 
+  },
+  kHHDo == {
+    ParameterType    -> Internal,
+    Value            -> ca/cb,
+    TeX              -> Subsuperscript[\[Kappa], HH, d],
+    Description      -> "The down yukawa with HH normalized to SM value" 
+  },
   GHL == {
     ParameterType    -> Internal,
     InteractionOrder -> {QCD, 2},
