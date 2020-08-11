@@ -2,9 +2,9 @@
       DOUBLE COMPLEX FUNCTION FTriEvenTop(shat)
       IMPLICIT NONE
       DOUBLE COMPLEX shat
+      INCLUDE 'coupl.inc'
       INCLUDE 'input.inc' ! include model parameter
-      
-      DOUBLE COMPLEX FTriEvenTop
+
       DOUBLE PRECISION MQ,MQ2,S,REPS
       DOUBLE COMPLEX CQ2,CA5,C0AB
 
@@ -28,9 +28,9 @@
       DOUBLE COMPLEX FUNCTION FTriEvenBot(shat)
       IMPLICIT NONE
       DOUBLE COMPLEX shat
+      INCLUDE 'coupl.inc'
       INCLUDE 'input.inc' ! include model parameter
-      
-      DOUBLE COMPLEX FTriEvenBot
+
       DOUBLE PRECISION MQ,MQ2,S,REPS
       DOUBLE COMPLEX CQ2,CA5,C0AB
 

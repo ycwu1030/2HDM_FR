@@ -3,12 +3,12 @@
 SourceDir=$1
 TargetDir=$2
 
-cp -r $SourceDir $TargetDir
-cp -r $LoopFileDir/Fortran $TargetDir/Fortran
-
 LoopFileDir="Loop_Induced_Vertices"
 
 VertexTypes=("ggS")
+
+cp -r $SourceDir $TargetDir
+cp -r $LoopFileDir/Fortran $TargetDir/Fortran
 
 for vtype in ${VertexTypes[@]}
   do
