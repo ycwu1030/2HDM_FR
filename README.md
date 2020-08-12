@@ -14,6 +14,7 @@ I already made several UFOs and FA model files in corresponding folders.
 
 For the UFO files, the name conventions are:
 - With `ggF`, the model contains the effective `ggF` vertices for Higgs production. The numerical value is not correct, just easier for event generation
+    - Actually, using `NLO` model file can obtain correct 'LO' cross section for `ggF`.
 - With `NLO`, the model contains the CTs for QCD NLO calculation in MG5
 - Without any of above, it is a LO model file. Loop-induced vertices can not be calculated.
 
