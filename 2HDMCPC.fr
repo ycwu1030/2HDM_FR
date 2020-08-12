@@ -16,7 +16,7 @@ M$ModelName = "2HDM CPC";
 
 M$Information = {
   Authors      -> {"Yongcheng Wu"}, 
-  Version      -> "0.1.2",
+  Version      -> "0.3.0",
   Date         -> "01. 09. 2019",
   Institutions -> {"Carleton University"},
   Emails       -> {"ycwu@physics.carleton.ca"}
@@ -37,6 +37,7 @@ FR$RmDblExt = { ymb -> MB, ymc -> MC, ymdo -> MD, yme -> Me,
 (* ************************** *)
 
 (* ******************************* *)
+(* 0.3.0: Add QCD NLO Model        *)
 (* 0.2.0: Add ggF vertex           *)
 (* 0.1.2: Fix Typo in m222         *)
 (* 0.1.1: Remove the Cot function  *)
