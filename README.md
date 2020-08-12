@@ -10,7 +10,7 @@ $$v, m_h, m_H, m_A, m_{\pm}, \alpha, \beta, m_{12}^2$$
 
 ## Download
 
-- Find the corresponding files in `RELEASE` folder
+Either finding the corresponding files in `RELEASE` folder or checking [release page](https://github.com/ycwu1030/2HDM_FR/releases/tag/v0.3.0).
 
 ## Usage
 
