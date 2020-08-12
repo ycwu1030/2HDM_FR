@@ -8,6 +8,10 @@ In current convention, I only consider CP conserving case. The input parameters 
 
 $$v, m_h, m_H, m_A, m_{\pm}, \alpha, \beta, m_{12}^2$$
 
+## Download
+
+- Find the corresponding files in `RELEASE` folder
+
 ## Usage
 
 I already made several UFOs and FA model files in corresponding folders.
