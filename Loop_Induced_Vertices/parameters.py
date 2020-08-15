@@ -22,3 +22,15 @@ kHHDo = Parameter(name = 'kHHDo',
                    type = 'real',
                    value = 'ca/cb',
                    texname = '\\kappa_{HH}^{d}')
+
+kHAUp = Parameter(name = 'kHAUp',
+                   nature = 'internal',
+                   type = 'real',
+                   value = 'cb/sb',
+                   texname = '\\kappa_{HA}^{u}')
+
+kHADo = Parameter(name = 'kHADo',
+                   nature = 'internal',
+                   type = 'real',
+                   value = 'sb/cb',
+                   texname = '\\kappa_{HA}^{d}')
