@@ -1,4 +1,5 @@
 
+# This is for Type-II, should add other type later.
 kHLUp = Parameter(name = 'kHLUp',
                    nature = 'internal',
                    type = 'real',

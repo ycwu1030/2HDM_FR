@@ -5,15 +5,17 @@ TargetDir=$2
 
 LoopFileDir="Loop_Induced_Vertices"
 
-VertexTypes=("ggS")
+VertexTypes=("ggS" "ggZ")
 
 cp -r $SourceDir $TargetDir
-cp -r $LoopFileDir/Fortran $TargetDir/Fortran
+mkdir -p $TargetDir/Fortran
+touch $TargetDir/Fortran/functions.f 
 
 for vtype in ${VertexTypes[@]}
   do
     cat $LoopFileDir/couplings_$vtype.py >> $TargetDir/couplings.py
     cat $LoopFileDir/lorentz_$vtype.py >> $TargetDir/lorentz.py
     cat $LoopFileDir/vertices_$vtype.py >> $TargetDir/vertices.py
-    cat $LoopFileDir/parameters.py >> $TargetDir/parameters.py
+    cat $LoopFileDir/parameters_$vtype.py >> $TargetDir/parameters.py
+    cat $LoopFileDir/Fortran/functions_$vtype.f >> $TargetDir/Fortran/functions.f
   done

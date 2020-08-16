@@ -70,7 +70,7 @@
       C0AB = 0.5D0*CDLOG((CA5+1.D0)/(CA5-1.D0))**2/shat*MQ2
       C0AB = C0AB/MQ2
       
-      FTriOddTop = 2D0/S*(2D0+(4D0-S)*MQ2*C0AB)
+      FTriOddTop = -2D0*MQ2*C0AB
       
       RETURN
       END
@@ -94,7 +94,7 @@
       C0AB = 0.5D0*CDLOG((CA5+1.D0)/(CA5-1.D0))**2/shat*MQ2
       C0AB = C0AB/MQ2
       
-      FTriOddBot = 2D0/S*(2D0+(4D0-S)*MQ2*C0AB)
+      FTriOddBot = -2D0*MQ2*C0AB
       
       RETURN
       END

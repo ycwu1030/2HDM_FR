@@ -19,6 +19,6 @@ GC_ggHAtop = Coupling(name = 'GC_ggHAtop',
                       value = 'G**2*kHAUp/(8.*cmath.pi**2*vev)',
                       order = {'QCD':2,'QED':1})
 
-GC_ggHAbot = Coupling(name = 'GC_ggHHbot',
+GC_ggHAbot = Coupling(name = 'GC_ggHAbot',
                       value = 'G**2*kHADo/(8.*cmath.pi**2*vev)',
                       order = {'QCD':2,'QED':1})
