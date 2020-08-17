@@ -22,3 +22,11 @@ GC_ggHHHHtop = Coupling(name = 'GC_ggHHHHtop',
 GC_ggHHHHbot = Coupling(name = 'GC_ggHHHHbot',
                       value = 'G**2*kHHDo*kHHDo/(8.*cmath.pi**2*vev**2)',
                       order = {'QCD':2,'QED':1})
+
+GC_ggHAHAtop = Coupling(name = 'GC_ggHAHAtop',
+                      value = 'G**2*kHAUp*kHAUp/(8.*cmath.pi**2*vev**2)',
+                      order = {'QCD':2,'QED':1})
+
+GC_ggHAHAbot = Coupling(name = 'GC_ggHHHHbot',
+                      value = 'G**2*kHADo*kHADo/(8.*cmath.pi**2*vev**2)',
+                      order = {'QCD':2,'QED':1})
