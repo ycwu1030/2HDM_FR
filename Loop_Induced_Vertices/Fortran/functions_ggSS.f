@@ -318,7 +318,7 @@ C---------------------------------------------------------)
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION FBoxEven(Q12,Q13,Q23,Q32,Q42,MQ)
+      DOUBLE COMPLEX FUNCTION FBoxEven(Q12,Q13,Q23,Q32,MQ)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
@@ -330,6 +330,7 @@ C---------------------------------------------------------)
       S = 2*Q12
       T = Q32 - 2*Q13
       U = Q32 - 2*Q23
+      Q42 = S + T + U - Q32
 
       SS = S/MQ2
       TT = T/MQ2
@@ -366,36 +367,36 @@ C---------------------------------------------------------)
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION FBoxEvenTop(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION FBoxEvenTop(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      FBoxEvenTop = FBoxEven(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+      FBoxEvenTop = FBoxEven(Q12,Q13,Q23,Q32,MDL_MT)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION FBoxEvenBot(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION FBoxEvenBot(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      FBoxEvenBot = FBoxEven(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+      FBoxEvenBot = FBoxEven(Q12,Q13,Q23,Q32,MDL_MB)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION GBoxEven(Q12,Q13,Q23,Q32,Q42,MQ)
+      DOUBLE COMPLEX FUNCTION GBoxEven(Q12,Q13,Q23,Q32,MQ)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
       DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
       DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,PT2
 
@@ -404,6 +405,7 @@ C---------------------------------------------------------)
       S = 2*Q12
       T = Q32 - 2*Q13
       U = Q32 - 2*Q23
+      Q42 = S + T + U - Q32
 
       SS = S/MQ2
       TT = T/MQ2
@@ -450,34 +452,34 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       END
 
 
-      DOUBLE COMPLEX FUNCTION GBoxEvenTop(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION GBoxEvenTop(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      GBoxEvenTop = GBoxEven(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+      GBoxEvenTop = GBoxEven(Q12,Q13,Q23,Q32,MDL_MT)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION GBoxEvenBot(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION GBoxEvenBot(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      GBoxEvenBot = GBoxEven(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+      GBoxEvenBot = GBoxEven(Q12,Q13,Q23,Q32,MDL_MB)
 
       RETURN
       END
 
 
-      DOUBLE COMPLEX FUNCTION FBoxOdd(Q12,Q13,Q23,Q32,Q42,MQ)
+      DOUBLE COMPLEX FUNCTION FBoxOdd(Q12,Q13,Q23,Q32,MQ)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
@@ -489,6 +491,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       S = 2*Q12
       T = Q32 - 2*Q13
       U = Q32 - 2*Q23
+      Q42 = S + T + U - Q32
 
       SS = S/MQ2
       TT = T/MQ2
@@ -525,33 +528,33 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION FBoxOddTop(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION FBoxOddTop(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      FBoxOddTop = FBoxOdd(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+      FBoxOddTop = FBoxOdd(Q12,Q13,Q23,Q32,MDL_MT)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION FBoxOddBot(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION FBoxOddBot(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      FBoxOddBot = FBoxOdd(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+      FBoxOddBot = FBoxOdd(Q12,Q13,Q23,Q32,MDL_MB)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION GBoxOdd(Q12,Q13,Q23,Q32,Q42,MQ)
+      DOUBLE COMPLEX FUNCTION GBoxOdd(Q12,Q13,Q23,Q32,MQ)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
@@ -563,6 +566,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       S = 2*Q12
       T = Q32 - 2*Q13
       U = Q32 - 2*Q23
+      Q42 = S + T + U - Q32
 
       SS = S/MQ2
       TT = T/MQ2
@@ -608,34 +612,34 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       END
 
 
-      DOUBLE COMPLEX FUNCTION GBoxOddTop(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION GBoxOddTop(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      GBoxOddTop = GBoxOdd(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+      GBoxOddTop = GBoxOdd(Q12,Q13,Q23,Q32,MDL_MT)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION GBoxOddBot(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION GBoxOddBot(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      GBoxOddBot = GBoxOdd(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+      GBoxOddBot = GBoxOdd(Q12,Q13,Q23,Q32,MDL_MB)
 
       RETURN
       END
 
 
-      DOUBLE COMPLEX FUNCTION FBoxSA(Q12,Q13,Q23,Q32,Q42,MQ)
+      DOUBLE COMPLEX FUNCTION FBoxSA(Q12,Q13,Q23,Q32,MQ)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
@@ -647,6 +651,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       S = 2*Q12
       T = Q32 - 2*Q13
       U = Q32 - 2*Q23
+      Q42 = S + T + U - Q32
 
       SS = S/MQ2
       TT = T/MQ2
@@ -683,34 +688,34 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION FBoxSATop(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION FBoxSATop(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      FBoxSATop = FBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+      FBoxSATop = FBoxSA(Q12,Q13,Q23,Q32,MDL_MT)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION FBoxSABot(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION FBoxSABot(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      FBoxSABot = FBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+      FBoxSABot = FBoxSA(Q12,Q13,Q23,Q32,MDL_MB)
 
       RETURN
       END
 
 
-      DOUBLE COMPLEX FUNCTION GBoxSA(Q12,Q13,Q23,Q32,Q42,MQ)
+      DOUBLE COMPLEX FUNCTION GBoxSA(Q12,Q13,Q23,Q32,MQ)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
@@ -722,6 +727,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       S = 2*Q12
       T = Q32 - 2*Q13
       U = Q32 - 2*Q23
+      Q42 = S + T + U - Q32
 
       SS = S/MQ2
       TT = T/MQ2
@@ -767,28 +773,28 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       END
 
 
-      DOUBLE COMPLEX FUNCTION GBoxSATop(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION GBoxSATop(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      GBoxSATop = GBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+      GBoxSATop = GBoxSA(Q12,Q13,Q23,Q32,MDL_MT)
 
       RETURN
       END
 
-      DOUBLE COMPLEX FUNCTION GBoxSABot(Q12,Q13,Q23,Q32,Q42)
+      DOUBLE COMPLEX FUNCTION GBoxSABot(Q12,Q13,Q23,Q32)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION Q12,Q13,Q23,Q32
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
 
-      GBoxSABot = GBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+      GBoxSABot = GBoxSA(Q12,Q13,Q23,Q32,MDL_MB)
 
       RETURN
       END
