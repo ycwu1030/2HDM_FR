@@ -319,6 +319,16 @@ C---------------------------------------------------------)
       END
 
       DOUBLE COMPLEX FUNCTION FBoxEven(Q12,Q13,Q23,Q32,MQ)
+C------------------------------------------------------------)
+C-- THE FORM FACTOR FOR BOX DIAGRAM, F
+C-- INPUT:
+C--    Q12 = P1.P2
+C--    Q13 = P1.P3
+C--    Q23 = P2.P3
+C--    Q32 = P3.P3
+C-- NOTE THAT IN MADGRAPH CONVENTION, P1 P2 P3 P4 ARE ALL INCOMING
+C-- THUS T = (P1+P3)^2 = P3^2 + 2*P1.P3, SIMILAR FOR U
+C-------------------------------------------------------------)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
@@ -329,8 +339,8 @@ C---------------------------------------------------------)
       MQ2 = MQ**2
 
       S = 2*Q12
-      T = Q32 - 2*Q13
-      U = Q32 - 2*Q23
+      T = Q32 + 2*Q13
+      U = Q32 + 2*Q23
       Q42 = S + T + U - Q32
 
       SS = S/MQ2
@@ -408,8 +418,8 @@ C---------------------------------------------------------)
       MQ2 = MQ**2
 
       S = 2*Q12
-      T = Q32 - 2*Q13
-      U = Q32 - 2*Q23
+      T = Q32 + 2*Q13
+      U = Q32 + 2*Q23
       Q42 = S + T + U - Q32
 
       SS = S/MQ2
@@ -497,8 +507,8 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       MQ2 = MQ**2
 
       S = 2*Q12
-      T = Q32 - 2*Q13
-      U = Q32 - 2*Q23
+      T = Q32 + 2*Q13
+      U = Q32 + 2*Q23
       Q42 = S + T + U - Q32
 
       SS = S/MQ2
@@ -576,8 +586,8 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       MQ2 = MQ**2
 
       S = 2*Q12
-      T = Q32 - 2*Q13
-      U = Q32 - 2*Q23
+      T = Q32 + 2*Q13
+      U = Q32 + 2*Q23
       Q42 = S + T + U - Q32
 
       SS = S/MQ2
@@ -664,8 +674,8 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       MQ2 = MQ**2
 
       S = 2*Q12
-      T = Q32 - 2*Q13
-      U = Q32 - 2*Q23
+      T = Q32 + 2*Q13
+      U = Q32 + 2*Q23
       Q42 = S + T + U - Q32
 
       SS = S/MQ2
@@ -744,8 +754,8 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       MQ2 = MQ**2
 
       S = 2*Q12
-      T = Q32 - 2*Q13
-      U = Q32 - 2*Q23
+      T = Q32 + 2*Q13
+      U = Q32 + 2*Q23
       Q42 = S + T + U - Q32
 
       SS = S/MQ2
