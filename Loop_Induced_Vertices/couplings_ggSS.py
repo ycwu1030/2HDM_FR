@@ -27,6 +27,22 @@ GC_ggHAHAtop = Coupling(name = 'GC_ggHAHAtop',
                       value = 'G**2*kHAUp*kHAUp/(8.*cmath.pi**2*vev**2)',
                       order = {'QCD':2,'QED':1})
 
-GC_ggHAHAbot = Coupling(name = 'GC_ggHHHHbot',
+GC_ggHAHAbot = Coupling(name = 'GC_ggHAHAbot',
                       value = 'G**2*kHADo*kHADo/(8.*cmath.pi**2*vev**2)',
+                      order = {'QCD':2,'QED':1})
+
+GC_ggHLHAtop = Coupling(name = 'GC_ggHLHAtop',
+                      value = 'G**2*kHLUp*kHAUp/(8.*cmath.pi**2*vev**2)',
+                      order = {'QCD':2,'QED':1})
+
+GC_ggHLHAbot = Coupling(name = 'GC_ggHLHAbot',
+                      value = 'G**2*kHLDo*kHADo/(8.*cmath.pi**2*vev**2)',
+                      order = {'QCD':2,'QED':1})
+
+GC_ggHHHAtop = Coupling(name = 'GC_ggHHHAtop',
+                      value = 'G**2*kHHUp*kHAUp/(8.*cmath.pi**2*vev**2)',
+                      order = {'QCD':2,'QED':1})
+
+GC_ggHHHAbot = Coupling(name = 'GC_ggHHHAbot',
+                      value = 'G**2*kHHDo*kHADo/(8.*cmath.pi**2*vev**2)',
                       order = {'QCD':2,'QED':1})

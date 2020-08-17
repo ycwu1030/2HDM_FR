@@ -633,3 +633,162 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
 
       RETURN
       END
+
+
+      DOUBLE COMPLEX FUNCTION FBoxSA(Q12,Q13,Q23,Q32,Q42,MQ)
+      IMPLICIT NONE
+
+      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
+      DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,EPM
+
+      MQ2 = MQ**2
+
+      S = 2*Q12
+      T = Q32 - 2*Q13
+      U = Q32 - 2*Q23
+
+      SS = S/MQ2
+      TT = T/MQ2
+      UU = U/MQ2
+
+      RHOC = Q32/MQ2
+      RHOD = Q42/MQ2
+
+      TAUQ = 4D0/SS
+      TT1 = TT - RHOC
+      UU1 = UU - RHOC
+      TT2 = TT - RHOD
+      UU2 = UU - RHOD
+
+      CALL INISCAL(MQ,S,T,U,DSQRT(Q32),DSQRT(Q42),
+     &     C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB)
+
+      C0AB = C0AB/MQ2
+      C0AC = C0AC/MQ2
+      C0AD = C0AD/MQ2
+      C0BC = C0BC/MQ2
+      C0BD = C0BD/MQ2
+      C0CD = C0CD/MQ2
+
+      D0ABC = D0ABC/MQ2**2
+      D0BAC = D0BAC/MQ2**2
+      D0ACB = D0ACB/MQ2**2
+
+      FBoxSA = 1D0/SS**2*(-2D0*SS*(SS+RHOC-RHOD)*MQ2**2
+     &   *(D0ABC+D0BAC+D0ACB)
+     &   +(RHOC-RHOD)*MQ2*(TT1*C0AC+UU1*C0BC
+     &   +TT2*C0BD+UU2*C0AD-(TT*UU-RHOC*RHOD)*MQ2*D0ACB))
+
+      RETURN
+      END
+
+      DOUBLE COMPLEX FUNCTION FBoxSATop(Q12,Q13,Q23,Q32,Q42)
+      IMPLICIT NONE
+
+      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+
+      INCLUDE 'coupl.inc'
+      INCLUDE 'input.inc'
+
+      FBoxSATop = FBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+
+      RETURN
+      END
+
+      DOUBLE COMPLEX FUNCTION FBoxSABot(Q12,Q13,Q23,Q32,Q42)
+      IMPLICIT NONE
+
+      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+
+      INCLUDE 'coupl.inc'
+      INCLUDE 'input.inc'
+
+      FBoxSABot = FBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+
+      RETURN
+      END
+
+
+      DOUBLE COMPLEX FUNCTION GBoxSA(Q12,Q13,Q23,Q32,Q42,MQ)
+      IMPLICIT NONE
+
+      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+      DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
+      DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,PT2
+
+      MQ2 = MQ**2
+
+      S = 2*Q12
+      T = Q32 - 2*Q13
+      U = Q32 - 2*Q23
+
+      SS = S/MQ2
+      TT = T/MQ2
+      UU = U/MQ2
+
+      RHOC = Q32/MQ2
+      RHOD = Q42/MQ2
+
+      TAUQ = 4D0/SS
+      TT1 = TT - RHOC
+      UU1 = UU - RHOC
+      TT2 = TT - RHOD
+      UU2 = UU - RHOD
+
+      PT2 = 2*Q13*Q23/Q12 - Q32
+
+      CALL INISCAL(MQ,S,T,U,DSQRT(Q32),DSQRT(Q42),
+     &     C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB)
+
+      C0AB = C0AB/MQ2
+      C0AC = C0AC/MQ2
+      C0AD = C0AD/MQ2
+      C0BC = C0BC/MQ2
+      C0BD = C0BD/MQ2
+      C0CD = C0CD/MQ2
+
+      D0ABC = D0ABC/MQ2**2
+      D0BAC = D0BAC/MQ2**2
+      D0ACB = D0ACB/MQ2**2
+
+      GBoxSA = 1D0/(SS*(TT*UU-RHOC*RHOD))*(
+     &  -(TT**2-RHOC*RHOD)*MQ2*
+     &  (SS*C0AB+TT1*C0AC+TT2*C0BD-SS*TT*MQ2*D0BAC)
+     &  +(UU**2-RHOC*RHOD)*MQ2*
+     &  (SS*C0AB+UU1*C0BC+UU2*C0AD-SS*UU*MQ2*D0ABC)
+     &  +((TT+UU)**2-4*RHOC*RHOD)*(TT-UU)*MQ2*C0CD
+     &  +2D0*(TT-UU)*(TT*UU-RHOC*RHOD)*MQ2**2
+     &     *(D0ABC+D0BAC+D0ACB))
+
+      GBoxSA = GBoxSA/PT2
+
+      RETURN
+      END
+
+
+      DOUBLE COMPLEX FUNCTION GBoxSATop(Q12,Q13,Q23,Q32,Q42)
+      IMPLICIT NONE
+
+      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+
+      INCLUDE 'coupl.inc'
+      INCLUDE 'input.inc'
+
+      GBoxSATop = GBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MT)
+
+      RETURN
+      END
+
+      DOUBLE COMPLEX FUNCTION GBoxSABot(Q12,Q13,Q23,Q32,Q42)
+      IMPLICIT NONE
+
+      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
+
+      INCLUDE 'coupl.inc'
+      INCLUDE 'input.inc'
+
+      GBoxSABot = GBoxSA(Q12,Q13,Q23,Q32,Q42,MDL_MB)
+
+      RETURN
+      END
