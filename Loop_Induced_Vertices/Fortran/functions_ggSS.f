@@ -324,6 +324,7 @@ C---------------------------------------------------------)
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
       DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
       DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,EPM
+      DOUBLE COMPLEX C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB
 
       MQ2 = MQ**2
 
@@ -371,6 +372,7 @@ C---------------------------------------------------------)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX FBoxEven
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -384,6 +386,7 @@ C---------------------------------------------------------)
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX FBoxEven
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -396,9 +399,11 @@ C---------------------------------------------------------)
       DOUBLE COMPLEX FUNCTION GBoxEven(Q12,Q13,Q23,Q32,MQ)
       IMPLICIT NONE
 
-      DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
       DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
       DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,PT2
+      DOUBLE COMPLEX C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB
+      DOUBLE COMPLEX GBoxEvenQ
 
       MQ2 = MQ**2
 
@@ -436,7 +441,7 @@ C---------------------------------------------------------)
       D0BAC = D0BAC/MQ2**2
       D0ACB = D0ACB/MQ2**2
 
-      GBoxEven = 1D0/(SS*(TT*UU-RHOC*RHOD))*(
+      GBoxEvenQ = 1D0/(SS*(TT*UU-RHOC*RHOD))*(
      &  (TT**2+RHOC*RHOD-8D0*TT)*MQ2*
      &  (SS*C0AB+TT1*C0AC+TT2*C0BD-SS*TT*MQ2*D0BAC)
      &  +(UU**2+RHOC*RHOD-8D0*UU)*MQ2*
@@ -446,7 +451,7 @@ C---------------------------------------------------------)
      &     *(D0ABC+D0BAC+D0ACB))
 
 C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form factor
-      GBoxEven = GBoxEven/PT2
+      GBoxEven = GBoxEvenQ/PT2
 
       RETURN
       END
@@ -456,6 +461,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX GBoxEven
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -469,6 +475,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX GBoxEven
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -485,6 +492,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
       DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
       DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,EPM
+      DOUBLE COMPLEX C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB
 
       MQ2 = MQ**2
 
@@ -532,6 +540,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX FBoxOdd
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -545,6 +554,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX FBoxOdd
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -560,6 +570,8 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
       DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
       DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,PT2
+      DOUBLE COMPLEX C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB
+      DOUBLE COMPLEX GBoxOddQ
 
       MQ2 = MQ**2
 
@@ -597,7 +609,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       D0BAC = D0BAC/MQ2**2
       D0ACB = D0ACB/MQ2**2
 
-      GBoxOdd = 1D0/(SS*(TT*UU-RHOC*RHOD))*(
+      GBoxOddQ = 1D0/(SS*(TT*UU-RHOC*RHOD))*(
      &  (TT**2+RHOC*RHOD)*MQ2*
      &  (SS*C0AB+TT1*C0AC+TT2*C0BD-SS*TT*MQ2*D0BAC)
      &  +(UU**2+RHOC*RHOD)*MQ2*
@@ -606,7 +618,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
      &  -2D0*(TT+UU)*(TT*UU-RHOC*RHOD)*MQ2**2
      &     *(D0ABC+D0BAC+D0ACB))
 
-      GBoxOdd = GBoxOdd/PT2
+      GBoxOdd = GBoxOddQ/PT2
 
       RETURN
       END
@@ -616,6 +628,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX GBoxOdd
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -629,6 +642,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX GBoxOdd
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -645,6 +659,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
       DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
       DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,EPM
+      DOUBLE COMPLEX C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB
 
       MQ2 = MQ**2
 
@@ -692,6 +707,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX FBoxSA
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -705,6 +721,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX FBoxSA
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -721,6 +738,8 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       DOUBLE PRECISION Q12,Q13,Q23,Q32,Q42
       DOUBLE PRECISION S,T,U,MQ,MQ2,SS,TT,UU,M1,M2
       DOUBLE PRECISION RHOC,RHOD,TAUQ,TT1,UU1,TT2,UU2,PT2
+      DOUBLE COMPLEX C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB
+      DOUBLE COMPLEX GBoxSAQ
 
       MQ2 = MQ**2
 
@@ -758,7 +777,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       D0BAC = D0BAC/MQ2**2
       D0ACB = D0ACB/MQ2**2
 
-      GBoxSA = 1D0/(SS*(TT*UU-RHOC*RHOD))*(
+      GBoxSAQ = 1D0/(SS*(TT*UU-RHOC*RHOD))*(
      &  -(TT**2-RHOC*RHOD)*MQ2*
      &  (SS*C0AB+TT1*C0AC+TT2*C0BD-SS*TT*MQ2*D0BAC)
      &  +(UU**2-RHOC*RHOD)*MQ2*
@@ -767,7 +786,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
      &  +2D0*(TT-UU)*(TT*UU-RHOC*RHOD)*MQ2**2
      &     *(D0ABC+D0BAC+D0ACB))
 
-      GBoxSA = GBoxSA/PT2
+      GBoxSA = GBoxSAQ/PT2
 
       RETURN
       END
@@ -777,6 +796,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX GBoxSA
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
@@ -790,6 +810,7 @@ C--Compared with hep-ph/9603205, I put the extra PT^2 in A2munu in the form fact
       IMPLICIT NONE
 
       DOUBLE PRECISION Q12,Q13,Q23,Q32
+      DOUBLE COMPLEX GBoxSA
 
       INCLUDE 'coupl.inc'
       INCLUDE 'input.inc'
