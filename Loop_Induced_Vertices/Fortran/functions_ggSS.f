@@ -121,7 +121,7 @@ C-------------------------------------------------------------)
       ENDIF
       END
 
-      DOUBLE COMPLEX FUNCTION CI(A,B,C)
+      DOUBLE COMPLEX FUNCTION MYMDL_CI(A,B,C)
 C--------------------------------------------------)
 C-- BASIC SCALAR INTEGRAL
 C-- I(a,b,c) = Integrate[Log[a*x+b]/(x-c),{x,0,1}]
@@ -132,7 +132,7 @@ C--------------------------------------------------)
       IMPLICIT DOUBLE PRECISION (A-H,O-Z)
       DOUBLE COMPLEX C,LI2
 
-      CI = CDLOG(A*C+B)*CDLOG(1.D0-1.D0/C)
+      MYMDL_CI = CDLOG(A*C+B)*CDLOG(1.D0-1.D0/C)
      .    -LI2(1.D0-(A+B)/(A*C+B))+LI2(1.D0-B/(A*C+B))
       RETURN
       END
@@ -175,7 +175,7 @@ C---------------------------------------------------------)
       DOUBLE COMPLEX D04
       DOUBLE COMPLEX C03
       DOUBLE COMPLEX LI2
-      DOUBLE COMPLEX CI,CJ
+      DOUBLE COMPLEX MYMDL_CI,CJ
       DOUBLE COMPLEX R,R0,X,XP,XM
       DOUBLE COMPLEX C0AB,C0AC,C0AD,C0BC,C0BD,C0CD,D0ABC,D0BAC,D0ACB
       DOUBLE PRECISION EPS, REPS
@@ -284,15 +284,15 @@ C---------------------------------------------------------)
       ALP=(S+Z-H+XLAM)/2.D0/S
       BET=(U-T+XLAM)/2.D0/S
       ZERO=0.D-15
-      D0ABC = 1.D0/S/U/X0*(CI(S,ZERO,XP)-CI(T-H,S,(1.D0-XM)/(1.D0-ALP))
-     .      -CI(Z-U,ZERO,XP/ALP)+CI(Z-U,ZERO,XP/BET)
-     .      -CI(T-H,S,XP/BET)
+      D0ABC = 1.D0/S/U/X0*(MYMDL_CI(S,ZERO,XP)-MYMDL_CI(T-H,S,(1.D0-XM)/(1.D0-ALP))
+     .      -MYMDL_CI(Z-U,ZERO,XP/ALP)+MYMDL_CI(Z-U,ZERO,XP/BET)
+     .      -MYMDL_CI(T-H,S,XP/BET)
      .      -CJ(S,AMQ**2,XP)+CJ(H,AMQ**2,(1.D0-XM)/(1.D0-ALP))
      .      +CJ(Z,AMQ**2,XP/ALP)-CJ(U,AMQ**2,XP/BET)
      .      +CJ(H,AMQ**2,XP/BET)
-     .      -(CI(S,ZERO,XM)-CI(T-H,S,(1.D0-XP)/(1.D0-ALP))
-     .      -CI(Z-U,ZERO,XM/ALP)+CI(Z-U,ZERO,XM/BET)
-     .      -CI(T-H,S,XM/BET)
+     .      -(MYMDL_CI(S,ZERO,XM)-MYMDL_CI(T-H,S,(1.D0-XP)/(1.D0-ALP))
+     .      -MYMDL_CI(Z-U,ZERO,XM/ALP)+MYMDL_CI(Z-U,ZERO,XM/BET)
+     .      -MYMDL_CI(T-H,S,XM/BET)
      .      -CJ(S,AMQ**2,XM)+CJ(H,AMQ**2,(1.D0-XP)/(1.D0-ALP))
      .      +CJ(Z,AMQ**2,XM/ALP)-CJ(U,AMQ**2,XM/BET)
      .      +CJ(H,AMQ**2,XM/BET)))*DQ2**2
@@ -302,15 +302,15 @@ C---------------------------------------------------------)
       XM=-T/(U-T+XLAM)*(1.D0-X)
       ALP=(S+Z-H+XLAM)/2.D0/S
       BET=(T-U+XLAM)/2.D0/S
-      D0BAC = 1.D0/S/T/X0*(CI(S,ZERO,XP)-CI(U-H,S,(1.D0-XM)/(1.D0-ALP))
-     .      -CI(Z-T,ZERO,XP/ALP)+CI(Z-T,ZERO,XP/BET)
-     .      -CI(U-H,S,XP/BET)
+      D0BAC = 1.D0/S/T/X0*(MYMDL_CI(S,ZERO,XP)-MYMDL_CI(U-H,S,(1.D0-XM)/(1.D0-ALP))
+     .      -MYMDL_CI(Z-T,ZERO,XP/ALP)+MYMDL_CI(Z-T,ZERO,XP/BET)
+     .      -MYMDL_CI(U-H,S,XP/BET)
      .      -CJ(S,AMQ**2,XP)+CJ(H,AMQ**2,(1.D0-XM)/(1.D0-ALP))
      .      +CJ(Z,AMQ**2,XP/ALP)-CJ(T,AMQ**2,XP/BET)
      .      +CJ(H,AMQ**2,XP/BET)
-     .      -(CI(S,ZERO,XM)-CI(U-H,S,(1.D0-XP)/(1.D0-ALP))
-     .      -CI(Z-T,ZERO,XM/ALP)+CI(Z-T,ZERO,XM/BET)
-     .      -CI(U-H,S,XM/BET)
+     .      -(MYMDL_CI(S,ZERO,XM)-MYMDL_CI(U-H,S,(1.D0-XP)/(1.D0-ALP))
+     .      -MYMDL_CI(Z-T,ZERO,XM/ALP)+MYMDL_CI(Z-T,ZERO,XM/BET)
+     .      -MYMDL_CI(U-H,S,XM/BET)
      .      -CJ(S,AMQ**2,XM)+CJ(H,AMQ**2,(1.D0-XP)/(1.D0-ALP))
      .      +CJ(Z,AMQ**2,XM/ALP)-CJ(T,AMQ**2,XM/BET)
      .      +CJ(H,AMQ**2,XM/BET)))*DQ2**2
