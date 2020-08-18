@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Wed 12 Aug 2020 15:26:17
+# Date: Tue 18 Aug 2020 00:12:31
 
 
 from object_library import all_vertices, all_CTvertices, Vertex, CTVertex

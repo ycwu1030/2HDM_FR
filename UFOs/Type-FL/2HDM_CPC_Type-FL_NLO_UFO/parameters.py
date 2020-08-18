@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Wed 12 Aug 2020 15:26:16
+# Date: Tue 18 Aug 2020 00:12:30
 
 
 
@@ -363,24 +363,6 @@ vev = Parameter(name = 'vev',
                 type = 'real',
                 value = '(2*MW*sw)/ee',
                 texname = '\\text{vev}')
-
-GHA = Parameter(name = 'GHA',
-                nature = 'internal',
-                type = 'real',
-                value = '-(G**2*(1 + MHA**6/(560.*MT**6) + MHA**4/(90.*MT**4) + MHA**2/(12.*MT**2)))/(8.*cmath.pi**2*vev)',
-                texname = 'G_{\\text{HH}}')
-
-GHH = Parameter(name = 'GHH',
-                nature = 'internal',
-                type = 'real',
-                value = '-(G**2*(1 + (13*MHH**6)/(16800.*MT**6) + MHH**4/(168.*MT**4) + (7*MHH**2)/(120.*MT**2)))/(12.*cmath.pi**2*vev)',
-                texname = 'G_{\\text{HH}}')
-
-GHL = Parameter(name = 'GHL',
-                nature = 'internal',
-                type = 'real',
-                value = '-(G**2*(1 + (13*MHL**6)/(16800.*MT**6) + MHL**4/(168.*MT**4) + (7*MHL**2)/(120.*MT**2)))/(12.*cmath.pi**2*vev)',
-                texname = 'G_{\\text{HL}}')
 
 lam1 = Parameter(name = 'lam1',
                  nature = 'internal',

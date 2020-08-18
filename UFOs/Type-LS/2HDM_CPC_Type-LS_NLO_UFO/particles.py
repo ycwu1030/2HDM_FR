@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Wed 12 Aug 2020 14:54:50
+# Date: Tue 18 Aug 2020 00:08:30
 
 
 from __future__ import division
