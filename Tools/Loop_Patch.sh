@@ -5,7 +5,7 @@ TargetDir=$2
 
 LoopFileDir="Loop_Induced_Vertices"
 
-VertexTypes=("ggS" "ggZ" "ggSS")
+VertexTypes=("ggS" "ggZ" "ggSS" "gagaS")
 
 cp -r $SourceDir $TargetDir
 mkdir -p $TargetDir/Fortran
