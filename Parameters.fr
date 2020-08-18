@@ -1,13 +1,4 @@
 (* ************************** *)
-(* **** Loop Coefficient **** *)
-(* ************************** *)
-
-SERT[x_] := 1 + 7/30 x + 2/21 x^2 + 26/525 x^3;
-
-SERP[x_] := 1 + x/3 + 8/45 x^2 + 4/35 x^3;
-
-
-(* ************************** *)
 (* *****   Parameters   ***** *)
 (* ************************** *)
 M$Parameters = {
@@ -299,51 +290,6 @@ M$Parameters = {
     Value            -> (MM2 - MHA^2)/vev/vev,
     InteractionOrder -> {QED, 2},
     Description      -> "lambda5"
-  },
-  kHLUp == {
-    ParameterType    -> Internal,
-    Value            -> ca/sb,
-    TeX              -> Subsuperscript[\[Kappa], HL, u],
-    Description      -> "The up yukawa with HL normalized to SM value" 
-  },
-  kHLDo == {
-    ParameterType    -> Internal,
-    Value            -> -sa/cb,
-    TeX              -> Subsuperscript[\[Kappa], HL, d],
-    Description      -> "The down yukawa with HL normalized to SM value" 
-  },
-  kHHUp == {
-    ParameterType    -> Internal,
-    Value            -> sa/sb,
-    TeX              -> Subsuperscript[\[Kappa], HH, u],
-    Description      -> "The up yukawa with HH normalized to SM value" 
-  },
-  kHHDo == {
-    ParameterType    -> Internal,
-    Value            -> ca/cb,
-    TeX              -> Subsuperscript[\[Kappa], HH, d],
-    Description      -> "The down yukawa with HH normalized to SM value" 
-  },
-  GHL == {
-    ParameterType    -> Internal,
-    InteractionOrder -> {QCD, 2},
-    Value            -> -gs^2/(4 Pi (3 Pi vev)) SERT[(MHL/2/MT)^2],
-    TeX              -> Subscript[G,HL],
-    Description      -> "The Coefficient of the coupling of HL with gluon"
-  },
-  GHH == {
-    ParameterType    -> Internal,
-    InteractionOrder -> {QCD, 2},
-    Value            -> -gs^2/(4 Pi (3 Pi vev)) SERT[(MHH/2/MT)^2],
-    TeX              -> Subscript[G,HH],
-    Description      -> "The Coefficient of the coupling of HH with gluon"
-  },
-  GHA == {
-    ParameterType    -> Internal,
-    InteractionOrder -> {QCD, 2},
-    Value            -> -gs^2/(4 Pi (2 Pi vev)) SERP[(MHA/2/MT)^2],
-    TeX              -> Subscript[G,HH],
-    Description      -> "The Coefficient of the coupling of HA with gluon"
   },
   yl == {
     ParameterType    -> Internal,
