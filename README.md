@@ -6,11 +6,11 @@ Actually, in FeynRule model databasis, there is a model file for 2HDM. However, 
 
 In current convention, I only consider CP conserving case. The input parameters are
 
-$$v, m_h, m_H, m_A, m_{\pm}, \alpha, \beta, m_{12}^2$$
+$$v, m_h, m_H, m_A, m_{\pm}, \cos(\beta-\alpha), \tan\beta, m_{12}^2$$
 
 ## Download
 
-Either finding the corresponding files in `RELEASE` folder or checking [release page](https://github.com/ycwu1030/2HDM_FR/releases/tag/v0.4.0).
+Either finding the corresponding files in `RELEASE` folder or checking [release page](https://github.com/ycwu1030/2HDM_FR/releases/tag/v0.4.1).
 
 ## Usage
 

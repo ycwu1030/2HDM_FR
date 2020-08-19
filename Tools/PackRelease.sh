@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=0.4.0
+version=0.4.1
 RELEASEDIR='RELEASE'
 UFOFolders=("Type-I" "Type-II" "Type-LS" "Type-FL")
 FAFolders=("Type-I" "Type-II")
