@@ -7,8 +7,8 @@ YukawaTypes=("Type-I" "Type-II" "Type-LS" "Type-FL")
 
 for ytype in ${YukawaTypes[@]}
   do
-    SourceDir=UFOs/${ytype}/2HDM_CPC_${ytype}_UFO
-    TargetDir=UFOs/${ytype}/2HDM_CPC_${ytype}_EFF_UFO
+    SourceDir=UFOs/${ytype}/2HDM_CPC_${ytype}_cba_UFO
+    TargetDir=UFOs/${ytype}/2HDM_CPC_${ytype}_EFF_cba_UFO
     cp -r $SourceDir $TargetDir
     mkdir -p $TargetDir/Fortran
     touch $TargetDir/Fortran/functions.f 

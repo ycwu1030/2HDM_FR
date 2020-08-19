@@ -20,7 +20,7 @@ RUNNLO=RUNNLOSWITCH[[nlo]];
 
 If[!RUNNLO, 
 FeynmanGauge=True;
-DirName=StringReplace[M$ModelName <> "_" <> YukawaType <> "_UFO", {" " -> "_"}];
+DirName=StringReplace[M$ModelName <> "_" <> YukawaType <> "_cba_UFO", {" " -> "_"}];
 WriteUFO[L2HDM,Output -> DirName];
 CopyDirectory[DirName,"UFOs/"<>YukawaType<>"/"<>DirName];
 DeleteDirectory[DirName,DeleteContents->True];
@@ -31,7 +31,7 @@ CopyFile["restrict_default.dat","UFOs/"<>YukawaType<>"/"<>DirName<>"/restrict_de
 If[RUNNLO, 
 LoadRestriction["Massless.rst", "Cabibbo.rst"]; (* For NLO UFO, directly applying Massless constraints for light fermions *)
 Get["NLOCT/THDM_"<>YukawaType<>"_QCDreno.nlo"];
-DirName=StringReplace[M$ModelName <> "_" <> YukawaType <> "_NLO_UFO", {" " -> "_"}];
+DirName=StringReplace[M$ModelName <> "_" <> YukawaType <> "_NLO_cba_UFO", {" " -> "_"}];
 WriteUFO[L2HDM, UVCounterterms -> UV$vertlist, R2Vertices -> R2$vertlist, Output -> DirName];
 CopyDirectory[DirName,"UFOs/"<>YukawaType<>"/"<>DirName];
 DeleteDirectory[DirName,DeleteContents->True];

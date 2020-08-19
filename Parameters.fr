@@ -101,21 +101,21 @@ M$Parameters = {
     TeX           -> Subscript[\[Theta], c],
     Description   -> "Cabibbo angle"
   },
-  beta == {
+  tb == {
     ParameterType -> External,
     BlockName     -> THDMBLOCK,
     OrderBlock    -> 1,
-    Value         -> 0.7854,
-    TeX           -> \[Beta],
-    Description   -> "Angle beta in 2HDM"
+    Value         -> 5.0,
+    TeX           -> Subscript[t,\[Beta]],
+    Description   -> "tanbeta in 2HDM"
   },
-  alpha == {
+  cba == {
     ParameterType -> External,
     BlockName     -> THDMBLOCK,
     OrderBlock    -> 2,
-    Value         -> -0.7854,
-    TeX           -> \[Alpha],
-    Description   -> "Angle alpha in 2HDM"
+    Value         -> 0.01,
+    TeX           -> Subscript[c,\[Beta]-\[Alpha]],
+    Description   -> "cos(beta-alpha) in 2HDM"
   },
   m122 == {
     ParameterType -> External,
@@ -124,6 +124,24 @@ M$Parameters = {
     Value         -> 90000.0,
     TeX           -> Subsuperscript["m", "12", "2"],
     Description   -> "Z2 Soft breaking term"
+  },
+  beta == {
+    ParameterType -> Internal,
+    Value         -> ArcTan[tb],
+    TeX           -> \[Beta],
+    Description   -> "Angle beta in 2HDM"
+  },
+  alpha == {
+    ParameterType -> Internal,
+    Value         -> beta - ArcCos[cba],
+    TeX           -> \[Alpha],
+    Description   -> "Angle alpha in 2HDM"
+  },
+  sba == {
+    ParameterType -> Internal,
+    Value         -> Sqrt[1-cba^2],
+    TeX           -> Subscript[s,\[Beta]-\[Alpha]],
+    Description   -> "sin(beta-alpha) in 2HDM" 
   },
   (* Internal Parameters *)
   aEW == {
@@ -205,27 +223,15 @@ M$Parameters = {
   },
   ca == {
     ParameterType    -> Internal,
-    Value            -> Cos[alpha],
+    Definitions      -> {ca -> sba*sb + cba*cb},
     TeX              -> Subscript[c,\[Alpha]],
-    Description      -> "Cosine of alpha"
+    Description      -> "Cosine of Alpha" 
   },
   sa == {
     ParameterType    -> Internal,
-    Value            -> Sin[alpha],
+    Definitions      -> {sa -> cba*sb - sba*cb},
     TeX              -> Subscript[s,\[Alpha]],
-    Description      -> "Sine of alpha"
-  },
-  cab == {
-    ParameterType    -> Internal,
-    Value            -> Cos[alpha-beta],
-    TeX              -> Subscript[c,\[Alpha]-\[Beta]],
-    Description      -> "Cosine of alpha - beta"
-  },
-  sab == {
-    ParameterType    -> Internal,
-    Value            -> Sin[alpha-beta],
-    TeX              -> Subscript[s,\[Alpha]-\[Beta]],
-    Description      -> "Sine of alpha - beta"
+    Description      -> "Sine of Alpha" 
   },
   vev1 == {
     ParameterType    -> Internal,
@@ -247,47 +253,47 @@ M$Parameters = {
   m112 == {
     ParameterType    -> Internal, (*
     Definitions      -> {m112->MM2*sb*sb - (sa*sab*MHL*MHL+ca*cab*MHH*MHH)/2/cb},*)
-    Value            -> MM2*sb*sb - (sa*sab*MHL*MHL+ca*cab*MHH*MHH)/2/cb,
+    Value            -> m122*sb/cb + MHL^2*sba*(cba*sb-cb*sba)/2/cb - MHH^2*cba*(cb*cba+sb*sba)/2/cb,
     Description      -> "m112"
   },
   m222 == {
     ParameterType    -> Internal, (*
     Definitions      -> {m222->MM2*cb*cb + (ca*sab*MHL*MHL-sa*cab*MHH*MHH)/2/sb},*)
-    Value            -> MM2*cb*cb + (ca*sab*MHL*MHL-sa*cab*MHH*MHH)/2/sb,
+    Value            -> m122*cb/sb - MHL^2*sba*(cb*cba+sb*sba)/2/sb + MHH^2*cba*(cb*sba-cba*sb)/2/sb,
     Description      -> "m222"
   },
   lam1 == {
-    ParameterType    -> Internal, (*
-    Definitions      -> {lam1->(sa^2*MHL^2+ca^2*MHH^2-MM2*sb^2)/vev/vev/cb/cb}, *)
-    Value            -> (sa^2*MHL^2+ca^2*MHH^2-MM2*sb^2)/vev/vev/cb/cb,
+    ParameterType    -> Internal,
+    Definitions      -> {lam1->(cb*((MHL^2-MHH^2)*(cba*sb-cb*sba)^2+MHH^2)-m122*sb)/cb^3/vev/vev},
+    (* Value            -> (cb*((MHL^2-MHH^2)*(cba*sb-cb*sba)^2+MHH^2)-m122*sb)/cb^3/vev/vev, *)
     InteractionOrder -> {QED, 2},
     Description      -> "lambda1"
   },
   lam2 == {
-    ParameterType    -> Internal, (*
-    Definitions      -> {lam2->(sa^2*MHH^2+ca^2*MHL^2-MM2*cb^2)/vev/vev/sb/sb}, *)
-    Value            -> (sa^2*MHH^2+ca^2*MHL^2-MM2*cb^2)/vev/vev/sb/sb,
+    ParameterType    -> Internal,
+    Definitions      -> {lam2->(sb*((MHH^2-MHL^2)*(cba*sb-sba*cb)^2+MHL^2)-m122*cb)/sb^3/vev/vev},
+    (* Value            -> (sb*((MHH^2-MHL^2)*(cba*sb-sba*cb)^2+MHL^2)-m122*cb)/sb^3/vev/vev, *)
     InteractionOrder -> {QED, 2},
     Description      -> "lambda2"
   },
   lam3 == {
-    ParameterType    -> Internal, (*
-    Definitions      -> {lam3->2*MHp^2/vev/vev - MM2/vev/vev + sa*ca/sb/cb*(MHH^2-MHL^2)/vev/vev},*)
-    Value            -> 2*MHp^2/vev/vev - MM2/vev/vev + sa*ca/sb/cb*(MHH^2-MHL^2)/vev/vev,
+    ParameterType    -> Internal,
+    Definitions      -> {lam3->((MHH^2-MHL^2)*(cba*sb-cb*sba)*(cb*cba+sb*sba)+2*cb*sb*MHp^2-m122)/cb/sb/vev/vev},
+    (* Value            -> ((MHH^2-MHL^2)*(cba*sb-cb*sba)*(cb*cba+sb*sba)+2*cb*sb*MHp^2-m122)/cb/sb/vev/vev, *)
     InteractionOrder -> {QED, 2},
     Description      -> "lambda3"
   },
   lam4 == {
-    ParameterType    -> Internal, (*
-    Definitions      -> {lam4->(MM2 + MHA^2 - 2*MHp^2)/vev/vev},*)
-    Value            -> (MM2 + MHA^2 - 2*MHp^2)/vev/vev,
+    ParameterType    -> Internal,
+    Definitions      -> {lam4->(cb*sb*(MHA^2-2*MHp^2)+m122)/cb/sb/vev/vev},
+    (* Value            -> (cb*sb*(MHA^2-2*MHp^2)+m122)/cb/sb/vev/vev, *)
     InteractionOrder -> {QED, 2},
     Description      -> "lambda4"
   },
   lam5 == {
-    ParameterType    -> Internal, (*
-    Definitions      -> {lam5->(MM2 - MHA^2)/vev/vev},*)
-    Value            -> (MM2 - MHA^2)/vev/vev,
+    ParameterType    -> Internal,
+    Definitions      -> {lam5->(m122-cb*sb*MHA^2)/sb/cb/vev/vev},
+    (* Value            -> (m122-cb*sb*MHA^2)/sb/cb/vev/vev, *)
     InteractionOrder -> {QED, 2},
     Description      -> "lambda5"
   },
