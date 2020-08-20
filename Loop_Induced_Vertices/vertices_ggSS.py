@@ -24,13 +24,13 @@ V_ggHAHA = Vertex(name = 'V_ggHAHA',
                 couplings = {(0,0):C.GC_ggHAHAtop,(0,1):C.GC_ggHAHAbot,(0,2):C.GC_ggHAHAtop,(0,3):C.GC_ggHAHAbot})
 
 V_ggHLHA = Vertex(name = 'V_ggHLHA',
-                particles = [ P.g, P.g, P.HL, P.HA ],
+                particles = [ P.g, P.g, P.HA, P.HL ],
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVSAFtop, L.VVSAFbot, L.VVSAGtop, L.VVSAGbot ],
                 couplings = {(0,0):C.GC_ggHLHAtop,(0,1):C.GC_ggHLHAbot,(0,2):C.GC_ggHLHAtop,(0,3):C.GC_ggHLHAbot})
 
 V_ggHHHA = Vertex(name = 'V_ggHHHA',
-                particles = [ P.g, P.g, P.HH, P.HA ],
+                particles = [ P.g, P.g, P.HA, P.HH ],
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVSAFtop, L.VVSAFbot, L.VVSAGtop, L.VVSAGbot ],
                 couplings = {(0,0):C.GC_ggHHHAtop,(0,1):C.GC_ggHHHAbot,(0,2):C.GC_ggHHHAtop,(0,3):C.GC_ggHHHAbot})
