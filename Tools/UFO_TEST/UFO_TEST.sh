@@ -64,6 +64,7 @@ calc_width_param()
         beta=$(echo "a($tb)" | bc -l)
         alprn=${alp[$paraid]}
         alpha=$(echo "$alprn*a(1)*4" | bc -l)
+        cba=$(echo "c($beta-$alpha)" | bc -l)
         # cp $RUNNINGDIR/Decays_${runtype}/Cards/param_card.dat $tmpdir/param_card_$paraid.dat
         rundir=run_2HDM_DECAY_"$paraid"
         echo "calculate_decay_widths $rundir" > RUNNINGCOMMAND
@@ -72,8 +73,8 @@ calc_width_param()
         echo "set MHA $mha" >> RUNNINGCOMMAND
         echo "set MHp $mhp" >> RUNNINGCOMMAND
         echo "set m122 $M122" >> RUNNINGCOMMAND
-        echo "set beta $beta" >> RUNNINGCOMMAND
-        echo "set alpha $alpha" >> RUNNINGCOMMAND
+        echo "set tb $tb" >> RUNNINGCOMMAND
+        echo "set cba $cba" >> RUNNINGCOMMAND
         echo "0" >> RUNNINGCOMMAND
         ./bin/madevent RUNNINGCOMMAND >> $OVERALLLOG-Decays_${runtype}.log
         cd $curdir
@@ -106,6 +107,7 @@ calc_cs_for_param()
         beta=$(echo "a($tb)" | bc -l)
         alprn=${alp[$paraid]}
         alpha=$(echo "$alprn*a(1)*4" | bc -l)
+        cba=$(echo "c($beta-$alpha)" | bc -l)
         cp $tmpdir/param_card_$paraid.dat Cards/param_card.dat
         rundir=run_2HDM_ggF_"$paraid"
         echo "generate_events $rundir" > RUNNINGCOMMAND
@@ -118,8 +120,8 @@ calc_cs_for_param()
         echo "set MHA $mha" >> RUNNINGCOMMAND
         echo "set MHp $mhp" >> RUNNINGCOMMAND
         echo "set m122 $M122" >> RUNNINGCOMMAND
-        echo "set beta $beta" >> RUNNINGCOMMAND
-        echo "set alpha $alpha" >> RUNNINGCOMMAND
+        echo "set tb $tb" >> RUNNINGCOMMAND
+        echo "set cba $cba" >> RUNNINGCOMMAND
         echo "0" >> RUNNINGCOMMAND
         ./bin/madevent RUNNINGCOMMAND >> $OVERALLLOG-$Name.log
         CSFile=Events/$rundir/parton_systematics.log
