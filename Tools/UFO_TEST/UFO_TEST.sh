@@ -46,7 +46,7 @@ calc_width_param()
     while [ $paraid -lt $NParameters ]
       do
         cd $curdir
-        echo "import model 2HDM_CPC_${runtype}_NLO_UFO" > Decays_${runtype}.cmd
+        echo "import model 2HDM_CPC_${runtype}_NLO_cba_UFO" > Decays_${runtype}.cmd
         echo "generate hl > all all" >> Decays_${runtype}.cmd
         echo "add process hh > all all" >> Decays_${runtype}.cmd
         echo "add process ha > all all" >> Decays_${runtype}.cmd
@@ -154,14 +154,14 @@ for typ in Type-I Type-II
     while [ $procid -lt $NProcesses ]
       do
         # Generate LO proess
-        model=2HDM_CPC_${typ}_EFF_UFO
+        model=2HDM_CPC_${typ}_EFF_cba_UFO
         proname=2HDM_${typ}_ggF_EFF_${PROCESSNAME[$procid]}
         process="g g > ${FINALSTATES[$procid]}"
         generate_proc "$proname" "$model" "$process"
         calc_cs_for_param "$proname" "$typ" "CS_EFF_$proname.dat"
         
         # Generate NLO process
-        model=2HDM_CPC_${typ}_NLO_UFO
+        model=2HDM_CPC_${typ}_NLO_cba_UFO
         proname=2HDM_${typ}_ggF_NLO_${PROCESSNAME[$procid]}
         process="g g > ${FINALSTATES[$procid]} [QCD]"
         generate_proc "$proname" "$model" "$process"
