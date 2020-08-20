@@ -47,10 +47,11 @@ calc_width_param()
       do
         cd $curdir
         echo "import model 2HDM_CPC_${runtype}_NLO_cba_UFO" > Decays_${runtype}.cmd
-        echo "generate hl > all all" >> Decays_${runtype}.cmd
-        echo "add process hh > all all" >> Decays_${runtype}.cmd
-        echo "add process ha > all all" >> Decays_${runtype}.cmd
-        echo "add process h+ > all all" >> Decays_${runtype}.cmd
+        echo "define alsm = u d c s b t u~ d~ c~ s~ b~ t~ e- e+ mu- mu+ ta- ta+ ve ve~ vm vm~ vt vt~ w+ w- z a g hl hh ha h+ h-" >> Decays_${runtype}.cmd
+        echo "generate hl > alsm alsm" >> Decays_${runtype}.cmd
+        echo "add process hh > alsm alsm" >> Decays_${runtype}.cmd
+        echo "add process ha > alsm alsm" >> Decays_${runtype}.cmd
+        echo "add process h+ > alsm alsm" >> Decays_${runtype}.cmd
         echo "output $RUNNINGDIR/Decays_${runtype} -f" >> Decays_${runtype}.cmd
         echo "exit" >> Decays_${runtype}.cmd
         cat Decays_${runtype}.cmd >> $OVERALLLOG-Decays_${runtype}.log
@@ -61,10 +62,10 @@ calc_width_param()
         mhp=${MHp[$paraid]}
         M122=${m122[$paraid]}
         tb=${TB[$paraid]}
-        beta=$(echo "a($tb)" | bc -l)
+        beta=$(echo "a(($tb))" | bc -l)
         alprn=${alp[$paraid]}
-        alpha=$(echo "$alprn*a(1)*4" | bc -l)
-        cba=$(echo "c($beta-$alpha)" | bc -l)
+        alpha=$(echo "($alprn)*a(1)*4" | bc -l)
+        cba=$(echo "c(($beta)-($alpha))" | bc -l)
         # cp $RUNNINGDIR/Decays_${runtype}/Cards/param_card.dat $tmpdir/param_card_$paraid.dat
         rundir=run_2HDM_DECAY_"$paraid"
         echo "calculate_decay_widths $rundir" > RUNNINGCOMMAND
@@ -104,10 +105,10 @@ calc_cs_for_param()
         mhp=${MHp[$paraid]}
         M122=${m122[$paraid]}
         tb=${TB[$paraid]}
-        beta=$(echo "a($tb)" | bc -l)
+        beta=$(echo "a(($tb))" | bc -l)
         alprn=${alp[$paraid]}
-        alpha=$(echo "$alprn*a(1)*4" | bc -l)
-        cba=$(echo "c($beta-$alpha)" | bc -l)
+        alpha=$(echo "($alprn)*a(1)*4" | bc -l)
+        cba=$(echo "c(($beta)-($alpha))" | bc -l)
         cp $tmpdir/param_card_$paraid.dat Cards/param_card.dat
         rundir=run_2HDM_ggF_"$paraid"
         echo "generate_events $rundir" > RUNNINGCOMMAND
