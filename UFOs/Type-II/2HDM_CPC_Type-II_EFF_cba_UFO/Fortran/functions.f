@@ -152,9 +152,9 @@
 
       SUBROUTINE BERNINI(N)
 C-----------------------------------)
-C-- INITIALIZE THE BERNOULLI NUMBER, 
-C-- USED IN DILOGARITHM EXPANSION     
-C-----------------------------------) 
+C-- INITIALIZE THE BERNOULLI NUMBER,
+C-- USED IN DILOGARITHM EXPANSION
+C-----------------------------------)
       IMPLICIT DOUBLE PRECISION (A-H,O-Z)
       COMMON/BERNOULLI/B(18)
       COMMON/CONST/ZETA2
@@ -206,7 +206,7 @@ C-- MATHEMATICAL FACTORIAL
       DOUBLE COMPLEX FUNCTION CLI2(X)
 C----------------------------------------------------)
 C-- TAYLOR-EXPANSION FOR COMPLEX DILOGARITHM
-C-- REFERENCE: 
+C-- REFERENCE:
 C--   Eq.(4.3) in Proc. R. Soc. Lond. A 459 (2003) 2807-2819
 C-- CONVERGE WHEN |-CDLOG(1D0-X)|<2*PI
 C----------------------------------------------------)
@@ -231,7 +231,7 @@ C-------------------------------------------------------------)
 C-- COMPLEX DILOGARITHM (SPENCE-FUNCTION)
 C-- SOME LINEAR TRANSFORMATIONS OF THE DILOGARITHM ARE ALSO USED
 C-- REFERENCE:
-C--   Eq.(3.2) TO Eq.(3.6) in 
+C--   Eq.(3.2) TO Eq.(3.6) in
 C--       Proc. R. Soc. Lond. A 459 (2003) 2807-2819
 C-------------------------------------------------------------)
       IMPLICIT DOUBLE PRECISION (A-H,O-Z)
@@ -284,7 +284,7 @@ C--------------------------------------------------)
       DOUBLE COMPLEX C,LI2
 
       MYMDL_CI = CDLOG(A*C+B)*CDLOG(1.D0-1.D0/C)
-     .    -LI2(1.D0-(A+B)/(A*C+B))+LI2(1.D0-B/(A*C+B))
+     &    -LI2(1.D0-(A+B)/(A*C+B))+LI2(1.D0-B/(A*C+B))
       RETURN
       END
 
@@ -307,8 +307,8 @@ C-----------------------------------------------------)
       AP = 0.5D0*(1.D0+CDSQRT(1.D0-4.D0*CB/A))
       AM = 0.5D0*(1.D0-CDSQRT(1.D0-4.D0*CB/A))
       CJ = CDLOG(A*CC*(1.D0-CC)-CB)*CDLOG(1.D0-1.D0/C)
-     .    -LI2((CC-1.D0)/(CC-AP))+LI2(CC/(CC-AP))
-     .    -LI2((CC-1.D0)/(CC-AM))+LI2(CC/(CC-AM))
+     &    -LI2((CC-1.D0)/(CC-AP))+LI2(CC/(CC-AP))
+     &    -LI2((CC-1.D0)/(CC-AM))+LI2(CC/(CC-AM))
       RETURN
       END
 
@@ -335,7 +335,7 @@ C---------------------------------------------------------)
       EPS=1d-8
       REPS=1d-15
       CALL BERNINI(18)
-      
+
       DQ2=AMQ**2
 
       CQ2=DQ2*DCMPLX(1.D0,-REPS)
@@ -353,13 +353,13 @@ C---------------------------------------------------------)
       CB2=1.D0/XLAM*(S2-S1-S5)
       CB5=1.D0/XLAM*(S5-S1-S2)
       C0CD = -(
-     .       LI2((1.D0+CB1)/(CA1+CB1)) - LI2((1.D0-CB1)/(CA1-CB1))
-     .     - LI2((-1.D0+CB1)/(CA1+CB1)) + LI2((-1.D0-CB1)/(CA1-CB1))
-     .     + LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
-     .     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
-     .     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
-     .     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
-     .       )/XLAM*DQ2
+     &       LI2((1.D0+CB1)/(CA1+CB1)) - LI2((1.D0-CB1)/(CA1-CB1))
+     &     - LI2((-1.D0+CB1)/(CA1+CB1)) + LI2((-1.D0-CB1)/(CA1-CB1))
+     &     + LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
+     &     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
+     &     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
+     &     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
+     &       )/XLAM*DQ2
       S1=0.D0
       S2=M1**2
       S5=T
@@ -369,11 +369,11 @@ C---------------------------------------------------------)
       CB2=1.D0/XLAM*(S2-S1-S5)
       CB5=1.D0/XLAM*(S5-S1-S2)
       C0AC = -(
-     .       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
-     .     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
-     .     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
-     .     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
-     .       )/XLAM*DQ2
+     &       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
+     &     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
+     &     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
+     &     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
+     &       )/XLAM*DQ2
       S1=0.D0
       S2=M2**2
       S5=U
@@ -383,11 +383,11 @@ C---------------------------------------------------------)
       CB2=1.D0/XLAM*(S2-S1-S5)
       CB5=1.D0/XLAM*(S5-S1-S2)
       C0AD = -(
-     .       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
-     .     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
-     .     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
-     .     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
-     .       )/XLAM*DQ2
+     &       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
+     &     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
+     &     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
+     &     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
+     &       )/XLAM*DQ2
       S1=0.D0
       S2=M1**2
       S5=U
@@ -397,11 +397,11 @@ C---------------------------------------------------------)
       CB2=1.D0/XLAM*(S2-S1-S5)
       CB5=1.D0/XLAM*(S5-S1-S2)
       C0BC = -(
-     .       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
-     .     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
-     .     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
-     .     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
-     .       )/XLAM*DQ2
+     &       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
+     &     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
+     &     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
+     &     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
+     &       )/XLAM*DQ2
       S1=0.D0
       S2=M2**2
       S5=T
@@ -411,11 +411,11 @@ C---------------------------------------------------------)
       CB2=1.D0/XLAM*(S2-S1-S5)
       CB5=1.D0/XLAM*(S5-S1-S2)
       C0BD = -(
-     .       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
-     .     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
-     .     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
-     .     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
-     .       )/XLAM*DQ2
+     &       LI2((1.D0+CB2)/(CA2+CB2)) - LI2((1.D0-CB2)/(CA2-CB2))
+     &     - LI2((-1.D0+CB2)/(CA2+CB2)) + LI2((-1.D0-CB2)/(CA2-CB2))
+     &     + LI2((1.D0+CB5)/(CA5+CB5)) - LI2((1.D0-CB5)/(CA5-CB5))
+     &     - LI2((-1.D0+CB5)/(CA5+CB5)) + LI2((-1.D0-CB5)/(CA5-CB5))
+     &       )/XLAM*DQ2
       Z=M1**2
       H=M2**2
       S1=S
@@ -427,7 +427,7 @@ C---------------------------------------------------------)
       R=(1.D0+R0)/2.D0
       RR=DREAL(R0)
       D0ACB = 2.D0/XN/RR*(CJ(Z,AMQ**2,R)+CJ(H,AMQ**2,R)
-     .                   -CJ(T,AMQ**2,R)-CJ(U,AMQ**2,R))*DQ2**2
+     &                   -CJ(T,AMQ**2,R)-CJ(U,AMQ**2,R))*DQ2**2
       X=CDSQRT(1.D0+4.D0*XN/S/U**2*CQ2)
       X0=DSQRT(1.D0+4.D0*XN/S/U**2*DQ2)
       XP=-U/(T-U+XLAM)*(1.D0+X)
@@ -436,17 +436,17 @@ C---------------------------------------------------------)
       BET=(U-T+XLAM)/2.D0/S
       ZERO=0.D-15
       D0ABC = 1.D0/S/U/X0*(MYMDL_CI(S,ZERO,XP)-MYMDL_CI(T-H,S,(1.D0-XM)/(1.D0-ALP))
-     .      -MYMDL_CI(Z-U,ZERO,XP/ALP)+MYMDL_CI(Z-U,ZERO,XP/BET)
-     .      -MYMDL_CI(T-H,S,XP/BET)
-     .      -CJ(S,AMQ**2,XP)+CJ(H,AMQ**2,(1.D0-XM)/(1.D0-ALP))
-     .      +CJ(Z,AMQ**2,XP/ALP)-CJ(U,AMQ**2,XP/BET)
-     .      +CJ(H,AMQ**2,XP/BET)
-     .      -(MYMDL_CI(S,ZERO,XM)-MYMDL_CI(T-H,S,(1.D0-XP)/(1.D0-ALP))
-     .      -MYMDL_CI(Z-U,ZERO,XM/ALP)+MYMDL_CI(Z-U,ZERO,XM/BET)
-     .      -MYMDL_CI(T-H,S,XM/BET)
-     .      -CJ(S,AMQ**2,XM)+CJ(H,AMQ**2,(1.D0-XP)/(1.D0-ALP))
-     .      +CJ(Z,AMQ**2,XM/ALP)-CJ(U,AMQ**2,XM/BET)
-     .      +CJ(H,AMQ**2,XM/BET)))*DQ2**2
+     &      -MYMDL_CI(Z-U,ZERO,XP/ALP)+MYMDL_CI(Z-U,ZERO,XP/BET)
+     &      -MYMDL_CI(T-H,S,XP/BET)
+     &      -CJ(S,AMQ**2,XP)+CJ(H,AMQ**2,(1.D0-XM)/(1.D0-ALP))
+     &      +CJ(Z,AMQ**2,XP/ALP)-CJ(U,AMQ**2,XP/BET)
+     &      +CJ(H,AMQ**2,XP/BET)
+     &      -(MYMDL_CI(S,ZERO,XM)-MYMDL_CI(T-H,S,(1.D0-XP)/(1.D0-ALP))
+     &      -MYMDL_CI(Z-U,ZERO,XM/ALP)+MYMDL_CI(Z-U,ZERO,XM/BET)
+     &      -MYMDL_CI(T-H,S,XM/BET)
+     &      -CJ(S,AMQ**2,XM)+CJ(H,AMQ**2,(1.D0-XP)/(1.D0-ALP))
+     &      +CJ(Z,AMQ**2,XM/ALP)-CJ(U,AMQ**2,XM/BET)
+     &      +CJ(H,AMQ**2,XM/BET)))*DQ2**2
       X=CDSQRT(1.D0+4.D0*XN/S/T**2*CQ2)
       X0=DSQRT(1.D0+4.D0*XN/S/T**2*DQ2)
       XP=-T/(U-T+XLAM)*(1.D0+X)
@@ -454,17 +454,17 @@ C---------------------------------------------------------)
       ALP=(S+Z-H+XLAM)/2.D0/S
       BET=(T-U+XLAM)/2.D0/S
       D0BAC = 1.D0/S/T/X0*(MYMDL_CI(S,ZERO,XP)-MYMDL_CI(U-H,S,(1.D0-XM)/(1.D0-ALP))
-     .      -MYMDL_CI(Z-T,ZERO,XP/ALP)+MYMDL_CI(Z-T,ZERO,XP/BET)
-     .      -MYMDL_CI(U-H,S,XP/BET)
-     .      -CJ(S,AMQ**2,XP)+CJ(H,AMQ**2,(1.D0-XM)/(1.D0-ALP))
-     .      +CJ(Z,AMQ**2,XP/ALP)-CJ(T,AMQ**2,XP/BET)
-     .      +CJ(H,AMQ**2,XP/BET)
-     .      -(MYMDL_CI(S,ZERO,XM)-MYMDL_CI(U-H,S,(1.D0-XP)/(1.D0-ALP))
-     .      -MYMDL_CI(Z-T,ZERO,XM/ALP)+MYMDL_CI(Z-T,ZERO,XM/BET)
-     .      -MYMDL_CI(U-H,S,XM/BET)
-     .      -CJ(S,AMQ**2,XM)+CJ(H,AMQ**2,(1.D0-XP)/(1.D0-ALP))
-     .      +CJ(Z,AMQ**2,XM/ALP)-CJ(T,AMQ**2,XM/BET)
-     .      +CJ(H,AMQ**2,XM/BET)))*DQ2**2
+     &      -MYMDL_CI(Z-T,ZERO,XP/ALP)+MYMDL_CI(Z-T,ZERO,XP/BET)
+     &      -MYMDL_CI(U-H,S,XP/BET)
+     &      -CJ(S,AMQ**2,XP)+CJ(H,AMQ**2,(1.D0-XM)/(1.D0-ALP))
+     &      +CJ(Z,AMQ**2,XP/ALP)-CJ(T,AMQ**2,XP/BET)
+     &      +CJ(H,AMQ**2,XP/BET)
+     &      -(MYMDL_CI(S,ZERO,XM)-MYMDL_CI(U-H,S,(1.D0-XP)/(1.D0-ALP))
+     &      -MYMDL_CI(Z-T,ZERO,XM/ALP)+MYMDL_CI(Z-T,ZERO,XM/BET)
+     &      -MYMDL_CI(U-H,S,XM/BET)
+     &      -CJ(S,AMQ**2,XM)+CJ(H,AMQ**2,(1.D0-XP)/(1.D0-ALP))
+     &      +CJ(Z,AMQ**2,XM/ALP)-CJ(T,AMQ**2,XM/BET)
+     &      +CJ(H,AMQ**2,XM/BET)))*DQ2**2
 
       RETURN
       END
