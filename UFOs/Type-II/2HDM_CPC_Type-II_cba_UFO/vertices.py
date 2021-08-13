@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Fri 13 Aug 2021 15:45:15
+# Date: Thu 12 Aug 2021 22:13:28
 
 
 from object_library import all_vertices, Vertex
@@ -1916,4 +1916,3 @@ V_318 = Vertex(name = 'V_318',
                color = [ '1' ],
                lorentz = [ L.FFV2, L.FFV4 ],
                couplings = {(0,0):C.GC_112,(0,1):C.GC_118})
-

@@ -15,11 +15,11 @@
 M$ModelName = "2HDM CPC";
 
 M$Information = {
-  Authors      -> {"Yongcheng Wu"}, 
-  Version      -> "0.4.2",
-  Date         -> "08. 17. 2020",
-  Institutions -> {"Carleton University"},
-  Emails       -> {"ycwu@physics.carleton.ca"}
+  Authors      -> {"Yongcheng Wu"},
+  Version      -> "0.5.0",
+  Date         -> "08. 13. 2021",
+  Institutions -> {"Oklahoma State University"},
+  Emails       -> {"ycwu0830@gmail.com"}
 };
 
 FeynmanGauge = True;
@@ -29,7 +29,7 @@ FeynmanGauge = True;
 (******************************)
 
 FR$LoopSwitches = {{Gf, MW}};
-FR$RmDblExt = { ymb -> MB, ymc -> MC, ymdo -> MD, yme -> Me, 
+FR$RmDblExt = { ymb -> MB, ymc -> MC, ymdo -> MD, yme -> Me,
    ymm -> MMU, yms -> MS, ymt -> MT, ymtau -> MTA, ymup -> MU};
 
 (* ************************** *)
@@ -37,6 +37,8 @@ FR$RmDblExt = { ymb -> MB, ymc -> MC, ymdo -> MD, yme -> Me,
 (* ************************** *)
 
 (* ****************************************** *)
+(* 0.5.0: Assign coupling order to Effective  *)
+(*        Vertices                            *)
 (* 0.4.2: Fixing typo                         *)
 (* 0.4.1: Using cos(beta-alpha) and tan(beta) *)
 (*        as input parameters                 *)
@@ -60,28 +62,28 @@ M$vevs = { {Phi1[2],vev1}, {Phi2[2],vev2} };
 (* *****  Gauge groups  ***** *)
 (* ************************** *)
 M$GaugeGroups = {
-  U1Y  == { 
-    Abelian          -> True,  
-    CouplingConstant -> g1, 
-    GaugeBoson       -> B, 
+  U1Y  == {
+    Abelian          -> True,
+    CouplingConstant -> g1,
+    GaugeBoson       -> B,
     Charge           -> Y
   },
-  SU2L == { 
-    Abelian           -> False, 
-    CouplingConstant  -> gw, 
-    GaugeBoson        -> Wi, 
-    StructureConstant -> Eps, 
-    Representations   -> {Ta,SU2D}, 
+  SU2L == {
+    Abelian           -> False,
+    CouplingConstant  -> gw,
+    GaugeBoson        -> Wi,
+    StructureConstant -> Eps,
+    Representations   -> {Ta,SU2D},
     Definitions       -> {Ta[a_,b_,c_]->PauliSigma[a,b,c]/2, FSU2L[i_,j_,k_]:> I Eps[i,j,k]}
   },
-  SU3C == { 
-    Abelian           -> False, 
-    CouplingConstant  -> gs, 
+  SU3C == {
+    Abelian           -> False,
+    CouplingConstant  -> gs,
     GaugeBoson        -> G,
-    StructureConstant -> f, 
-    Representations   -> {T,Colour}, 
+    StructureConstant -> f,
+    Representations   -> {T,Colour},
     SymmetricTensor   -> dSUN
-  } 
+  }
 };
 
 
@@ -89,10 +91,10 @@ M$GaugeGroups = {
 (* *****    Indices     ***** *)
 (* ************************** *)
 
-IndexRange[Index[SU2W      ]] = Unfold[Range[3]]; 
+IndexRange[Index[SU2W      ]] = Unfold[Range[3]];
 IndexRange[Index[SU2D      ]] = Unfold[Range[2]];
 IndexRange[Index[Gluon     ]] = NoUnfold[Range[8]];
-IndexRange[Index[Colour    ]] = NoUnfold[Range[3]]; 
+IndexRange[Index[Colour    ]] = NoUnfold[Range[3]];
 IndexRange[Index[Generation]] = Range[3];
 
 IndexStyle[SU2W,       j];

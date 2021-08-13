@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Wed 19 Aug 2020 10:38:31
+# Date: Thu 12 Aug 2021 22:31:42
 
 
 from object_library import all_couplings, Coupling
@@ -1012,120 +1012,120 @@ GC_250 = Coupling(name = 'GC_250',
 
 GC_ggHLtop = Coupling(name = 'GC_ggHLtop',
                       value = 'G**2*kHLUp/(8.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOT':1})
 
 GC_ggHLbot = Coupling(name = 'GC_ggHLbot',
                       value = 'G**2*kHLDo/(8.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOT':1})
 
 GC_ggHHtop = Coupling(name = 'GC_ggHHtop',
                       value = 'G**2*kHHUp/(8.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOT':1})
 
 GC_ggHHbot = Coupling(name = 'GC_ggHHbot',
                       value = 'G**2*kHHDo/(8.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOT':1})
 
 GC_ggHAtop = Coupling(name = 'GC_ggHAtop',
                       value = 'G**2*kHAUp/(8.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOT':1})
 
 GC_ggHAbot = Coupling(name = 'GC_ggHAbot',
                       value = 'G**2*kHADo/(8.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOT':1})
 
 GC_ggZtop = Coupling(name = 'GC_ggZtop',
                       value = 'complex(0,1)*G**2*AUp*MZ/(16.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOZ':1})
 
 GC_ggZbot = Coupling(name = 'GC_ggZbot',
                       value = 'complex(0,1)*G**2*ADo*MZ/(16.*cmath.pi**2*vev)',
-                      order = {'QCD':2,'QED':1, 'NLO':1})
+                      order = {'QCD':2,'QED':1, 'NLOZ':1})
 
 GC_ggHLHLtop = Coupling(name = 'GC_ggHLHLtop',
                       value = 'G**2*kHLUp*kHLUp/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHLHLbot = Coupling(name = 'GC_ggHLHLbot',
                       value = 'G**2*kHLDo*kHLDo/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHLHHtop = Coupling(name = 'GC_ggHLHHtop',
                       value = 'G**2*kHLUp*kHHUp/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHLHHbot = Coupling(name = 'GC_ggHLHHbot',
                       value = 'G**2*kHLDo*kHHDo/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHHHHtop = Coupling(name = 'GC_ggHHHHtop',
                       value = 'G**2*kHHUp*kHHUp/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHHHHbot = Coupling(name = 'GC_ggHHHHbot',
                       value = 'G**2*kHHDo*kHHDo/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2, 'NLO':1})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHAHAtop = Coupling(name = 'GC_ggHAHAtop',
                       value = 'G**2*kHAUp*kHAUp/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2, 'NLO':1})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHAHAbot = Coupling(name = 'GC_ggHAHAbot',
                       value = 'G**2*kHADo*kHADo/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2, 'NLO':1})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHLHAtop = Coupling(name = 'GC_ggHLHAtop',
                       value = 'G**2*kHLUp*kHAUp/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2, 'NLO':1})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHLHAbot = Coupling(name = 'GC_ggHLHAbot',
                       value = 'G**2*kHLDo*kHADo/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2, 'NLO':1})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHHHAtop = Coupling(name = 'GC_ggHHHAtop',
                       value = 'G**2*kHHUp*kHAUp/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2, 'NLO':1})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_ggHHHAbot = Coupling(name = 'GC_ggHHHAbot',
                       value = 'G**2*kHHDo*kHADo/(8.*cmath.pi**2*vev**2)',
-                      order = {'QCD':2,'QED':2, 'NLO':1})
+                      order = {'QCD':2,'QED':2, 'NLOB':1})
 
 GC_gagaHLtop = Coupling(name = 'GC_gagaHLtop',
                       value = '3.*(2./3.)**2*aEW*kHLUp/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHLbot = Coupling(name = 'GC_gagaHLbot',
                       value = '3.*(1./3.)**2*aEW*kHLDo/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHLW = Coupling(name = 'GC_gagaHLW',
                       value = 'aEW*kHLW/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHLS = Coupling(name = 'GC_gagaHLS',
                       value = 'aEW*kHLHpm/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHHtop = Coupling(name = 'GC_gagaHHtop',
                       value = '3.*(2./3.)**2*aEW*kHHUp/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHHbot = Coupling(name = 'GC_gagaHHbot',
                       value = '3.*(1./3.)**2*aEW*kHHDo/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHHW = Coupling(name = 'GC_gagaHHW',
                       value = 'aEW*kHHW/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHHS = Coupling(name = 'GC_gagaHHS',
                       value = 'aEW*kHHHpm/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHAtop = Coupling(name = 'GC_gagaHAtop',
                       value = 'complex(0,1)*3.*(2./3.)**2*aEW*kHAUp/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
 
 GC_gagaHAbot = Coupling(name = 'GC_gagaHAbot',
                       value = 'complex(0,1)*3.*(2./3.)**2*aEW*kHADo/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})

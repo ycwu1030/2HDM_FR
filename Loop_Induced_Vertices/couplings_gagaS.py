@@ -37,4 +37,4 @@ GC_gagaHAtop = Coupling(name = 'GC_gagaHAtop',
 
 GC_gagaHAbot = Coupling(name = 'GC_gagaHAbot',
                       value = 'complex(0,1)*3.*(2./3.)**2*aEW*kHADo/(2.*cmath.pi*vev)',
-                      order = {'QED':3, 'NLO':1})
+                      order = {'QED':3, 'NLOEW':1})
