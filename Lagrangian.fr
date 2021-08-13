@@ -3,17 +3,17 @@
 (* ************************** *)
 YukawaType = "Type-II";
 
-LGauge := Block[{mu,nu,ii,aa}, 
+LGauge := Block[{mu,nu,ii,aa},
   ExpandIndices[-1/4 FS[B,mu,nu] FS[B,mu,nu] - 1/4 FS[Wi,mu,nu,ii] FS[Wi,mu,nu,ii] - 1/4 FS[G,mu,nu,aa] FS[G,mu,nu,aa], FlavorExpand->SU2W]];
 
-LFermions := Block[{mu}, 
+LFermions := Block[{mu},
   ExpandIndices[I*(
-    QLbar.Ga[mu].DC[QL, mu] + LLbar.Ga[mu].DC[LL, mu] + uRbar.Ga[mu].DC[uR, mu] + dRbar.Ga[mu].DC[dR, mu] + lRbar.Ga[mu].DC[lR, mu]), 
+    QLbar.Ga[mu].DC[QL, mu] + LLbar.Ga[mu].DC[LL, mu] + uRbar.Ga[mu].DC[uR, mu] + dRbar.Ga[mu].DC[dR, mu] + lRbar.Ga[mu].DC[lR, mu]),
   FlavorExpand->{SU2W,SU2D}]/.{CKM[a_,b_] Conjugate[CKM[a_,c_]]->IndexDelta[b,c], CKM[b_,a_] Conjugate[CKM[c_,a_]]->IndexDelta[b,c]}];
 
 LHiggs := Block[{ii,mu, feynmangaugerules,V2HDM, LKinetic},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
- 
+
   P11 := Module[{jj},Phi1bar[jj] Phi1[jj]];
   P12 := Module[{jj},Phi1bar[jj] Phi2[jj]];
   P21 := Module[{jj},Phi2bar[jj] Phi1[jj]];
@@ -29,10 +29,10 @@ LHiggs := Block[{ii,mu, feynmangaugerules,V2HDM, LKinetic},
 
 LYu["Type-I"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
- 
+
   yuk = ExpandIndices[
-   -vev/vev2 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi2[ii] - 
-    vev/vev2 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi2[ii] - 
+   -vev/vev2 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi2[ii] -
+    vev/vev2 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi2[ii] -
     vev/vev2 yu[ff1, ff2] QLbar[sp, ii, ff1, cc].uR [sp, ff2, cc] Phi2bar[jj] Eps[ii, jj], FlavorExpand -> SU2D];
   yuk = yuk /. { CKM[a_, b_] Conjugate[CKM[a_, c_]] -> IndexDelta[b, c], CKM[b_, a_] Conjugate[CKM[c_, a_]] -> IndexDelta[b, c]};
   yuk+HC[yuk]/.feynmangaugerules
@@ -40,10 +40,10 @@ LYu["Type-I"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
 
 LYu["Type-II"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
- 
+
   yuk = ExpandIndices[
-   -vev/vev1 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi1[ii] - 
-    vev/vev1 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi1[ii] - 
+   -vev/vev1 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi1[ii] -
+    vev/vev1 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi1[ii] -
     vev/vev2 yu[ff1, ff2] QLbar[sp, ii, ff1, cc].uR [sp, ff2, cc] Phi2bar[jj] Eps[ii, jj], FlavorExpand -> SU2D];
   yuk = yuk /. { CKM[a_, b_] Conjugate[CKM[a_, c_]] -> IndexDelta[b, c], CKM[b_, a_] Conjugate[CKM[c_, a_]] -> IndexDelta[b, c]};
   yuk+HC[yuk]/.feynmangaugerules
@@ -51,10 +51,10 @@ LYu["Type-II"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
 
 LYu["Type-LS"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
- 
+
   yuk = ExpandIndices[
-   -vev/vev2 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi2[ii] - 
-    vev/vev1 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi1[ii] - 
+   -vev/vev2 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi2[ii] -
+    vev/vev1 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi1[ii] -
     vev/vev2 yu[ff1, ff2] QLbar[sp, ii, ff1, cc].uR [sp, ff2, cc] Phi2bar[jj] Eps[ii, jj], FlavorExpand -> SU2D];
   yuk = yuk /. { CKM[a_, b_] Conjugate[CKM[a_, c_]] -> IndexDelta[b, c], CKM[b_, a_] Conjugate[CKM[c_, a_]] -> IndexDelta[b, c]};
   yuk+HC[yuk]/.feynmangaugerules
@@ -62,17 +62,17 @@ LYu["Type-LS"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
 
 LYu["Type-FL"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
- 
+
   yuk = ExpandIndices[
-   -vev/vev1 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi1[ii] - 
-    vev/vev2 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi2[ii] - 
+   -vev/vev1 yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi1[ii] -
+    vev/vev2 yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi2[ii] -
     vev/vev2 yu[ff1, ff2] QLbar[sp, ii, ff1, cc].uR [sp, ff2, cc] Phi2bar[jj] Eps[ii, jj], FlavorExpand -> SU2D];
   yuk = yuk /. { CKM[a_, b_] Conjugate[CKM[a_, c_]] -> IndexDelta[b, c], CKM[b_, a_] Conjugate[CKM[c_, a_]] -> IndexDelta[b, c]};
   yuk+HC[yuk]/.feynmangaugerules
  ];
 
-LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,phi2,togoldstones,doublet,doublet0},
-  (* Pure gauge piece *)    
+LGhost := Block[{LGh1,LGhw,LGhs,LGhphi, LGhphi1, LGhphi2,mu, generators,gh,ghbar,Vectorize,gp1,gp2,hp1,hp2,togoldstones,doublet1,doublet2,doublet10,doublet20},
+  (* Pure gauge piece *)
   LGh1 = -ghBbar.del[DC[ghB,mu],mu];
   LGhw = -ghWibar[ii].del[DC[ghWi[ii],mu],mu];
   LGhs = -ghGbar[ii].del[DC[ghG[ii],mu],mu];
@@ -83,12 +83,15 @@ LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,ph
   gh    = {ghB, ghWi[1], ghWi[2], ghWi[3]};
   ghbar = {ghBbar, ghWibar[1], ghWibar[2], ghWibar[3]};
   generators = {-I/2 g1 IdentityMatrix[2], -I/2 gw PauliSigma[1], -I/2 gw PauliSigma[2], -I/2 gw PauliSigma[3]};
-  doublet = Expand[{(-I phi1 - phi2)/Sqrt[2], Phi[2]} /. MR$Definitions /. vev -> 0]; 
-  doublet0 = {0, vev/Sqrt[2]};
+  doublet1 = Expand[{(-sb*(hp1 + I hp2) + cb*(gp1 + I gp2))/Sqrt[2], Phi1[2]} /. MR$Definitions /. {vev1 -> 0, vev2 -> 0}];
+  doublet10 = {0, vev1/Sqrt[2]};
+  doublet2 = Expand[{(cb*(hp1 + I hp2) + sb*(gp1 + I gp2))/Sqrt[2], Phi2[2]} /. MR$Definitions /. {vev1 -> 0, vev2 -> 0}];
+  doublet20 = {0, vev2/Sqrt[2]};
   Vectorize[{a_, b_}]:= Simplify[{Sqrt[2] Re[Expand[a]], Sqrt[2] Im[Expand[a]], Sqrt[2] Re[Expand[b]], Sqrt[2] Im[Expand[b]]}/.{Im[_]->0, Re[num_]->num}];
-  togoldstones := {phi1 -> (GP + GPbar)/Sqrt[2], phi2 -> (-GP + GPbar)/(I Sqrt[2])};
-  LGhphi=Plus@@Flatten[Table[-ghbar[[kkk]].gh[[lll]] Vectorize[generators[[kkk]].doublet0].Vectorize[generators[[lll]].(doublet+doublet0)],{kkk,4},{lll,4}]] /.togoldstones;
-
+  togoldstones := {hp1->(Hp + Hpbar)/Sqrt[2], hp2->(Hp - Hpbar)/(Sqrt[2] I), gp1->(GP + GPbar)/Sqrt[2], gp2->(GP - GPbar)/(Sqrt[2] I)};
+  LGhphi1=Plus@@Flatten[Table[-ghbar[[kkk]].gh[[lll]] Vectorize[generators[[kkk]].doublet10].Vectorize[generators[[lll]].(doublet1+doublet10)],{kkk,4},{lll,4}]] /.togoldstones;
+  LGhphi2=Plus@@Flatten[Table[-ghbar[[kkk]].gh[[lll]] Vectorize[generators[[kkk]].doublet20].Vectorize[generators[[lll]].(doublet2+doublet20)],{kkk,4},{lll,4}]] /.togoldstones;
+  LGhphi = LGhphi1 + LGhphi2;
 ExpandIndices[ LGhs + If[FeynmanGauge, LGh1 + LGhw + LGhphi,0], FlavorExpand->SU2W]];
 
 LYukawa := LYu[YukawaType];
