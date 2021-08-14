@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Wed 19 Aug 2020 10:31:00
+# Date: Fri 13 Aug 2021 16:24:45
 
 
 from object_library import all_orders, CouplingOrder
@@ -15,6 +15,18 @@ QED = CouplingOrder(name = 'QED',
                     hierarchy = 2)
 
 
-NLO = CouplingOrder(name = 'NLO',
+NLOT = CouplingOrder(name = 'NLOT', # ggS triangle nlo couplings
+                    expansion_order = 1,
+                    hierarchy = 2)
+
+NLOB = CouplingOrder(name = 'NLOB', # ggSS box nlo couplings
+                    expansion_order = 1,
+                    hierarchy = 2)
+
+NLOZ = CouplingOrder(name = 'NLOZ', # ggZ nlo couplings
+                    expansion_order = 1,
+                    hierarchy = 2)
+
+NLOEW = CouplingOrder(name = 'NLOEW', # gagaS nlo couplings
                     expansion_order = 1,
                     hierarchy = 2)

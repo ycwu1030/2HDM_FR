@@ -1,13 +1,13 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Fri 13 Aug 2021 15:40:58
+# Date: Fri 13 Aug 2021 16:12:34
 
 
 # 
 # This is the logfile for the model 2HDM CPC
 
 # Authors: Yongcheng Wu
-# Model version: 0.4.2
+# Model version: 0.5.1
 # Checking the Quantum numbers
    * Electric charge defined.
 # Checking the Lagrangians
