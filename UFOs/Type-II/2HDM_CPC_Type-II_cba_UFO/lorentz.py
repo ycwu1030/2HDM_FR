@@ -1,13 +1,13 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Thu 12 Aug 2021 22:13:29
+# Date: Fri 13 Aug 2021 16:16:20
 
 
 from object_library import all_lorentz, Lorentz
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 try:
-   import form_factors as ForFac
+   import form_factors as ForFac 
 except ImportError:
    pass
 
@@ -99,3 +99,4 @@ VVVV4 = Lorentz(name = 'VVVV4',
 VVVV5 = Lorentz(name = 'VVVV5',
                 spins = [ 3, 3, 3, 3 ],
                 structure = 'Metric(1,4)*Metric(2,3) - (Metric(1,3)*Metric(2,4))/2. - (Metric(1,2)*Metric(3,4))/2.')
+

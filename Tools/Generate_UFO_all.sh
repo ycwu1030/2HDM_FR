@@ -8,3 +8,5 @@ for type in 1 2 3 4
         ./Tools/Generate_UFO.m $type $order
     done
 done
+
+./Tools/Patch_All.sh

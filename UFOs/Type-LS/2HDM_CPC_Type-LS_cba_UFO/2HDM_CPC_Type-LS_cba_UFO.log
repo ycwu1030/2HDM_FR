@@ -1,13 +1,13 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Thu 12 Aug 2021 22:19:46
+# Date: Fri 13 Aug 2021 16:21:06
 
 
 # 
 # This is the logfile for the model 2HDM CPC
 
 # Authors: Yongcheng Wu
-# Model version: 0.4.2
+# Model version: 0.5.1
 # Checking the Quantum numbers
    * Electric charge defined.
 # Checking the Lagrangians
@@ -39,8 +39,8 @@
 
 # Vertices
    * Calling FeynmanRules for 1 Lagrangians.
-   * Number of classes vertices: 208
-   * Number of flavored vertices: 310
+   * Number of classes vertices: 216
+   * Number of flavored vertices: 318
    * Saved vertices in InterfaceRun[ 1 ].
    * Checked QNumber conservation.
       - Quantum number GhostNumber conserved in all vertices.
@@ -53,7 +53,7 @@
 # Vertex definitions
 #
 
-   * 310 vertices written.
+   * 318 vertices written.
    * vertices.py written.
 #
 # Lorentz structure definitions
@@ -65,7 +65,7 @@
 # Coupling definitions
 #
 
-   * 250 couplings written.
+   * 253 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions

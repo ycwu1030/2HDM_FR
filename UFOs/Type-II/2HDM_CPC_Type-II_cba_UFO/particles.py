@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.36
 # Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Thu 12 Aug 2021 22:13:28
+# Date: Fri 13 Aug 2021 16:16:20
 
 
 from __future__ import division
@@ -428,3 +428,4 @@ G__plus__ = Particle(pdg_code = 251,
                      Y = 0)
 
 G__minus__ = G__plus__.anti()
+

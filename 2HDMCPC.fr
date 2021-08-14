@@ -16,7 +16,7 @@ M$ModelName = "2HDM CPC";
 
 M$Information = {
   Authors      -> {"Yongcheng Wu"},
-  Version      -> "0.5.0",
+  Version      -> "0.5.1",
   Date         -> "08. 13. 2021",
   Institutions -> {"Oklahoma State University"},
   Emails       -> {"ycwu0830@gmail.com"}
@@ -37,6 +37,7 @@ FR$RmDblExt = { ymb -> MB, ymc -> MC, ymdo -> MD, yme -> Me,
 (* ************************** *)
 
 (* ****************************************** *)
+(* 0.5.1: Fixing error in Ghost Lagrangian    *)
 (* 0.5.0: Assign coupling order to Effective  *)
 (*        Vertices                            *)
 (* 0.4.2: Fixing typo                         *)
