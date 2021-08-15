@@ -10,7 +10,7 @@ $$v, m_h, m_H, m_A, m_{\pm}, \cos(\beta-\alpha), \tan\beta, m_{12}^2$$
 
 ## Download
 
-Either finding the corresponding files in `RELEASE` folder or checking [release page](https://github.com/ycwu1030/2HDM_FR/releases/tag/v0.4.2).
+Either finding the corresponding files in `RELEASE` folder or checking [release page](https://github.com/ycwu1030/2HDM_FR/releases/tag/v0.5.1).
 
 ## Usage
 
