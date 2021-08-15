@@ -26,3 +26,7 @@ For the UFO files, the name conventions are:
 - [x] Adding the loop-induced vertex as effective vertex with form factors, such that $h\to\gamma\gamma$ can be handled.
 - [ ] Adding the loop-induced vertex as effective vertex for charged scalar.
 - [ ] Adding CP-violation case.
+
+## WARNING
+
+For the model with **effective vertices**, we don't fully check through those effective vertices. As far as we checked, for process not involving interference effects, they should be fine (we've checked the scalar-pair productions with triangle and box diagrams). But be careful in any case one wants to check the interference effects (we've checked the $t\bar t$ case)! For the interference effects involving effective vertices, one might also want to using NLO model and check [hacking the MG5](https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/LoopInducedTimesTree).
