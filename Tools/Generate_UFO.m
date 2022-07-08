@@ -1,10 +1,10 @@
-#!/Applications/Mathematica.app/Contents/MacOS/MathematicaScript -script
+#!/Applications/Mathematica.app/Contents/MacOS/wolframscript -script
 
-$FeynRulesPath=SetDirectory["/Users/ycwu/Workingspace/FeynRules/feynrules-2.3.36"];
+$FeynRulesPath=SetDirectory["/Users/ycwu/Workingspace/FeynRules/feynrules-2.3.49"];
 <<FeynRules`
 
 
-SetDirectory["/Users/ycwu/Workingspace/FeynRules/ModelBuilding/2HDM_FR"];
+SetDirectory["/Users/ycwu/Library/CloudStorage/OneDrive-Personal/Projects/000.Codings/FeynRules/ModelBuilding/2HDM_FR"];
 LoadModel["2HDMCPC.fr"];
 YukawaTypeList={"Type-I","Type-II","Type-LS","Type-FL"};
 RUNNLOSWITCH={False,True};

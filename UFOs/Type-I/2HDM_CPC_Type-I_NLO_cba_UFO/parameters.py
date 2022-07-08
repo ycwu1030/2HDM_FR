@@ -1,6 +1,6 @@
-# This file was automatically created by FeynRules 2.3.36
-# Mathematica version: 11.3.0 for Mac OS X x86 (64-bit) (March 7, 2018)
-# Date: Fri 13 Aug 2021 16:12:12
+# This file was automatically created by FeynRules 2.3.49
+# Mathematica version: 13.0.1 for Mac OS X ARM (64-bit) (January 28, 2022)
+# Date: Fri 8 Jul 2022 20:49:42
 
 
 
@@ -78,7 +78,7 @@ m122 = Parameter(name = 'm122',
                  nature = 'external',
                  type = 'real',
                  value = 90000.,
-                 texname = '\\text{Subsuperscript}[\\text{m},12,2]',
+                 texname = '\\text{m}_{12}^2',
                  lhablock = 'THDMBLOCK',
                  lhacode = [ 3 ])
 
