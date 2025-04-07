@@ -71,6 +71,17 @@ LYu["Type-FL"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   yuk+HC[yuk]/.feynmangaugerules
  ];
 
+LYu["General"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
+  feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
+
+  yuk = ExpandIndices[
+    - CKM[ff1,ff2] QLbar[sp, ii, ff1, cc].dR[sp, ff3, cc](yd1hat[ff2,ff3] Phi1[ii] + yd2hat[ff2,ff3] Phi2[ii])
+    - LLbar[sp, ii, ff1].lR[sp, ff3] (yl1hat[ff1,ff3] Phi1[ii] + yl2hat[ff1,ff3] Phi2[ii])
+    - QLbar[sp, ii, ff1, cc].uR[sp, ff2, cc] (yu1hat[ff1,ff2] Phi1bar[jj] Eps[ii,jj] + yu2hat[ff1,ff2] Phi2bar[jj] Eps[ii,jj]), FlavorExpand -> SU2D];
+  yuk = yuk /. { CKM[a_, b_] Conjugate[CKM[a_, c_]] -> IndexDelta[b, c], CKM[b_, a_] Conjugate[CKM[c_, a_]] -> IndexDelta[b, c]};
+  yuk + HC[yuk] /. feynmangaugerules
+]
+
 LGhost := Block[{LGh1,LGhw,LGhs,LGhphi, LGhphi1, LGhphi2,mu, generators,gh,ghbar,Vectorize,gp1,gp2,hp1,hp2,togoldstones,doublet1,doublet2,doublet10,doublet20},
   (* Pure gauge piece *)
   LGh1 = -ghBbar.del[DC[ghB,mu],mu];

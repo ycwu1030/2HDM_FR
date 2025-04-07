@@ -4,10 +4,10 @@
 M$Parameters = {
 
   (* External parameters *)
-  aEWM1 == { 
-    ParameterType    -> External, 
-    BlockName        -> SMINPUTS, 
-    OrderBlock       -> 1, 
+  aEWM1 == {
+    ParameterType    -> External,
+    BlockName        -> SMINPUTS,
+    OrderBlock       -> 1,
     Value            -> 127.9,
     InteractionOrder -> {QED,-2},
     Description      -> "Inverse of the EW coupling constant at the Z pole"
@@ -16,16 +16,16 @@ M$Parameters = {
     ParameterType    -> External,
     BlockName        -> SMINPUTS,
     OrderBlock       -> 2,
-    Value            -> 1.16637*^-5, 
+    Value            -> 1.16637*^-5,
     InteractionOrder -> {QED,2},
     TeX              -> Subscript[G,f],
     Description      -> "Fermi constant"
   },
-  aS    == { 
+  aS    == {
     ParameterType    -> External,
     BlockName        -> SMINPUTS,
     OrderBlock       -> 3,
-    Value            -> 0.1184, 
+    Value            -> 0.1184,
     InteractionOrder -> {QCD,2},
     TeX              -> Subscript[\[Alpha],s],
     Description      -> "Strong coupling constant at the Z pole"
@@ -141,7 +141,7 @@ M$Parameters = {
     ParameterType -> Internal,
     Value         -> Sqrt[1-cba^2],
     TeX           -> Subscript[s,\[Beta]-\[Alpha]],
-    Description   -> "sin(beta-alpha) in 2HDM" 
+    Description   -> "sin(beta-alpha) in 2HDM"
   },
   (* Internal Parameters *)
   aEW == {
@@ -151,61 +151,61 @@ M$Parameters = {
     TeX              -> Subscript[\[Alpha], EW],
     Description      -> "Electroweak coupling contant"
   },
-  MW == { 
-    ParameterType -> Internal, 
-    Value         -> Sqrt[MZ^2/2+Sqrt[MZ^4/4-Pi/Sqrt[2]*aEW/Gf*MZ^2]], 
-    TeX           -> Subscript[M,W], 
+  MW == {
+    ParameterType -> Internal,
+    Value         -> Sqrt[MZ^2/2+Sqrt[MZ^4/4-Pi/Sqrt[2]*aEW/Gf*MZ^2]],
+    TeX           -> Subscript[M,W],
     Description   -> "W mass"
   },
-  sw2 == { 
-    ParameterType -> Internal, 
-    Value         -> 1-(MW/MZ)^2, 
+  sw2 == {
+    ParameterType -> Internal,
+    Value         -> 1-(MW/MZ)^2,
     Description   -> "Squared Sin of the Weinberg angle"
   },
-  ee == { 
-    ParameterType    -> Internal, 
-    Value            -> Sqrt[4 Pi aEW], 
-    InteractionOrder -> {QED,1}, 
-    TeX              -> e,  
+  ee == {
+    ParameterType    -> Internal,
+    Value            -> Sqrt[4 Pi aEW],
+    InteractionOrder -> {QED,1},
+    TeX              -> e,
     Description      -> "Electric coupling constant"
   },
-  cw == { 
-    ParameterType -> Internal, 
-    Value         -> Sqrt[1-sw2], 
-    TeX           -> Subscript[c,w], 
+  cw == {
+    ParameterType -> Internal,
+    Value         -> Sqrt[1-sw2],
+    TeX           -> Subscript[c,w],
     Description   -> "Cosine of the Weinberg angle"
   },
-  sw == { 
-    ParameterType -> Internal, 
-    Value         -> Sqrt[sw2], 
-    TeX           -> Subscript[s,w], 
+  sw == {
+    ParameterType -> Internal,
+    Value         -> Sqrt[sw2],
+    TeX           -> Subscript[s,w],
     Description   -> "Sine of the Weinberg angle"
   },
-  gw == { 
-    ParameterType    -> Internal, 
-    Definitions      -> {gw->ee/sw}, 
-    InteractionOrder -> {QED,1},  
-    TeX              -> Subscript[g,w], 
+  gw == {
+    ParameterType    -> Internal,
+    Definitions      -> {gw->ee/sw},
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[g,w],
     Description      -> "Weak coupling constant at the Z pole"
   },
-  g1 == { 
-    ParameterType    -> Internal, 
-    Definitions      -> {g1->ee/cw}, 
-    InteractionOrder -> {QED,1},  
-    TeX              -> Subscript[g,1], 
+  g1 == {
+    ParameterType    -> Internal,
+    Definitions      -> {g1->ee/cw},
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[g,1],
     Description      -> "U(1)Y coupling constant at the Z pole"
   },
-  gs == { 
-    ParameterType    -> Internal, 
+  gs == {
+    ParameterType    -> Internal,
     Value            -> Sqrt[4 Pi aS],
-    InteractionOrder -> {QCD,1},  
-    TeX              -> Subscript[g,s], 
+    InteractionOrder -> {QCD,1},
+    TeX              -> Subscript[g,s],
     ParameterName    -> G,
     Description      -> "Strong coupling constant at the Z pole"
   },
   vev == {
     ParameterType    -> Internal,
-    Value            -> 2*MW*sw/ee, 
+    Value            -> 2*MW*sw/ee,
     InteractionOrder -> {QED,-1},
     Description      -> "Higgs total vacuum expectation value"
   },
@@ -225,23 +225,23 @@ M$Parameters = {
     ParameterType    -> Internal,
     Definitions      -> {ca -> sba*sb + cba*cb},
     TeX              -> Subscript[c,\[Alpha]],
-    Description      -> "Cosine of Alpha" 
+    Description      -> "Cosine of Alpha"
   },
   sa == {
     ParameterType    -> Internal,
     Definitions      -> {sa -> cba*sb - sba*cb},
     TeX              -> Subscript[s,\[Alpha]],
-    Description      -> "Sine of Alpha" 
+    Description      -> "Sine of Alpha"
   },
   vev1 == {
     ParameterType    -> Internal,
-    Definitions      -> {vev1 -> vev*cb}, 
+    Definitions      -> {vev1 -> vev*cb},
     InteractionOrder -> {QED,-1},
     Description      -> "Higgs vacuum expectation value for Phi1"
   },
   vev2 == {
     ParameterType    -> Internal,
-    Definitions      -> {vev2 -> vev*sb}, 
+    Definitions      -> {vev2 -> vev*sb},
     InteractionOrder -> {QED,-1},
     Description      -> "Higgs vacuum expectation value for Phi2"
   },
@@ -327,8 +327,109 @@ M$Parameters = {
     TeX              -> Superscript[y, d],
     Description      -> "Down-type Yukawa couplings"
   },
+  rhol == {
+    ParameterType    -> External,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (*Value            -> {rhol[1,1] -> 0.11, rhol[1,2] -> 0.12, rhol[1,3] -> 0.13,
+                         rhol[2,1] -> 0.21, rhol[2,2] -> 0.22, rhol[2,3] -> 0.23,
+                         rhol[3,1] -> 0.31, rhol[3,2] -> 0.32, rhol[3,3] -> 0.33},*)
+    InteractionOrder -> {QED, 1},
+    (* ParameterName    -> {rhol[1,1] -> rhoee, rhol[1,2] -> rhoemu, rhol[1,3] -> rhoetau,
+                         rhol[2,1] -> rhomue, rhol[2,2] -> rhomumu, rhol[2,3] -> rhomutau,
+                         rhol[3,1] -> rhotaue, rhol[3,2] -> rhotaumu, rhol[3,3] -> rhotautau}, *)
+    TensorClass      ->  RhoL,
+    BlockName        -> RHOLEP,
+    TeX              -> Superscript[rho,l],
+    Description      -> "Lepton flavor violation couplings"
+  },
+  rhou == {
+    ParameterType    -> External,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Value            -> {rhou[1,1] -> 0.11, rhou[1,2] -> 0.12, rhou[1,3] -> 0.13,
+                         rhou[2,1] -> 0.21, rhou[2,2] -> 0.22, rhou[2,3] -> 0.23,
+                         rhou[3,1] -> 0.31, rhou[3,2] -> 0.32, rhou[3,3] -> 0.33}, *)
+    InteractionOrder -> {QED, 1},
+    (* ParameterName    -> {rhou[1,1] -> rhouu, rhou[1,2] -> rhouc, rhou[1,3] -> rhout,
+                         rhou[2,1] -> rhocu, rhou[2,2] -> rhocc, rhou[2,3] -> rhoct,
+                         rhou[3,1] -> rhotu, rhou[3,2] -> rhotc, rhou[3,3] -> rhott}, *)
+    TensorClass      -> RhoU,
+    BlockName        -> RHOUP,
+    TeX              -> Superscript[rho,u],
+    Description      -> "up-type quark flavor violation couplings"
+  },
+  rhod == {
+    ParameterType    -> External,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Value            -> {rhod[1,1] -> 0.11, rhod[1,2] -> 0.12, rhod[1,3] -> 0.13,
+                         rhod[2,1] -> 0.21, rhod[2,2] -> 0.22, rhod[2,3] -> 0.23,
+                         rhod[3,1] -> 0.31, rhod[3,2] -> 0.32, rhod[3,3] -> 0.33}, *)
+    InteractionOrder -> {QED, 1},
+    (* ParameterName    -> {rhod[1,1] -> rhodd, rhod[1,2] -> rhods, rhod[1,3] -> rhodb,
+                         rhod[2,1] -> rhosd, rhod[2,2] -> rhoss, rhod[2,3] -> rhosb,
+                         rhod[3,1] -> rhobd, rhod[3,2] -> rhobs, rhod[3,3] -> rhobb}, *)
+    TensorClass      -> RhoD,
+    BlockName        -> RHODO,
+    TeX              -> Superscript[rho,d],
+    Description      -> "down-type quark flavor violation couplings"
+  },
+  yl1hat == {
+    ParameterType    -> Internal,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Definitions      -> {yl1hat[i_?NumericQ, j_?NumericQ] :> yl[i,j] cb - rhol[i,j] sb}, *)
+    Value            -> { yl1hat[i_,j_]:>  - rhol[i,j] sb /; (i=!=j) , yl1hat[i_,i_] :> yl[i,i] cb - rhol[i,i] sb},
+    InteractionOrder -> {QED, 1},
+    TeX              -> Superscript[yh,l1],
+    Description      -> "Lepton flavor violation couplings accociated with the first Higgs doublet"
+  },
+  yl2hat == {
+    ParameterType    -> Internal,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Definitions      -> {yl2hat[i_?NumericQ, j_?NumericQ] :> yl[i,j] sb + rhol[i,j] cb}, *)
+    Value            -> { yl2hat[i_,j_]:> rhol[i,j] cb /; (i=!=j), yl2hat[i_,i_] :> yl[i,i] sb + rhol[i,i] cb},
+    InteractionOrder -> {QED, 1},
+    TeX              -> Superscript[yh,l2],
+    Description      -> "Lepton flavor violation couplings accociated with the second Higgs doublet"
+  },
+  yu1hat == {
+    ParameterType    -> Internal,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Definitions      -> {yu1hat[i_?NumericQ, j_?NumericQ] :> yu[i,j] cb - rhou[i,j] sb}, *)
+    Value            -> { yu1hat[i_,j_]:> -rhou[i,j]sb /; (i=!=j), yu1hat[i_,i_] :> yu[i,i] cb - rhou[i,i] sb},
+    InteractionOrder -> {QED, 1},
+    TeX              -> Superscript[yh,u1],
+    Description      -> "Up-type quark flavor violation couplings accociated with the first Higgs doublet"
+  },
+  yu2hat == {
+    ParameterType    -> Internal,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Definitions      -> {yu2hat[i_?NumericQ, j_?NumericQ] :> yu[i,j] sb + rhou[i,j] cb}, *)
+    Value            -> { yu2hat[i_,j_]:> rhou[i,j] cb /; (i=!=j), yu2hat[i_,i_] :> yu[i,i] sb + rhou[i,i] cb},
+    InteractionOrder -> {QED, 1},
+    TeX              -> Superscript[yh,u2],
+    Description      -> "Up-type quark flavor violation couplings accociated with the second Higgs doublet"
+  },
+  yd1hat == {
+    ParameterType    -> Internal,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Definitions      -> {yd1hat[i_?NumericQ, j_?NumericQ] :> yd[i,j] cb - rhod[i,j] sb}, *)
+    Value            -> { yd1hat[i_,j_]:> -rhod[i,j] sb /; (i=!=j), yd1hat[i_,i_] :> yd[i,i] cb - rhod[i,i] sb},
+    InteractionOrder -> {QED, 1},
+    TeX              -> Superscript[yh,d1],
+    Description      -> "Down-type quark flavor violation couplings accociated with the first Higgs doublet"
+  },
+  yd2hat == {
+    ParameterType    -> Internal,
+    Indices          -> {Index[Generation], Index[Generation]},
+    (* Definitions      -> {yd2hat[i_?NumericQ, j_?NumericQ] :> yd[i,j] sb + rhod[i,j] cb}, *)
+    Value            -> { yd2hat[i_,j_]:> rhod[i,j] cb /; (i=!=j), yd2hat[i_,i_] :> yd[i,i] sb + rhod[i,i] cb},
+    InteractionOrder -> {QED, 1},
+    TeX              -> Superscript[yh,d2],
+    Description      -> "Down-type quark flavor violation couplings accociated with the second Higgs doublet"
+  },
+
+  (* CKM matrix *)
 (* N. B. : only Cabibbo mixing! *)
-  CKM == { 
+  CKM == {
     ParameterType -> Internal,
     Indices       -> {Index[Generation], Index[Generation]},
     Unitary       -> True,

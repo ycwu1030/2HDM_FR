@@ -1,0 +1,167 @@
+# This file was automatically created by FeynRules 2.3.49
+# Mathematica version: 13.1.0 for Mac OS X ARM (64-bit) (June 16, 2022)
+# Date: Mon 7 Apr 2025 23:35:10
+
+
+# 
+# This is the logfile for the model 2HDM CPC
+
+# Authors: Yongcheng Wu
+# Model version: 0.5.1
+# Checking the Quantum numbers
+   * Electric charge defined.
+# Checking the Lagrangians
+   * All Lagrangians are ok.
+#
+# Particle definitions
+#
+
+   * No particles removed. All particles correspond to GenInt setup.
+
+# Automatically assigned PDG numbers
+   * Assigned PDG number 9000001 to particle ghA
+   * Assigned PDG number 9000002 to particle ghZ
+   * Assigned PDG number 9000003 to particle ghWp
+   * Assigned PDG number 9000004 to particle ghWm
+
+
+# Compulsory PDG codes:
+   * Class SM leptons complete.
+   * Class SM neutrinos complete.
+   * Class SM quarks complete.
+   * Class SM gauge bosons complete.
+#
+# Parameter definitions
+#
+
+   * Parameter rhod1x1 has no value. Default value 1 assigned.
+   * Parameter rhod1x2 has no value. Default value 1 assigned.
+   * Parameter rhod1x3 has no value. Default value 1 assigned.
+   * Parameter rhod2x1 has no value. Default value 1 assigned.
+   * Parameter rhod2x2 has no value. Default value 1 assigned.
+   * Parameter rhod2x3 has no value. Default value 1 assigned.
+   * Parameter rhod3x1 has no value. Default value 1 assigned.
+   * Parameter rhod3x2 has no value. Default value 1 assigned.
+   * Parameter rhod3x3 has no value. Default value 1 assigned.
+   * Parameter rhol1x1 has no value. Default value 1 assigned.
+   * Parameter rhol1x2 has no value. Default value 1 assigned.
+   * Parameter rhol1x3 has no value. Default value 1 assigned.
+   * Parameter rhol2x1 has no value. Default value 1 assigned.
+   * Parameter rhol2x2 has no value. Default value 1 assigned.
+   * Parameter rhol2x3 has no value. Default value 1 assigned.
+   * Parameter rhol3x1 has no value. Default value 1 assigned.
+   * Parameter rhol3x2 has no value. Default value 1 assigned.
+   * Parameter rhol3x3 has no value. Default value 1 assigned.
+   * Parameter rhou1x1 has no value. Default value 1 assigned.
+   * Parameter rhou1x2 has no value. Default value 1 assigned.
+   * Parameter rhou1x3 has no value. Default value 1 assigned.
+   * Parameter rhou2x1 has no value. Default value 1 assigned.
+   * Parameter rhou2x2 has no value. Default value 1 assigned.
+   * Parameter rhou2x3 has no value. Default value 1 assigned.
+   * Parameter rhou3x1 has no value. Default value 1 assigned.
+   * Parameter rhou3x2 has no value. Default value 1 assigned.
+   * Parameter rhou3x3 has no value. Default value 1 assigned.
+   * Parameter yd1hat1x2 has no value. Default value 1 assigned.
+   * Parameter yd1hat1x3 has no value. Default value 1 assigned.
+   * Parameter yd1hat2x1 has no value. Default value 1 assigned.
+   * Parameter yd1hat2x3 has no value. Default value 1 assigned.
+   * Parameter yd1hat3x1 has no value. Default value 1 assigned.
+   * Parameter yd1hat3x2 has no value. Default value 1 assigned.
+   * Parameter yd2hat1x2 has no value. Default value 1 assigned.
+   * Parameter yd2hat1x3 has no value. Default value 1 assigned.
+   * Parameter yd2hat2x1 has no value. Default value 1 assigned.
+   * Parameter yd2hat2x3 has no value. Default value 1 assigned.
+   * Parameter yd2hat3x1 has no value. Default value 1 assigned.
+   * Parameter yd2hat3x2 has no value. Default value 1 assigned.
+   * Parameter yl1hat1x2 has no value. Default value 1 assigned.
+   * Parameter yl1hat1x3 has no value. Default value 1 assigned.
+   * Parameter yl1hat2x1 has no value. Default value 1 assigned.
+   * Parameter yl1hat2x3 has no value. Default value 1 assigned.
+   * Parameter yl1hat3x1 has no value. Default value 1 assigned.
+   * Parameter yl1hat3x2 has no value. Default value 1 assigned.
+   * Parameter yl2hat1x2 has no value. Default value 1 assigned.
+   * Parameter yl2hat1x3 has no value. Default value 1 assigned.
+   * Parameter yl2hat2x1 has no value. Default value 1 assigned.
+   * Parameter yl2hat2x3 has no value. Default value 1 assigned.
+   * Parameter yl2hat3x1 has no value. Default value 1 assigned.
+   * Parameter yl2hat3x2 has no value. Default value 1 assigned.
+   * Parameter yu1hat1x2 has no value. Default value 1 assigned.
+   * Parameter yu1hat1x3 has no value. Default value 1 assigned.
+   * Parameter yu1hat2x1 has no value. Default value 1 assigned.
+   * Parameter yu1hat2x3 has no value. Default value 1 assigned.
+   * Parameter yu1hat3x1 has no value. Default value 1 assigned.
+   * Parameter yu1hat3x2 has no value. Default value 1 assigned.
+   * Parameter yu2hat1x2 has no value. Default value 1 assigned.
+   * Parameter yu2hat1x3 has no value. Default value 1 assigned.
+   * Parameter yu2hat2x1 has no value. Default value 1 assigned.
+   * Parameter yu2hat2x3 has no value. Default value 1 assigned.
+   * Parameter yu2hat3x1 has no value. Default value 1 assigned.
+   * Parameter yu2hat3x2 has no value. Default value 1 assigned.
+   * Parameter yd1hat1x1 has no value. Default value 1 assigned.
+   * Parameter yd1hat2x2 has no value. Default value 1 assigned.
+   * Parameter yd1hat3x3 has no value. Default value 1 assigned.
+   * Parameter yd2hat1x1 has no value. Default value 1 assigned.
+   * Parameter yd2hat2x2 has no value. Default value 1 assigned.
+   * Parameter yd2hat3x3 has no value. Default value 1 assigned.
+   * Parameter yl1hat1x1 has no value. Default value 1 assigned.
+   * Parameter yl1hat2x2 has no value. Default value 1 assigned.
+   * Parameter yl1hat3x3 has no value. Default value 1 assigned.
+   * Parameter yl2hat1x1 has no value. Default value 1 assigned.
+   * Parameter yl2hat2x2 has no value. Default value 1 assigned.
+   * Parameter yl2hat3x3 has no value. Default value 1 assigned.
+   * Parameter yu1hat1x1 has no value. Default value 1 assigned.
+   * Parameter yu1hat2x2 has no value. Default value 1 assigned.
+   * Parameter yu1hat3x3 has no value. Default value 1 assigned.
+   * Parameter yu2hat1x1 has no value. Default value 1 assigned.
+   * Parameter yu2hat2x2 has no value. Default value 1 assigned.
+   * Parameter yu2hat3x3 has no value. Default value 1 assigned.
+
+
+# Vertices
+   * Calling FeynmanRules for 1 Lagrangians.
+   * Number of classes vertices: 216
+   * Number of flavored vertices: 406
+   * Saved vertices in InterfaceRun[ 1 ].
+   * Checked QNumber conservation.
+      - Quantum number GhostNumber conserved in all vertices.
+      - Quantum number LeptonNumber conserved in all vertices.
+      - Quantum number Q conserved in all vertices.
+      - Quantum number Y conserved in all vertices.
+   * particles.py written.
+   * parameters.py written.
+#
+# Vertex definitions
+#
+
+   * 406 vertices written.
+   * vertices.py written.
+#
+# Lorentz structure definitions
+#
+
+   * 20 lorentz structures written.
+   * lorentz.py written.
+#
+# Coupling definitions
+#
+
+   * 384 couplings written.
+   * couplings.py written.
+#
+# Coupling order definitions
+#
+
+   * 0 couplings orders written.
+   * coupling_orders.py written.
+#
+# Decay definitions
+#
+
+   * 15 decays written.
+   * decay.py not written
+#
+# CTCoupling definitions
+#
+
+   * 0 CTcouplings written.
+   * CT_couplings.py written.
