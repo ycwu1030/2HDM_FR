@@ -330,9 +330,9 @@ M$Parameters = {
   rhol == {
     ParameterType    -> External,
     Indices          -> {Index[Generation], Index[Generation]},
-    (*Value            -> {rhol[1,1] -> 0.11, rhol[1,2] -> 0.12, rhol[1,3] -> 0.13,
+    Value            -> {rhol[1,1] -> 0.11, rhol[1,2] -> 0.12, rhol[1,3] -> 0.13,
                          rhol[2,1] -> 0.21, rhol[2,2] -> 0.22, rhol[2,3] -> 0.23,
-                         rhol[3,1] -> 0.31, rhol[3,2] -> 0.32, rhol[3,3] -> 0.33},*)
+                         rhol[3,1] -> 0.31, rhol[3,2] -> 0.32, rhol[3,3] -> 0.33},
     InteractionOrder -> {QED, 1},
     (* ParameterName    -> {rhol[1,1] -> rhoee, rhol[1,2] -> rhoemu, rhol[1,3] -> rhoetau,
                          rhol[2,1] -> rhomue, rhol[2,2] -> rhomumu, rhol[2,3] -> rhomutau,
@@ -345,9 +345,9 @@ M$Parameters = {
   rhou == {
     ParameterType    -> External,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Value            -> {rhou[1,1] -> 0.11, rhou[1,2] -> 0.12, rhou[1,3] -> 0.13,
+    Value            -> {rhou[1,1] -> 0.11, rhou[1,2] -> 0.12, rhou[1,3] -> 0.13,
                          rhou[2,1] -> 0.21, rhou[2,2] -> 0.22, rhou[2,3] -> 0.23,
-                         rhou[3,1] -> 0.31, rhou[3,2] -> 0.32, rhou[3,3] -> 0.33}, *)
+                         rhou[3,1] -> 0.31, rhou[3,2] -> 0.32, rhou[3,3] -> 0.33},
     InteractionOrder -> {QED, 1},
     (* ParameterName    -> {rhou[1,1] -> rhouu, rhou[1,2] -> rhouc, rhou[1,3] -> rhout,
                          rhou[2,1] -> rhocu, rhou[2,2] -> rhocc, rhou[2,3] -> rhoct,
@@ -360,9 +360,9 @@ M$Parameters = {
   rhod == {
     ParameterType    -> External,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Value            -> {rhod[1,1] -> 0.11, rhod[1,2] -> 0.12, rhod[1,3] -> 0.13,
+    Value            -> {rhod[1,1] -> 0.11, rhod[1,2] -> 0.12, rhod[1,3] -> 0.13,
                          rhod[2,1] -> 0.21, rhod[2,2] -> 0.22, rhod[2,3] -> 0.23,
-                         rhod[3,1] -> 0.31, rhod[3,2] -> 0.32, rhod[3,3] -> 0.33}, *)
+                         rhod[3,1] -> 0.31, rhod[3,2] -> 0.32, rhod[3,3] -> 0.33},
     InteractionOrder -> {QED, 1},
     (* ParameterName    -> {rhod[1,1] -> rhodd, rhod[1,2] -> rhods, rhod[1,3] -> rhodb,
                          rhod[2,1] -> rhosd, rhod[2,2] -> rhoss, rhod[2,3] -> rhosb,
@@ -375,8 +375,8 @@ M$Parameters = {
   yl1hat == {
     ParameterType    -> Internal,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Definitions      -> {yl1hat[i_?NumericQ, j_?NumericQ] :> yl[i,j] cb - rhol[i,j] sb}, *)
-    Value            -> { yl1hat[i_,j_]:>  - rhol[i,j] sb /; (i=!=j) , yl1hat[i_,i_] :> yl[i,i] cb - rhol[i,i] sb},
+    Definitions      -> { (*yl1hat[i_,j_]:>  - rhol[i,j] sb /; (i=!=j) ,*) yl1hat[i_,j_] :> yl[i,j] cb - rhol[i,j] sb},
+    (* Value            -> { yl1hat[i_,j_]:>  - rhol[i,j] sb /; (i=!=j) , yl1hat[i_,i_] :> yl[i,i] cb - rhol[i,i] sb}, *)
     InteractionOrder -> {QED, 1},
     TeX              -> Superscript[yh,l1],
     Description      -> "Lepton flavor violation couplings accociated with the first Higgs doublet"
@@ -384,8 +384,8 @@ M$Parameters = {
   yl2hat == {
     ParameterType    -> Internal,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Definitions      -> {yl2hat[i_?NumericQ, j_?NumericQ] :> yl[i,j] sb + rhol[i,j] cb}, *)
-    Value            -> { yl2hat[i_,j_]:> rhol[i,j] cb /; (i=!=j), yl2hat[i_,i_] :> yl[i,i] sb + rhol[i,i] cb},
+    Definitions      -> { (*yl2hat[i_,j_]:> rhol[i,j] cb /; (i=!=j),*) yl2hat[i_,j_] :> yl[i,j] sb + rhol[i,j] cb},
+    (* Value            -> { yl2hat[i_,j_]:> rhol[i,j] cb /; (i=!=j), yl2hat[i_,i_] :> yl[i,i] sb + rhol[i,i] cb}, *)
     InteractionOrder -> {QED, 1},
     TeX              -> Superscript[yh,l2],
     Description      -> "Lepton flavor violation couplings accociated with the second Higgs doublet"
@@ -393,8 +393,8 @@ M$Parameters = {
   yu1hat == {
     ParameterType    -> Internal,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Definitions      -> {yu1hat[i_?NumericQ, j_?NumericQ] :> yu[i,j] cb - rhou[i,j] sb}, *)
-    Value            -> { yu1hat[i_,j_]:> -rhou[i,j]sb /; (i=!=j), yu1hat[i_,i_] :> yu[i,i] cb - rhou[i,i] sb},
+    Definitions      -> { (*yu1hat[i_,j_]:> -rhou[i,j]sb /; (i=!=j),*) yu1hat[i_,j_] :> yu[i,j] cb - rhou[i,j] sb},
+    (* Value            -> { yu1hat[i_,j_]:> -rhou[i,j]sb /; (i=!=j), yu1hat[i_,i_] :> yu[i,i] cb - rhou[i,i] sb}, *)
     InteractionOrder -> {QED, 1},
     TeX              -> Superscript[yh,u1],
     Description      -> "Up-type quark flavor violation couplings accociated with the first Higgs doublet"
@@ -402,8 +402,8 @@ M$Parameters = {
   yu2hat == {
     ParameterType    -> Internal,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Definitions      -> {yu2hat[i_?NumericQ, j_?NumericQ] :> yu[i,j] sb + rhou[i,j] cb}, *)
-    Value            -> { yu2hat[i_,j_]:> rhou[i,j] cb /; (i=!=j), yu2hat[i_,i_] :> yu[i,i] sb + rhou[i,i] cb},
+    Definitions      -> { (*yu2hat[i_,j_]:> rhou[i,j] cb /; (i=!=j),*) yu2hat[i_,j_] :> yu[i,j] sb + rhou[i,j] cb},
+    (* Value            -> { yu2hat[i_,j_]:> rhou[i,j] cb /; (i=!=j), yu2hat[i_,i_] :> yu[i,i] sb + rhou[i,i] cb}, *)
     InteractionOrder -> {QED, 1},
     TeX              -> Superscript[yh,u2],
     Description      -> "Up-type quark flavor violation couplings accociated with the second Higgs doublet"
@@ -411,8 +411,8 @@ M$Parameters = {
   yd1hat == {
     ParameterType    -> Internal,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Definitions      -> {yd1hat[i_?NumericQ, j_?NumericQ] :> yd[i,j] cb - rhod[i,j] sb}, *)
-    Value            -> { yd1hat[i_,j_]:> -rhod[i,j] sb /; (i=!=j), yd1hat[i_,i_] :> yd[i,i] cb - rhod[i,i] sb},
+    Definitions      -> { (*yd1hat[i_,j_]:> -rhod[i,j] sb /; (i=!=j),*) yd1hat[i_,j_] :> yd[i,j] cb - rhod[i,j] sb},
+    (* Value            -> { yd1hat[i_,j_]:> -rhod[i,j] sb /; (i=!=j), yd1hat[i_,i_] :> yd[i,i] cb - rhod[i,i] sb},*)
     InteractionOrder -> {QED, 1},
     TeX              -> Superscript[yh,d1],
     Description      -> "Down-type quark flavor violation couplings accociated with the first Higgs doublet"
@@ -420,8 +420,8 @@ M$Parameters = {
   yd2hat == {
     ParameterType    -> Internal,
     Indices          -> {Index[Generation], Index[Generation]},
-    (* Definitions      -> {yd2hat[i_?NumericQ, j_?NumericQ] :> yd[i,j] sb + rhod[i,j] cb}, *)
-    Value            -> { yd2hat[i_,j_]:> rhod[i,j] cb /; (i=!=j), yd2hat[i_,i_] :> yd[i,i] sb + rhod[i,i] cb},
+    Definitions      -> { (*yd2hat[i_,j_]:> rhod[i,j] cb /; (i=!=j),*) yd2hat[i_,j_] :> yd[i,j] sb + rhod[i,j] cb},
+    (* Value            -> { yd2hat[i_,j_]:> rhod[i,j] cb /; (i=!=j), yd2hat[i_,i_] :> yd[i,i] sb + rhod[i,i] cb},*)
     InteractionOrder -> {QED, 1},
     TeX              -> Superscript[yh,d2],
     Description      -> "Down-type quark flavor violation couplings accociated with the second Higgs doublet"
