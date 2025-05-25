@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.1.0 for Mac OS X ARM (64-bit) (June 16, 2022)
-# Date: Wed 9 Apr 2025 22:20:43
+# Date: Fri 11 Apr 2025 21:58:38
 
 
 # 
@@ -59,13 +59,13 @@
 # Lorentz structure definitions
 #
 
-   * 19 lorentz structures written.
+   * 20 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   * 393 couplings written.
+   * 388 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions
