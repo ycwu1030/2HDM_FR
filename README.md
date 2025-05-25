@@ -8,6 +8,23 @@ In current convention, I only consider CP conserving case. The input parameters 
 
 $$v, m_h, m_H, m_A, m_{\pm}, \cos(\beta-\alpha), \tan\beta, m_{12}^2$$
 
+## Citation
+
+If you use the model file in this repository, please cite as
+
+```tex
+@software{wu_yongcheng_2023_8207058,
+  author       = {Wu, Yongcheng},
+  title        = {UFO Model File for CP conserving 2HDM},
+  month        = aug,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {0.5.1},
+  doi          = {10.5281/zenodo.8207058},
+  url          = {https://doi.org/10.5281/zenodo.8207058}
+}
+```
+
 ## Download
 
 Either finding the corresponding files in `RELEASE` folder or checking [release page](https://github.com/ycwu1030/2HDM_FR/releases/tag/v0.5.1).
