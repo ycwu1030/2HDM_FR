@@ -8,6 +8,17 @@ In current convention, I only consider CP conserving case. The input parameters 
 
 $$v, m_h, m_H, m_A, m_{\pm}, \cos(\beta-\alpha), \tan\beta, m_{12}^2$$
 
+## The Yukawa Coupling
+
+In this branch (G2HDM), I added the general Yukawa couplings with imposing the $Z_2$ symmetry. In addition to the usual Yukawa couplings that are controlled by the fermion mass and $t_\beta$ and $c_{\beta-\alpha}$, there will be extra matrices controlling the Yukawa couplings. For each type of the fermion (up, down, charged lepton), there will be a 3x3 $\rho$ matrix of which the elements can be set in the parameter card.
+
+In general, all the elements in the $\rho$ matrix will be non-zero. However, in many studies, one may want to use some special texture of these couplings where many elements of these matrices are zero. In such case, there are two ways to set the $\rho$ matrices:
+
+1. Directly setting the elements in the parameter card
+2. Using restrict card when loading the UFO model in MG5
+
+For the second case, the restrict card is just a parameter card with specicifc value for some entries of the rho matrices which can be put in the UFO folder.
+
 ## Citation
 
 If you use the model file in this repository, please cite as
