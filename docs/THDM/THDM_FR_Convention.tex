@@ -1,0 +1,294 @@
+\documentclass[12pt]{article}
+\pdfoutput=1 % if your are submitting a pdflatex (i.e. if you have images in pdf, png or jpg format)
+
+\usepackage{jheppub} % for details on the use of the package, please see the JHEP-author-manual
+\usepackage{graphicx}  % needed for figures
+\usepackage{dcolumn}   % needed for some tablese$\cdot$cm
+\usepackage{bm}        % for math
+\usepackage{amssymb}   % for math
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage{slashed}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{footnote}
+\usepackage{amsmath}
+\allowdisplaybreaks[4]
+\usepackage{accents}
+\newlength{\dhatheight}
+\newcommand{\doublehat}[1]{%
+    \settoheight{\dhatheight}{\ensuremath{\hat{#1}}}%
+    \addtolength{\dhatheight}{-0.35ex}%
+    \hat{\vphantom{\rule{1pt}{\dhatheight}}%
+    \smash{\hat{#1}}}}
+\newcommand{\ycwu}[1]{{\bf \color{red} yc: #1}}
+\usepackage{hyperref}
+% autoref configuration
+\def\figureautorefname~#1\null{Fig.\,#1\null}
+\def\tableautorefname~#1\null{Tab.\,#1\null}
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\def\equationautorefname~#1\null{Eq.\,(#1)\null}
+
+\title{The Model file for Two-Higgs-doublet model}
+\author[a,b]{ Yongcheng Wu}
+% \author[c,d]{ Author-2}
+\affiliation[a]{Department of Physics, Institute of Theoretical Physics and Institute of Physics Frontiers and Interdisciplinary Sciences, Nanjing Normal University, Nanjing, 210023, China}
+\affiliation[b]{Nanjing Key Laboratory of Particle Physics and Astrophysics, Nanjing, 210023, China}
+% \affiliation[b]{Institute-b}
+% \affiliation[c]{Institute-c}
+% \affiliation[d]{Institute-d}
+\emailAdd{ycwu@njnu.edu.cn}
+% \emailAdd{email for author-2}
+
+
+%\date{\today}
+
+\abstract{
+This document lists the convention for {\tt FeynRules} model files of the Two-Higgs-doublet model (2HDM). It is mainly about the scalar potential, and the Yukawa couplings.
+}
+
+
+\begin{document}
+\titlepage
+\maketitle
+\newpage
+
+\flushbottom
+
+\section{The Model}
+
+The 2HDM extends the SM with extra scalar doublet. Hence, the differences with the SM come from the scalar sector as well as the Yukawa sector. Other parts follow well with the SM.
+
+\subsection{The Scalar Sector}
+In the scalar sector, we have two doublets, given as
+\begin{align}
+    \Phi_1 = \begin{pmatrix}
+        \phi_1^+\\
+        \frac{v_1 + \phi_1^0 + i\eta_1}{\sqrt{2}}
+    \end{pmatrix},\quad \Phi_2 = \begin{pmatrix}
+        \phi_2^+\\
+        \frac{v_2 + \phi_2^0 + i\eta_2}{\sqrt{2}}
+    \end{pmatrix}.
+\end{align}
+Note that we are working in the CP conserving case without any CP violation effect.
+
+The scalar potential with the above two doublets is given by
+\begin{align}
+V &= m_{11}^2\Phi_1^\dagger \Phi_1 + m_{22}^2 \Phi_2^\dagger \Phi_2 - m_{12}^2 (\Phi_1^\dagger\Phi_2 + h.c.) + \frac{\lambda_1}{2}(\Phi_1^\dagger\Phi_1)^2 + \frac{\lambda_2}{2}(\Phi_2^\dagger \Phi_2)^2\nonumber \\
+&\quad + \lambda_3 (\Phi_1^\dagger\Phi_1)(\Phi_2^\dagger\Phi_2) + \lambda_4 (\Phi_1^\dagger\Phi_2)(\Phi_2^\dagger\Phi_1) + \frac{\lambda_5}{2}\left((\Phi_1^\dagger\Phi_2)^2 + h.c.\right) \nonumber \\
+&\quad + \lambda_6\left((\Phi_1^\dagger\Phi_1)(\Phi_1^\dagger\Phi_2) + h.c.\right) + \lambda_7 \left((\Phi_2^\dagger\Phi_2)(\Phi_1^\dagger\Phi_2) + h.c.\right)
+\end{align}
+In many cases, $\lambda_{6,7}$ will be set to 0 for simplicity. The mass eigenstates are connected with the scalars in the two doublets as
+\begin{align}
+\begin{pmatrix}
+    G^\pm \\
+    H^\pm
+\end{pmatrix} = \mathcal{R}(\beta)\begin{pmatrix}
+    \phi_1^\pm \\
+    \phi_2^\pm
+\end{pmatrix},\quad \begin{pmatrix}
+    G^0 \\
+    A
+\end{pmatrix} = \mathcal{R}(\beta)\begin{pmatrix}
+    \eta_1 \\
+    \eta_2
+\end{pmatrix},\quad \begin{pmatrix}
+    H\\
+    h
+\end{pmatrix} = \mathcal{R}(\alpha)\begin{pmatrix}
+    \phi_1^0\\
+    \phi_2^0
+\end{pmatrix}
+\end{align}
+The corresponding rotation matrix is given by
+\begin{align}
+    \mathcal{R}(\theta) = \begin{pmatrix}
+        c_\theta   &   s_\theta \\
+        -s_\theta  &   c_\theta
+    \end{pmatrix}
+\end{align}
+
+It will be convenient to use physical parameters as input (not those in the potential). Here, the input parameters of the scalar sector is chosen as
+\begin{align}
+    v(\approx 246\,{\rm GeV}),\, t_\beta(\equiv v_2/v_1),\, c_{\beta-\alpha},\, m_h(=125\,{\rm GeV}),\, m_H,\, m_A,\, m_{H^\pm},\, m_{12}^2,\,(\lambda_6,\,\lambda_7).
+\end{align}
+where in the current version, we set $\lambda_6=\lambda_7=0$ for simplicity.
+
+
+\subsection{The Yukawa Sector}
+The most general Yukawa couplings for the 2HDM is given by
+\begin{align}
+\mathcal{L}_{Y} = - \bar{Q^{\prime}}_{L}^{i}(Y_{1ij}^{u}\tilde{\Phi}_{1}+Y_{2ij}^{u}\tilde{\Phi}_{2})u_{R}^{\prime j} - \bar{Q^{\prime}}_{L}^{i}(Y_{1ij}^{d}\Phi_{1}+Y_{2ij}^{d}\Phi_{2})d_{R}^{\prime j} - \bar{L^{\prime}}_{L}^{i}(Y_{1ij}^{\ell}\Phi_{1}+Y_{2ij}^{\ell}\Phi_{2})e_{R}^{\prime j}+ h.c.
+\end{align}
+
+In 2HDM, even in g2HDM, there is a Higgs Basis $(H_{1},H_{2})$, where only one doublet obtain all the vev, which will exclusively contain the Goldstone components. The relation between $(H_{1},H_{2})$ and $(\Phi_{1},\Phi_{2})$ can be written as
+\begin{align}
+\begin{pmatrix}
+H_{1} \\
+H_{2}
+\end{pmatrix} = \begin{pmatrix}
+c_{\beta} & s_{\beta} \\
+-s_{\beta} & c_{\beta}
+\end{pmatrix}\begin{pmatrix}
+\Phi_{1} \\
+\Phi_{2}
+\end{pmatrix}
+\end{align}
+where
+\begin{align}
+H_{1} = \begin{pmatrix}
+G^{+}  \\
+\frac{v+h_{1}+i G^{0}}{\sqrt{ 2 }}
+\end{pmatrix}, \quad H_{2}=\begin{pmatrix}
+H^{+} \\
+\frac{h_{2}+iA}{\sqrt{ 2 }}
+\end{pmatrix}
+\end{align}
+
+In the Higgs basis, the Yukawa couplings are written as
+\begin{align}
+\mathcal{L}_{Y}^{HB} &= - \bar{Q'}_{L}^{i}(Y_{1ij}^{u}\tilde{\Phi}_{1}+Y_{2ij}^{u}\tilde{\Phi}_{2})u_{R}^{'j} + \dots + h.c. \\
+&=-\bar{Q'}_{L}^{i}(Y_{1ij}^{u}(c_{\beta}\tilde{H}_{1}-s_{\beta}\tilde{H}_{2})+Y_{2ij}^{u}(s_{\beta}\tilde{H}_{1}+c_{\beta}\tilde{H}_{2}))u_{R}^{'j} + \dots + h.c. \\
+&=-\bar{Q'}_{L}^{i}((Y_{1ij}^{u}c_{\beta}+Y_{2ij}^{u}s_{\beta})\tilde{H}_{1}+(-Y_{1ij}^{u}s_{\beta}+Y_{2ij}^{u}c_{\beta})\tilde{H}_{2})u_{R}^{'j} + \dots +h.c.\\
+&\equiv -\bar{Q'}_{L}^{i}(G_{ij}^{u}\tilde{H}_{1}+P_{ij}^{u}\tilde{H}_{2})u_{R}^{'j} - \bar{Q'}_{L}^{i}(G_{ij}^{d}H_{1}+P_{ij}^{d}H_{2})d_{R}^{'j} - \bar{L'}_{L}^{i}(G_{ij}^{\ell}H_{1}+P_{ij}^{\ell}H_{2})e_{R}^{'j} + h.c.
+\end{align}
+The same type of fermions can be mixed in order to make $y^{u,d,\ell}$ diagonal. The fermion mass eigenstates will be the mixture of the flavor eigenstates:
+\begin{align}
+&f_{L} = U^{f,L}f'_{L},\quad f=u,d,\ell\\
+&f_{R} = U^{f,R}f'_{R},\quad f=u,d,\ell
+\end{align}
+Since we don't include the right handed neutrino, (if so, we need to include PMNS matrix similar to the CKM matrix), they are massless, we can choose $\nu_{L} = U^{\ell,L}\nu'_{L}$ the same as the LH lepton.
+
+According to the above mixing, we have
+\begin{align}
+&Q_{L}^{'i} = \begin{pmatrix}
+u_{L}^{'i} \\
+d_{L}^{'i}
+\end{pmatrix} = \begin{pmatrix}
+U_{ij}^{u,L^{\dagger}}u_{L}^{j} \\
+U_{ij}^{d,L^{\dagger}}d_{L}^{j}
+\end{pmatrix} = U_{ij}^{u,L^{\dagger}}\begin{pmatrix}
+u_{L}^{j} \\
+(U^{u,L}U^{d,L^{\dagger}}d_{L})^{j}
+\end{pmatrix}=U_{ij}^{u,L^{\dagger}}\begin{pmatrix}
+u_{L}^{j} \\
+(V_{CKM}d_{L})^{j}
+\end{pmatrix} = U_{ij}^{u,L^{\dagger}}Q_{M,L}^{j},\\
+& u_{R}^{'i} = U_{ij}^{u,R^{\dagger}}u_{R}^{j},\quad d_{R}^{'i}= U_{ij}^{d,R^{\dagger}}d_{R}^{j} \\
+& L_{L}^{'i} = U_{ij}^{\ell,L^{\dagger}}L_{L}^{j}, \quad e_{R}^{'i} = U_{ij}^{\ell,R^{\dagger}}e_{R}^{j}
+\end{align}
+\begin{align}
+\bar{Q'}_{L}^{i} = \begin{pmatrix}
+\bar{u'}_{L}^{i} & \bar{d'}_{L}^{i}
+\end{pmatrix} = \begin{pmatrix}
+\bar{u}_{L}^{j} & \bar{d}_{L}^{k}V_{CKM}^{^{\dagger} kj}
+\end{pmatrix}U_{ji}^{u,L} = \bar{Q}_{M,L}^{j}U_{ji}^{u,L}, \quad \bar{L'}_{L}^{i} = \bar{L}_{L}^{j}U^{\ell,L}_{ji}
+\end{align}
+
+Then the Yukawa couplings can be given in terms of the mass eigenstates as
+\begin{align}
+\mathcal{L}_{Y}^{HB} &= -\bar{Q}_{M,L}^{i}U_{il}^{u,L}(G_{lk}^{u}\tilde{H}_{1}+P_{lk}^{u}\tilde{H}_{2})U_{kj}^{u,R^{\dagger}}u_{R}^{j}-\bar{Q}_{M,L}^{i}U_{il}^{u,L}U_{lk}^{d,L^{\dagger}}U_{km}^{d,L}(G_{mn}^{d}H_{1}+P_{mn}^{d}H_{2})U_{nj}^{d,R^{\dagger}}d_{R}^{j} \nonumber \\
+&\qquad\qquad  - \bar{L}_{L}^{i}U_{il}^{\ell,L}(G_{lk}^{\ell}H_{1}+P_{lk}^{\ell}H_{2})U_{kj}^{\ell,R^{\dagger}}e_{R}^{j} + h.c.\nonumber \\
+&=-\bar{Q}_{M,L}^{i}(Y_{ij}^{u}\tilde{H}_{1}+\rho_{ij}^{u}\tilde{H}_{2})u_{R}^{j} - \bar{Q}_{M,L}^{i}V_{CKM}^{ik}(Y_{kj}^{d}H_{1}+\rho_{kj}^{d}H_{2})d_{R}^{j}- \bar{L}_{L}^{i}(Y_{ij}^{\ell}H_{1}+\rho_{ij}^{\ell}H_{2})e_{R}^{j} + h.c.
+\end{align}
+where, we have defined
+\begin{align}
+&Y^{u} \equiv \begin{pmatrix}
+y_{u} & 0 & 0 \\
+0 & y_{c} & 0 \\
+0 & 0 & y_{t}
+\end{pmatrix} = U^{u,L}G^{u}U^{u,R^{\dagger}},\quad Y^{d}\equiv \begin{pmatrix}
+y_{d} & 0 & 0 \\
+0 & y_{s} & 0 \\
+0 & 0 & y_{b}
+\end{pmatrix} = U^{d,L}G^{d}U^{d,R^{\dagger}},\nonumber \\
+&Y^{\ell}\equiv \begin{pmatrix}
+y_{e} & 0 & 0 \\
+0 & y_{\mu} & 0 \\
+0 & 0 & y_{\tau}
+\end{pmatrix} = U^{\ell,L}G^{\ell}U^{\ell,R^{\dagger}}
+\end{align}
+and
+\begin{align}
+&\rho^{u} \equiv \begin{pmatrix}
+\rho_{uu} & \rho_{uc} & \rho_{ut} \\
+\rho_{cu} & \rho_{cc} & \rho_{ct} \\
+\rho_{tu} & \rho_{tc} & \rho_{tt}
+\end{pmatrix} = U^{u,L}P^{u}U^{u,R^{\dagger}},\quad \rho^{d}\equiv \begin{pmatrix}
+\rho_{dd} & \rho_{ds} & \rho_{db} \\
+\rho_{sd} & \rho_{ss} & \rho_{sb} \\
+\rho_{bd} & \rho_{bs} & \rho_{bb}
+\end{pmatrix} = U^{d,L}P^{d}U^{d,R^{\dagger}},\nonumber \\
+&\rho^{\ell}\equiv \begin{pmatrix}
+\rho_{ee} & \rho_{e\mu} & \rho_{e \tau} \\
+\rho_{\mu e} & \rho_{\mu \mu} & \rho_{\mu \tau} \\
+\rho_{\tau e} & \rho_{\tau \mu} & \rho_{\tau \tau}
+\end{pmatrix} = U^{\ell,L}P^{\ell}U^{\ell,R^{\dagger}}
+\end{align}
+
+For easier implementation (following the commonly used convention), we work in mass basis for fermions and use $\Phi_{1}$ and $\Phi_{2}$ instead of $H_{1}$ and $H_{2}$
+\begin{align}
+\begin{pmatrix}
+H_{1} \\
+H_{2}
+\end{pmatrix} = \begin{pmatrix}
+c_{\beta} & s_{\beta} \\
+-s_{\beta} & c_{\beta}
+\end{pmatrix}\begin{pmatrix}
+\Phi_{1} \\
+\Phi_{2}
+\end{pmatrix}
+\end{align}
+\begin{align}
+\mathcal{L}_{Y}^{GB} &= -\bar{Q}_{M,L}^{i}(Y_{ij}^{u}(c_{\beta}\tilde{\Phi}_{1}+s_{\beta}\tilde{\Phi}_{2})+\rho_{ij}^{u}(-s_{\beta}\tilde{\Phi}_{1}+c_{\beta}\tilde{\Phi}_{2}))u_{R}^{j}\nonumber\\
+&\qquad\quad - \bar{Q}_{M,L}^{i}V_{CKM}^{ik}(Y_{kj}^{d}(c_{\beta}\Phi_{1}+s_{\beta}\Phi_{2})+\rho_{kj}^{d}(-s_{\beta}\Phi_{1}+c_{\beta}\Phi_{2}))d_{R}^{j}\nonumber\\
+&\qquad\qquad - \bar{L}_{L}^{i}(Y_{ij}^{\ell}(c_{\beta}\Phi_{1}+s_{\beta}\Phi_{2})+\rho_{ij}^{\ell}(-s_{\beta}\Phi_{1}+c_{\beta}\Phi_{2}))e_{R}^{j} + h.c. \nonumber\\
+&=-\bar{Q}_{M,L}^{i}((Y^{u}_{ij}c_{\beta}-\rho_{ij}^{u}s_{\beta})\tilde{\Phi}_{1}+(Y_{ij}^{u}s_{\beta}+\rho_{ij}^{u}c_{\beta})\tilde{\Phi}_{2})u_{R}^{j}\nonumber \\
+&\qquad\quad - \bar{Q}_{M,L}^{i}V_{CKM}^{ik}((Y_{kj}^{d}c_{\beta}-\rho_{kj}^{d}s_{\beta})\Phi_{1}+(Y_{jk}^{d}s_{\beta}+\rho_{kj}^{d}c_{\beta})\Phi_{2})d_{R}^{j}\nonumber \\
+&\qquad\qquad - \bar{L}_{L}^{i}((Y_{ij}^{\ell}c_{\beta}-\rho_{ij}^{\ell}s_{\beta})\Phi_{1}+(Y_{ij}^{\ell}s_{\beta}+\rho_{ij}^{\ell}c_{\beta})\Phi_{2})e_{R}^{j} + h.c. \nonumber\\
+&=-\bar{Q}_{M,L}^{i}(\hat{Y}_{1ij}^{u}\tilde{\Phi}_{1}+\hat{Y}_{2ij}^{u}\tilde{\Phi}_{2})u_{R}^{j} - \bar{Q}_{M,L}^{i}V_{CKM}^{ik}(\hat{Y}_{1kj}^{d}\Phi_{1}+\hat{Y}_{2kj}^{d}\Phi_{2})d_{R}^{j} \nonumber\\
+&\qquad\qquad\qquad -\bar{L}_{L}^{i}(\hat{Y}_{1ij}^{\ell}\Phi_{1}+\hat{Y}_{2ij}^{\ell}\Phi_{2})e_{R}^{j} + h.c.
+\end{align}
+where we have defined
+\begin{align}
+&{\color{red}\hat{Y}_{1}^{f}= Y^{f}c_{\beta}-\rho^{f}s_{\beta}}\\
+&{\color{red}\hat{Y}_{2}^{f} = Y^{f}s_{\beta}+\rho^{f}c_{\beta}}
+\end{align}
+where the $Y^f$ matrix is diagonal and given by the masses of the fermions as
+\begin{align}
+M^{f} = \frac{Y^{f}v}{\sqrt{ 2 }}
+\end{align}
+while the $\rho^f$ matrices are the extra input parameters in the Yukawa sector, then we have for the Yukawa couplings.
+\begin{align}
+\hat{Y}_{1}^{f} &= \frac{\sqrt{ 2 }}{v} M^{f} c_{\beta}-\rho^{f}s_{\beta}\\
+\hat{Y}_{2}^{f} &= \frac{\sqrt{ 2 }}{v} M^{f} s_{\beta}+\rho^{f}c_{\beta}
+% \frac{\sqrt{ 2 }}{v}M^{f} &=\hat{Y}_{1}^{f}c_{\beta} + \hat{Y}_{2}^{f}s_{\beta}\\
+% \rho^{f} &= -\hat{Y}_{1}^{f}s_{\beta} + \hat{Y}_{2}^{f}c_{\beta}
+\end{align}
+
+\subsubsection{The Four special types of the Yukawa coupling}
+The mostly commonly used four types of the Yukawa coupling can be given by special choices of the Yukawa couplings of $\hat{Y}_{1,2}^f$:
+\begin{description}
+    \item[Type-I:] $\hat{Y}_{1}^{u,d,\ell}=0$
+    \item[Type-II:] $\hat{Y}_{1}^u=\hat{Y}_2^{d,\ell}=0$
+    \item[Type-LS:] $\hat{Y}_1^{u,d}=\hat{Y}_2^{\ell}=0$
+    \item[Type-FL:] $\hat{Y}_1^{u,\ell}=\hat{Y}_2^{d}=0$
+\end{description}
+These four types of the Yukawa couplings can be achieved by special choice of the $\rho$ matrices:
+\begin{description}
+    \item[Type-I:] $\rho^f=\frac{\sqrt{2}M^f}{vt_\beta}$
+    \item[Type-II:] $\rho^u=\frac{\sqrt{2}M^u}{vt_\beta}$, $\rho^{d,\ell}=-\frac{\sqrt{2}M^{d,\ell}}{v}t_\beta$
+    \item[Type-LS:] $\rho^{u,d}=\frac{\sqrt{2}M^{u,d}}{vt_\beta}$, $\rho^{\ell}=-\frac{\sqrt{2}M^{\ell}}{v}t_\beta$
+    \item[Type-FL:] $\rho^{u,\ell}=\frac{\sqrt{2}M^{u,\ell}}{vt_\beta}$, $\rho^{d}=-\frac{\sqrt{2}M^d}{v}t_\beta$
+\end{description}
+
+% \begin{acknowledgments}
+% Acknowledgments
+% \end{acknowledgments}
+
+% \bibliographystyle{bibsty}
+% \bibliography{references}
+
+\end{document}
