@@ -71,7 +71,7 @@ LYu["Type-FL"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   yuk+HC[yuk]/.feynmangaugerules
  ];
 
-LYu["General"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
+LYu["Generic"] := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
 
   yuk = ExpandIndices[

@@ -259,15 +259,15 @@ class Coupling(UFOBaseClass):
 
         CTparam=None
         for param in all_CTparameters:
-           pattern=re.compile(r"(?P<first>\A|\*|\+|\-|\()(?P<name>"+param.name+r")(?P<second>\Z|\*|\+|\-|\))")
-           numberOfMatches=len(pattern.findall(self.value))
-           if numberOfMatches==1:
-               if not CTparam:
-                   CTparam=param
-               else:
-                   raise UFOError, "UFO does not support yet more than one occurence of CTParameters in the couplings values."
-           elif numberOfMatches>1:
-               raise UFOError, "UFO does not support yet more than one occurence of CTParameters in the couplings values."
+            pattern=re.compile(r"(?P<first>\A|\*|\+|\-|\()(?P<name>"+param.name+r")(?P<second>\Z|\*|\+|\-|\))")
+            numberOfMatches=len(pattern.findall(self.value))
+            if numberOfMatches==1:
+                if not CTparam:
+                    CTparam=param
+                else:
+                    raise UFOError, "UFO does not support yet more than one occurence of CTParameters in the couplings values."
+            elif numberOfMatches>1:
+                raise UFOError, "UFO does not support yet more than one occurence of CTParameters in the couplings values."
 
         if not CTparam:
             if x==0:

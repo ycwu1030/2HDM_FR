@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.1.0 for Mac OS X ARM (64-bit) (June 16, 2022)
-# Date: Fri 11 Apr 2025 21:59:59
+# Date: Wed 17 Sep 2025 10:32:03
 
 
 from object_library import all_lorentz, Lorentz
@@ -30,15 +30,7 @@ FFS1 = Lorentz(name = 'FFS1',
 
 FFS2 = Lorentz(name = 'FFS2',
                spins = [ 2, 2, 1 ],
-               structure = 'ProjM(2,1) - ProjP(2,1)')
-
-FFS3 = Lorentz(name = 'FFS3',
-               spins = [ 2, 2, 1 ],
                structure = 'ProjP(2,1)')
-
-FFS4 = Lorentz(name = 'FFS4',
-               spins = [ 2, 2, 1 ],
-               structure = 'ProjM(2,1) + ProjP(2,1)')
 
 FFV1 = Lorentz(name = 'FFV1',
                spins = [ 2, 2, 3 ],

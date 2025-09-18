@@ -16,8 +16,8 @@ M$ModelName = "2HDM CPC";
 
 M$Information = {
   Authors      -> {"Yongcheng Wu"},
-  Version      -> "0.6.0",
-  Date         -> "04. 09. 2025",
+  Version      -> "0.6.1",
+  Date         -> "2025-09-17",
   Institutions -> {"Nanjing Normal University"},
   Emails       -> {"ycwu0830@gmail.com"}
 };
@@ -37,6 +37,7 @@ FR$RmDblExt = { ymb -> MB, ymc -> MC, ymdo -> MD, yme -> Me,
 (* ************************** *)
 
 (* ****************************************** *)
+(* 0.6.1: Add coupling order for Yukawa       *)
 (* 0.6.0: Including flavor violation Yukawa   *)
 (*         couplings                          *)
 (* 0.5.1: Fixing error in Ghost Lagrangian    *)
@@ -114,7 +115,8 @@ IndexStyle[Generation, f];
 
 M$InteractionOrderHierarchy = {
   {QCD, 1},
-  {QED, 2}
+  {QED, 2},
+  {YUK, 2}
 };
 
 Get["Particles.fr"];
